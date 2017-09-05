@@ -1,50 +1,43 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼şĞí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓĞ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑĞ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌĞòÊÇ×ÔÓÉÈí¼ş£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼ş»ù½ğ»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ğí
-	¿ÉÖ¤Ìõ¿îÀ´ĞŞ¸ÄºÍÖØĞÂ·¢²¼ÕâÒ»³ÌĞò¡£»òÕßÓÃĞí¿ÉÖ¤µÄµÚ¶ş°æ£¬»òÕß£¨¸ù
-	¾İÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üĞÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌĞòµÄÄ¿µÄÊÇÏ£ÍûËüÓĞÓÃ£¬µ«Ã»ÓĞÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓĞÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒşº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌĞòÒ»ÆğÊÕµ½Ò»·İGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼ş£©¡£Èç¹û»¹Ã»ÓĞ£¬Ğ´ĞÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼şÊ±ÓĞÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸æˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ĞÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼şÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼ş±àĞ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼ş°æ±¾£º	03
-	×îºóĞŞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åä¿®æ”¹äºï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖĞµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼ş¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ĞŞÕıÀúÊ·£º
+	ä¿®æ­£å†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
 
 
 
-#include ".\move_evasion.h"
+#include "move_evasion.h"
 #include "attack.h"
 #include "list.h"
 #include "move.h"
@@ -53,17 +46,17 @@
 #include "move_do.h"
 
 int nCheck;
-//µ²
+//æŒ¡
 
-//É±
+//æ€
 static void gen_attack(list_t * list,int to,int colour);
-//ÒÆ½«
+//ç§»å°†
 static void gen_move_king(list_t * list,const attack_t * attack);
-//µ² ÉÁ
+//æŒ¡ é—ª
 static void gen_block(list_t * list,const attack_t * attack);
 
 static void add_block(list_t * list,int square,int to,int colour);
-//½«¾ü¶ã±ÜÍêÈ«Ëã·¨
+//å°†å†›èº²é¿å®Œå…¨ç®—æ³•
 void gen_evasions(list_t * list,const attack_t * attack) 
 {
     int dn,move,size;
@@ -74,14 +67,14 @@ void gen_evasions(list_t * list,const attack_t * attack)
     if(dn==1)
 	{   
 		nCheck++;
-		gen_move_king(list,attack); //ÒÆ½«
-		gen_attack(list,attack->ds[0],Turn);              //É±
-	    gen_block(list, attack);                          //µ² ÉÁ
+		gen_move_king(list,attack); //ç§»å°†
+		gen_attack(list,attack->ds[0],Turn);              //æ€
+	    gen_block(list, attack);                          //æŒ¡ é—ª
 	}else if(dn>1)
 	{
-		gen_move_king(temp,attack); //ÒÆ½«
-		gen_attack(temp,attack->ds[0],Turn);              //É±
-	    gen_block(temp, attack);  //µ² ÉÁ
+		gen_move_king(temp,attack); //ç§»å°†
+		gen_attack(temp,attack->ds[0],Turn);              //æ€
+	    gen_block(temp, attack);  //æŒ¡ é—ª
 		size=LIST_SIZE(temp);
         for(int i=0;i<size;++i)
 		{
@@ -109,7 +102,7 @@ static void gen_attack(list_t * list,int to,int colour)
   if (colour == 0 ? (to & 0x80) != 0 : (to & 0x80) == 0) {
     if (c_InCity[to]) {
 
-      // 1. ÓÃË§(½«)É±
+      // 1. ç”¨å¸…(å°†)æ€
 		
       from = Piece[piece_tag];
       if (from != 0 && !is_checked(to,opp)) {
@@ -118,7 +111,7 @@ static void gen_attack(list_t * list,int to,int colour)
         }
       }
 
-      // 2. ÓÃÊË(Ê¿)É±
+      // 2. ç”¨ä»•(å£«)æ€
       for (i = 1; i <= 2; i ++) {
         from = Piece[piece_tag + i];
         if (from != 0 && !is_piece_pinned(from,colour)) {
@@ -129,7 +122,7 @@ static void gen_attack(list_t * list,int to,int colour)
       }
     }
 
-    // 3. ÓÃÏà(Ïó)É±
+    // 3. ç”¨ç›¸(è±¡)æ€
     for (i = 3; i <= 4; i ++) {
       from = Piece[piece_tag + i];
       if (from != 0 && !is_piece_pinned(from,colour)) {
@@ -140,7 +133,7 @@ static void gen_attack(list_t * list,int to,int colour)
     }
   } else {
 
-    // 4. ÓÃ±ø(×ä)ºáÏòÉ±
+    // 4. ç”¨å…µ(å’)æ¨ªå‘æ€
     for (from = to - 1; from <= to + 1; from += 2) {
 		if((Square[from]&pawn)==pawn && !is_piece_pinned(from,colour))
 		{
@@ -149,14 +142,14 @@ static void gen_attack(list_t * list,int to,int colour)
     }
   }
 
-  // 5. ÓÃ±ø(×ä)×İÏòÉ±
+  // 5. ç”¨å…µ(å’)çºµå‘æ€
   from = to + (colour == 0 ? 16 : -16);
   if((Square[from]&pawn)==pawn && !is_piece_pinned(from,colour))
   {
 	  LIST_ADD(list,MOVE_MAKE(from,to));
   }
 
-  // 6. ÓÃÂíÉ±
+  // 6. ç”¨é©¬æ€
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && !is_piece_pinned(from,colour)) {
@@ -172,7 +165,7 @@ static void gen_attack(list_t * list,int to,int colour)
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  // 7. ÓÃ³µÉ±
+  // 7. ç”¨è½¦æ€
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
 
@@ -189,7 +182,7 @@ static void gen_attack(list_t * list,int to,int colour)
     }
   }
 
-  // 8. ÓÃÅÚÉ±
+  // 8. ç”¨ç‚®æ€
   
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
@@ -222,7 +215,7 @@ static void gen_move_king(list_t * list,const attack_t* attack)
    opp = COLOUR_OPP(me);
    opp_flag = COLOUR_FLAG(opp);
  
-   // Ë§(½«)µÄÒÆ¶¯×Å·¨
+   // å¸…(å°†)çš„ç§»åŠ¨ç€æ³•
    from = Piece[piece_tag];
    if (from != 0) {
        ptr = g_KingMoves[from];
@@ -234,7 +227,7 @@ static void gen_move_king(list_t * list,const attack_t* attack)
 				   
 				   for(int i=0;i<dn;++i)
 				   {
-					   if(PIECE_IS_SLIDER(Square[attack->ds[i]]))   //¹ıÂË»¬×Ó½«¾üµÄÍ¬ĞĞ»òÍ¬ÁĞÒÆ¶¯
+					   if(PIECE_IS_SLIDER(Square[attack->ds[i]]))   //è¿‡æ»¤æ»‘å­å°†å†›çš„åŒè¡Œæˆ–åŒåˆ—ç§»åŠ¨
 					   {
 					      if((attack->ds[i]&0xf) ==(to&0xf)|| (attack->ds[i]>>4) == (to>>4))
                                 goto I;  
@@ -253,7 +246,7 @@ I:                 ;
 				   
 				   for(int i=0;i<dn;++i)
 				   {
-					   if(PIECE_IS_SLIDER(Square[attack->ds[i]]))   //¹ıÂË»¬×Ó½«¾üµÄÍ¬ĞĞ»òÍ¬ÁĞÒÆ¶¯
+					   if(PIECE_IS_SLIDER(Square[attack->ds[i]]))   //è¿‡æ»¤æ»‘å­å°†å†›çš„åŒè¡Œæˆ–åŒåˆ—ç§»åŠ¨
 					   {
 					       //if((attack->ds[i]&0xf) ==(to&0xf)|| (attack->ds[i]>>4) == (to>>4))
 						   if(AttackTab[to-from + 256]==AttackTab[attack->ds[i]-from + 256]) 
@@ -268,7 +261,7 @@ I:                 ;
        }
     }
 }
-//µ² ÉÁ
+//æŒ¡ é—ª
 static void gen_block(list_t * list,  const attack_t * attack)
 {
 	int from,to,paojiazi,sq,temp,leg;
@@ -287,14 +280,14 @@ static void gen_block(list_t * list,  const attack_t * attack)
 		
         to=Piece[me<<4];
 
-		if(PIECE_IS_CANNON(piece))               //µĞ·½ÅÚ½«
+		if(PIECE_IS_CANNON(piece))               //æ•Œæ–¹ç‚®å°†
 		{
 			inc=AttackTab[to-from + 256];
             sq = from;
 		    do
 			{
 			    sq += inc; 	  
-			}while (Square[sq]==Empty);    //Í³¼ÆÅÚ¼Ü×Ó £¨×¢£ºÒ²¿ÉÒÔÓÃÎ»ĞĞÎ»ÁĞÀ´Í³¼Æ£©
+			}while (Square[sq]==Empty);    //ç»Ÿè®¡ç‚®æ¶å­ ï¼ˆæ³¨ï¼šä¹Ÿå¯ä»¥ç”¨ä½è¡Œä½åˆ—æ¥ç»Ÿè®¡ï¼‰
 			paojiazi=sq;  
 			
 			sq = from;
@@ -306,10 +299,10 @@ static void gen_block(list_t * list,  const attack_t * attack)
 				 if(sq!=paojiazi)
 				 {
 					 //printf("sq=%d,paojiazi=%d\n",sq,paojiazi);
-			         add_block(list,paojiazi,sq,me);  //µ²
+			         add_block(list,paojiazi,sq,me);  //æŒ¡
 				 }else
 				 {
-					 if(PIECE_IS_CANNON(Square[paojiazi]) && FLAG_IS(Square[paojiazi],opp_flag)) //ÅÚ¼Ü×ÓÎªµĞ·½ÅÚ£¬¹¹³ÉË«ÅÚ½«£¬·ÅÆúÅÚµ½½«ÏßÂ·µÄµ²
+					 if(PIECE_IS_CANNON(Square[paojiazi]) && FLAG_IS(Square[paojiazi],opp_flag)) //ç‚®æ¶å­ä¸ºæ•Œæ–¹ç‚®ï¼Œæ„æˆåŒç‚®å°†ï¼Œæ”¾å¼ƒç‚®åˆ°å°†çº¿è·¯çš„æŒ¡
 						 break;
 				 }
 
@@ -317,10 +310,9 @@ static void gen_block(list_t * list,  const attack_t * attack)
             
 		    /*sq = from;			
 			temp=to-inc;
-
             if(PIECE_IS_ROOK(Square[paojiazi]) && FLAG_IS(Square[paojiazi],opp_flag))
 			{
-				sq=paojiazi;  //ÅÚ³µ½«£¬Ìø¹ıÅÜ¼Ü×Ó-ÅÚµÄ½â½«
+				sq=paojiazi;  //ç‚®è½¦å°†ï¼Œè·³è¿‡è·‘æ¶å­-ç‚®çš„è§£å°†
 			}else if(PIECE_IS_CANNON(Square[paojiazi]) && FLAG_IS(Square[paojiazi],opp_flag))
 			{
                 temp=paojiazi-inc;
@@ -328,35 +320,34 @@ static void gen_block(list_t * list,  const attack_t * attack)
             do
 			{
 			     sq += inc; 
-			     add_block(list,paojiazi,sq,me);  //µ²
-
+			     add_block(list,paojiazi,sq,me);  //æŒ¡
 			 }while (sq!=temp);
 			 */
-            //ÅÚ¼Ü×ÓÎª±¾·½Æå×Ó
-			if(FLAG_IS(Square[paojiazi],(32<<me)))  //ÉÁ
+            //ç‚®æ¶å­ä¸ºæœ¬æ–¹æ£‹å­
+			if(FLAG_IS(Square[paojiazi],(32<<me)))  //é—ª
 			{
 			    if((inc==16)||(inc==-16))
-			       add_flee(list,paojiazi,true); //ÅÚ ³µ ±ø ÉÁ
+			       add_flee(list,paojiazi,true); //ç‚® è½¦ å…µ é—ª
 			    else
-			       add_flee(list,paojiazi,false);//ÆäËû ÉÁ
+			       add_flee(list,paojiazi,false);//å…¶ä»– é—ª
 			}
 
 
-		}else if(PIECE_IS_ROOK(piece)) //µĞ·½³µ½«
+		}else if(PIECE_IS_ROOK(piece)) //æ•Œæ–¹è½¦å°†
 		{
 			inc=AttackTab[to-from + 256];
 			sq = from;
 			sq += inc; 	  
 			while (Square[sq]==Empty)
 			{
-				add_block(list,0,sq,me);    //µ²
+				add_block(list,0,sq,me);    //æŒ¡
 				sq += inc;
 			}
 
-		}else if(PIECE_IS_KNIGHT(piece))          //µĞ·½Âí½«
+		}else if(PIECE_IS_KNIGHT(piece))          //æ•Œæ–¹é©¬å°†
 		{
 			 leg = c_HorseLegTab[to - from + 256];
-			 add_block(list,0,from+leg,me); //µ²ÂíÍÈ
+			 add_block(list,0,from+leg,me); //æŒ¡é©¬è…¿
 		}
 	}
 }
@@ -371,33 +362,30 @@ static void gen_multi_evasion(list_t * list, const attack_t * attack)
 	}
 }*/
 /*
-//µ² ÉÁ
+//æŒ¡ é—ª
 static void gen_multi_block(list_t * list,  const attack_t * attack)
 {
 	int from,to,paojiazi,sq,temp,leg;
 	int piece,opp,opp_flag;
 	int inc;
 	int me;
-
 	me=Turn;
 	opp = COLOUR_OPP(me);
     opp_flag = COLOUR_FLAG(opp);
-
 	if(attack->dn>1)
 	{
 		from=attack->ds[0];
 		piece=Square[from];
 		
         to=Piece[me<<4];
-
-		if(PIECE_IS_CANNON(piece))               //µĞ·½ÅÚ½«
+		if(PIECE_IS_CANNON(piece))               //æ•Œæ–¹ç‚®å°†
 		{
 			inc=AttackTab[to-from + 256];
             sq = from;
 		    do
 			{
 			    sq += inc; 	  
-			}while (Square[sq]==Empty);    //Í³¼ÆÅÚ¼Ü×Ó £¨×¢£ºÒ²¿ÉÒÔÓÃÎ»ĞĞÎ»ÁĞÀ´Í³¼Æ£©
+			}while (Square[sq]==Empty);    //ç»Ÿè®¡ç‚®æ¶å­ ï¼ˆæ³¨ï¼šä¹Ÿå¯ä»¥ç”¨ä½è¡Œä½åˆ—æ¥ç»Ÿè®¡ï¼‰
 			paojiazi=sq;  
 			
 			sq = from;
@@ -407,40 +395,36 @@ static void gen_multi_block(list_t * list,  const attack_t * attack)
 			     sq += inc; 
 				 if(sq!=paojiazi)
 				 {
-			         add_block(list,paojiazi,sq,me);  //µ²
+			         add_block(list,paojiazi,sq,me);  //æŒ¡
 				 }else
 				 {
-					 if(PIECE_IS_CANNON(Square[paojiazi]) && FLAG_IS(Square[paojiazi],opp_flag)) //ÅÚ¼Ü×ÓÎªµĞ·½ÅÚ£¬¹¹³ÉË«ÅÚ½«£¬·ÅÆúÅÚµ½½«ÏßÂ·µÄµ²
+					 if(PIECE_IS_CANNON(Square[paojiazi]) && FLAG_IS(Square[paojiazi],opp_flag)) //ç‚®æ¶å­ä¸ºæ•Œæ–¹ç‚®ï¼Œæ„æˆåŒç‚®å°†ï¼Œæ”¾å¼ƒç‚®åˆ°å°†çº¿è·¯çš„æŒ¡
 						 break;
 				 }
-
 			 }while (sq!=temp);
             
-            //ÅÚ¼Ü×ÓÎª±¾·½Æå×Ó
-			if(FLAG_IS(Square[paojiazi],(32<<me)))  //ÉÁ
+            //ç‚®æ¶å­ä¸ºæœ¬æ–¹æ£‹å­
+			if(FLAG_IS(Square[paojiazi],(32<<me)))  //é—ª
 			{
 			    if((inc==16)||(inc==-16))
-			       add_flee(list,paojiazi,true); //ÅÚ ³µ ±ø ÉÁ
+			       add_flee(list,paojiazi,true); //ç‚® è½¦ å…µ é—ª
 			    else
-			       add_flee(list,paojiazi,false);//ÆäËû ÉÁ
+			       add_flee(list,paojiazi,false);//å…¶ä»– é—ª
 			}
-
-
-		}else if(PIECE_IS_ROOK(piece)) //µĞ·½³µ½«
+		}else if(PIECE_IS_ROOK(piece)) //æ•Œæ–¹è½¦å°†
 		{
 			inc=AttackTab[to-from + 256];
 			sq = from;
 			sq += inc; 	  
 			while (Square[sq]==Empty)
 			{
-				add_block(list,0,sq,me);    //µ²
+				add_block(list,0,sq,me);    //æŒ¡
 				sq += inc;
 			}
-
-		}else if(PIECE_IS_KNIGHT(piece))          //µĞ·½Âí½«
+		}else if(PIECE_IS_KNIGHT(piece))          //æ•Œæ–¹é©¬å°†
 		{
 			 leg = c_HorseLegTab[to - from + 256];
-			 add_block(list,0,from+leg,me); //µ²ÂíÍÈ
+			 add_block(list,0,from+leg,me); //æŒ¡é©¬è…¿
 		}
 	}
 }
@@ -460,9 +444,9 @@ static void add_block(list_t * list, int square, int to,int colour)
   if (colour == 0 ? (to & 0x80) != 0 : (to & 0x80) == 0) {
     if (c_InCity[to]) {
 
-      // 1. ÓÃË§(½«)µ²£¬²»ºÏ·¨
+      // 1. ç”¨å¸…(å°†)æŒ¡ï¼Œä¸åˆæ³•
 
-      // 2. ÓÃÊË(Ê¿)µ²
+      // 2. ç”¨ä»•(å£«)æŒ¡
       for (i = 1; i <= 2; i ++) {
         from = Piece[piece_tag + i];
         if (from != 0 && !is_piece_pinned(from,colour)) {
@@ -473,7 +457,7 @@ static void add_block(list_t * list, int square, int to,int colour)
       }
 	}
 
-    // 3. ÓÃÏà(Ïó)µ²
+    // 3. ç”¨ç›¸(è±¡)æŒ¡
     for (i = 3; i <= 4; i ++) {
       from = Piece[piece_tag + i];
       if (from != 0 && !is_piece_pinned(from,colour)) {
@@ -484,7 +468,7 @@ static void add_block(list_t * list, int square, int to,int colour)
     }
   } else {
     
-    // 4. ÓÃ±ø(×ä)ºáÏòµ²
+    // 4. ç”¨å…µ(å’)æ¨ªå‘æŒ¡
     for (from = to - 1; from <= to + 1; from += 2) {
 
 		if(from!=square && (Square[from]&pawn)==pawn && !is_piece_pinned(from,colour))
@@ -495,13 +479,13 @@ static void add_block(list_t * list, int square, int to,int colour)
     }
   }
 
-  // 5. ÓÃ±ø(×ä)×İÏòµ²
+  // 5. ç”¨å…µ(å’)çºµå‘æŒ¡
   from = to + (colour == 0 ? 16 : -16);
    if(from!=square && (Square[from] & pawn)==pawn && !is_piece_pinned(from,colour))
   {
 	  LIST_ADD(list,MOVE_MAKE(from,to));
   }
-  // 6. ÓÃÂíµ²
+  // 6. ç”¨é©¬æŒ¡
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && !is_piece_pinned(from,colour)) {
@@ -517,7 +501,7 @@ static void add_block(list_t * list, int square, int to,int colour)
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  // 7. ÓÃ³µ¡¢ÅÚµ²
+  // 7. ç”¨è½¦ã€ç‚®æŒ¡
   for (i = 7; i <= 10; i ++) {
     from = Piece[piece_tag + i];
 
@@ -553,7 +537,7 @@ void add_flee(list_t * list,int from,bool up)
     opp = COLOUR_OPP(me);
     opp_flag = COLOUR_FLAG(opp);
 
-	if(PIECE_IS_ADVISOR(piece)) //Ê¿ÉÁ
+	if(PIECE_IS_ADVISOR(piece)) //å£«é—ª
 	{
 		ptr = g_AdvisorMoves[from];
         to = *ptr;
@@ -565,7 +549,7 @@ void add_flee(list_t * list,int from,bool up)
            to = *ptr;
         }
 	
-	}else if (PIECE_IS_BISHOP(piece))//ÏóÉÁ
+	}else if (PIECE_IS_BISHOP(piece))//è±¡é—ª
 	{
 		ptr = g_BishopMoves[from];
         eye_leg_ptr = g_ElephantEyes[from];
@@ -581,7 +565,7 @@ void add_flee(list_t * list,int from,bool up)
            eye_leg_ptr ++;
          }
 	
-	}else if (PIECE_IS_KNIGHT(piece))//ÂíÉÁ
+	}else if (PIECE_IS_KNIGHT(piece))//é©¬é—ª
 	{
 		ptr = g_KnightMoves[from];
         eye_leg_ptr = g_HorseLegs[from];
@@ -597,7 +581,7 @@ void add_flee(list_t * list,int from,bool up)
            eye_leg_ptr ++;
          }
 	
-	}else if (PIECE_IS_ROOK(piece))//³µÉÁ
+	}else if (PIECE_IS_ROOK(piece))//è½¦é—ª
 	{	
 		x = from & 0xf;    
 	    y = from >> 4;		
@@ -660,7 +644,7 @@ void add_flee(list_t * list,int from,bool up)
             }
 		}
 	
-	}else if (PIECE_IS_CANNON(piece)) //ÅÚÉÁ
+	}else if (PIECE_IS_CANNON(piece)) //ç‚®é—ª
 	{
 		x = from & 0xf;
         y = from >> 4;
@@ -724,7 +708,7 @@ void add_flee(list_t * list,int from,bool up)
 
 		}
 	
-	}else if (PIECE_IS_PAWN(piece)) //±øÉÁ
+	}else if (PIECE_IS_PAWN(piece)) //å…µé—ª
 	{
 		int inc;
 		ptr = g_PawnMoves[Turn][from];
@@ -733,14 +717,14 @@ void add_flee(list_t * list,int from,bool up)
 			
 			inc=AttackTab[to-from + 256];
 			if(up)
-			{  //±øĞĞ×ß·¨
+			{  //å…µè¡Œèµ°æ³•
 			   if(inc==-1 || inc==1)
                if (FLAG_IS(Square[to],opp_flag)||Square[to]==Empty) {
                    LIST_ADD(list,MOVE_MAKE(from,to));
                }
 			}else
 			{
-			   //±øÁĞ×ß·¨
+			   //å…µåˆ—èµ°æ³•
 			   if(inc==-16 || inc==16)
 			   if (FLAG_IS(Square[to],opp_flag)||Square[to]==Empty) {
                    LIST_ADD(list,MOVE_MAKE(from,to));

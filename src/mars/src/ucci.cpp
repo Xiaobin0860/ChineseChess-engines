@@ -1,16 +1,16 @@
-/* ÎÄ¼ş£ºucci.cpp
- * ÄÚÈİ£ºElephantEyeÔ´³ÌĞòµÚ1²¿·Ö¡ª¡ªUCCIÖ¸Áî½âÊÍÄ£¿é
- * ±êÊ¶·ûÔ¼¶¨£º
- * c_£º³£Á¿£»
- * e_£ºÑ¡Ïî£»
- * g_£º×Å·¨Ô¤²úÉúÊı×é£»
- * p_£º¾ÖÃæ(ChessPosition)µÄ³ÉÔ±±äÁ¿£»
- * s_£º¾²Ì¬(È«¾Ö)±äÁ¿¡£
+/* æ–‡ä»¶ï¼šucci.cpp
+ * å†…å®¹ï¼šElephantEyeæºç¨‹åºç¬¬1éƒ¨åˆ†â€”â€”UCCIæŒ‡ä»¤è§£é‡Šæ¨¡å—
+ * æ ‡è¯†ç¬¦çº¦å®šï¼š
+ * c_ï¼šå¸¸é‡ï¼›
+ * e_ï¼šé€‰é¡¹ï¼›
+ * g_ï¼šç€æ³•é¢„äº§ç”Ÿæ•°ç»„ï¼›
+ * p_ï¼šå±€é¢(ChessPosition)çš„æˆå‘˜å˜é‡ï¼›
+ * s_ï¼šé™æ€(å…¨å±€)å˜é‡ã€‚
  */
 
-/* Ê×ÏÈÊÇĞĞÊäÈë³ÌĞòºÍÊı×ÖÊ¶±ğ¹¤¾ß£¬UCCIÖ¸ÁîºÍÇ³ºìÏóÆåĞ­Òé½âÊÍÆ÷¶¼Ê¹ÓÃÕâĞ©¹¤¾ß
- * ÆäÖĞ×î¸´ÔÓµÄÊÇ¼ì²éÊÇ·ñÓĞĞĞÊäÈëµÄ"CheckInput()"º¯Êı£¬WindowsºÍUnixÏµÍ³ÒªÇø±ğ¶Ô´ı
- * Õâ¸öº¯Êı»ù±¾ÉÏ¿½±´ÁËCraftyµÄÔ´³ÌĞò£¬ÆäÊµ´ó¶àÊı¹ú¼ÊÏóÆåµÄWinBoardÒıÇæºÍUCIÒıÇæ¶¼ÊÇÕâÃ´×öµÄ£¬ÕâÀï¾Í²»ÏêÏ¸ËµÃ÷ÁË
+/* é¦–å…ˆæ˜¯è¡Œè¾“å…¥ç¨‹åºå’Œæ•°å­—è¯†åˆ«å·¥å…·ï¼ŒUCCIæŒ‡ä»¤å’Œæµ…çº¢è±¡æ£‹åè®®è§£é‡Šå™¨éƒ½ä½¿ç”¨è¿™äº›å·¥å…·
+ * å…¶ä¸­æœ€å¤æ‚çš„æ˜¯æ£€æŸ¥æ˜¯å¦æœ‰è¡Œè¾“å…¥çš„"CheckInput()"å‡½æ•°ï¼ŒWindowså’ŒUnixç³»ç»Ÿè¦åŒºåˆ«å¯¹å¾…
+ * è¿™ä¸ªå‡½æ•°åŸºæœ¬ä¸Šæ‹·è´äº†Craftyçš„æºç¨‹åºï¼Œå…¶å®å¤§å¤šæ•°å›½é™…è±¡æ£‹çš„WinBoardå¼•æ“å’ŒUCIå¼•æ“éƒ½æ˜¯è¿™ä¹ˆåšçš„ï¼Œè¿™é‡Œå°±ä¸è¯¦ç»†è¯´æ˜äº†
  */
 
 #ifdef _WIN32
@@ -71,7 +71,7 @@ int /* bool */ CheckInput(int &) {
 #include <string.h>
 #include "ucci.h"
 
-// Õâ¶Î´úÂëÊÇidle.hÖĞµÄ´úÂë£¬Ö±½ÓÅ²µ½ÕâÀï************
+// è¿™æ®µä»£ç æ˜¯idle.hä¸­çš„ä»£ç ï¼Œç›´æ¥æŒªåˆ°è¿™é‡Œ************
 //#include "idle.h"
 #ifdef _WIN32
   //#include <windows.h>
@@ -89,9 +89,9 @@ int /* bool */ CheckInput(int &) {
 #endif
 // **************************************************
 
-/* ¶ÁÈ¡Ò»ĞĞµÄ³ÌĞò£¬ÀûÓÃ"CheckInput()"º¯Êı£¬ËùÒÔWindowsºÍUnixµÄ´úÂë¾ÍÒ»ÑùÁË
- * ÊäÈëĞĞ¶ÁÈ¡µ½»º³åÇøÖĞ£¬»º³åÇø±»±£´æÔÚ¾²Ì¬Êı×é"s_LineStr"ÖĞ£¬ÓĞĞĞÊäÈëÊ±×ÜÊÇ·µ»Ø"s_LineStr"£¬·ñÔò·µ»ØNULL
- * »¹ÓĞÒ»¸ö¾²Ì¬±äÁ¿ÊÇ"s_BytesLeft"£¬ÆäÊµÖ»ÓÃÔÚWindowsÖĞ£¬×÷ÓÃÔ­Àí²ÎÔÄ"CheckInput()"º¯Êı
+/* è¯»å–ä¸€è¡Œçš„ç¨‹åºï¼Œåˆ©ç”¨"CheckInput()"å‡½æ•°ï¼Œæ‰€ä»¥Windowså’ŒUnixçš„ä»£ç å°±ä¸€æ ·äº†
+ * è¾“å…¥è¡Œè¯»å–åˆ°ç¼“å†²åŒºä¸­ï¼Œç¼“å†²åŒºè¢«ä¿å­˜åœ¨é™æ€æ•°ç»„"s_LineStr"ä¸­ï¼Œæœ‰è¡Œè¾“å…¥æ—¶æ€»æ˜¯è¿”å›"s_LineStr"ï¼Œå¦åˆ™è¿”å›NULL
+ * è¿˜æœ‰ä¸€ä¸ªé™æ€å˜é‡æ˜¯"s_BytesLeft"ï¼Œå…¶å®åªç”¨åœ¨Windowsä¸­ï¼Œä½œç”¨åŸç†å‚é˜…"CheckInput()"å‡½æ•°
  */
 char *ReadInput(void) {
   const int c_MaxInputBuff = 1024;
@@ -114,8 +114,8 @@ char *ReadInput(void) {
   }
 }
 
-/* ¶ÁÈ¡Ä³´®×Ö·ûÖĞµÄÊı×Ö£¬Í¬Ê±ÒÆ¶¯×Ö·û´®µÄÖ¸Õë£¬²¢¿ÉÏŞ¶¨Êı×Ö´óĞ¡
- * Ô­Àí·Ç³£¼òµ¥£¬ÕâÀï²»×÷ËµÃ÷
+/* è¯»å–æŸä¸²å­—ç¬¦ä¸­çš„æ•°å­—ï¼ŒåŒæ—¶ç§»åŠ¨å­—ç¬¦ä¸²çš„æŒ‡é’ˆï¼Œå¹¶å¯é™å®šæ•°å­—å¤§å°
+ * åŸç†éå¸¸ç®€å•ï¼Œè¿™é‡Œä¸ä½œè¯´æ˜
  */
 int ReadDigit(const char *&LineStr, int MaxValue) {
   int RetValue;
@@ -135,11 +135,11 @@ int ReadDigit(const char *&LineStr, int MaxValue) {
   return RetValue;
 }
 
-/* È»ºóÊÇÈı¸öUCCIÖ¸Áî½âÊÍÆ÷
- * ÆäÖĞµÚÒ»¸ö½âÊÍÆ÷"BootLine()"×î¼òµ¥£¬Ö»ÓÃÀ´½ÓÊÕÒıÇæÆô¶¯ºóµÄµÚÒ»ĞĞÖ¸Áî
- * ÊäÈë"ucci"Ê±¾Í·µ»Ø"e_CommUcci"£¬·ñÔòÒ»ÂÉ·µ»Ø"e_CommNone"
- * Ç°Á½¸ö½âÊÍÆ÷¶¼µÈ´ıÊÇ·ñÓĞÊäÈë£¬Èç¹ûÃ»ÓĞÊäÈëÔòÖ´ĞĞ´ı»úÖ¸Áî"Idle()"
- * ¶øµÚÈı¸ö½âÊÍÆ÷("BusyLine()"£¬Ö»ÓÃÔÚÒıÇæË¼¿¼Ê±)ÔòÔÚÃ»ÓĞÊäÈëÊ±Ö±½Ó·µ»Ø"e_CommNone"
+/* ç„¶åæ˜¯ä¸‰ä¸ªUCCIæŒ‡ä»¤è§£é‡Šå™¨
+ * å…¶ä¸­ç¬¬ä¸€ä¸ªè§£é‡Šå™¨"BootLine()"æœ€ç®€å•ï¼Œåªç”¨æ¥æ¥æ”¶å¼•æ“å¯åŠ¨åçš„ç¬¬ä¸€è¡ŒæŒ‡ä»¤
+ * è¾“å…¥"ucci"æ—¶å°±è¿”å›"e_CommUcci"ï¼Œå¦åˆ™ä¸€å¾‹è¿”å›"e_CommNone"
+ * å‰ä¸¤ä¸ªè§£é‡Šå™¨éƒ½ç­‰å¾…æ˜¯å¦æœ‰è¾“å…¥ï¼Œå¦‚æœæ²¡æœ‰è¾“å…¥åˆ™æ‰§è¡Œå¾…æœºæŒ‡ä»¤"Idle()"
+ * è€Œç¬¬ä¸‰ä¸ªè§£é‡Šå™¨("BusyLine()"ï¼Œåªç”¨åœ¨å¼•æ“æ€è€ƒæ—¶)åˆ™åœ¨æ²¡æœ‰è¾“å…¥æ—¶ç›´æ¥è¿”å›"e_CommNone"
  */
 CommEnum BootLine(void) {
   const char *LineStr;
@@ -169,17 +169,17 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
     printf("info string %s\n", LineStr);
     fflush(stdout);
   }
-  // "IdleLine()"ÊÇ×î¸´ÔÓµÄUCCIÖ¸Áî½âÊÍÆ÷£¬´ó¶àÊıµÄUCCIÖ¸Áî¶¼ÓÉËüÀ´½âÊÍ£¬°üÀ¨£º
+  // "IdleLine()"æ˜¯æœ€å¤æ‚çš„UCCIæŒ‡ä»¤è§£é‡Šå™¨ï¼Œå¤§å¤šæ•°çš„UCCIæŒ‡ä»¤éƒ½ç”±å®ƒæ¥è§£é‡Šï¼ŒåŒ…æ‹¬ï¼š
 
-  // 1. "isready"Ö¸Áî
+  // 1. "isready"æŒ‡ä»¤
   if (strcmp(LineStr, "isready") == 0) {
     return e_CommIsReady;
 
-  // 2. "setoption <option> [<arguments>]"Ö¸Áî
+  // 2. "setoption <option> [<arguments>]"æŒ‡ä»¤
   } else if (strncmp(LineStr, "setoption ", 10) == 0) {
     LineStr += 10;
 
-    // (i) "batch"Ñ¡Ïî
+    // (i) "batch"é€‰é¡¹
     if (strncmp(LineStr, "batch ", 6) == 0) {
       LineStr += 6;
       Command.Option.Type = e_OptionBatch;
@@ -189,9 +189,9 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Check = e_CheckTrue;
       } else {
         Command.Option.Value.Check = e_CheckFalse;
-      } // ÓÉÓÚ"batch"Ñ¡ÏîÄ¬ÈÏÊÇ¹Ø±ÕµÄ£¬ËùÒÔÖ»ÓĞÉè¶¨"on"»ò"true"Ê±²Å´ò¿ª£¬ÏÂÍ¬
+      } // ç”±äº"batch"é€‰é¡¹é»˜è®¤æ˜¯å…³é—­çš„ï¼Œæ‰€ä»¥åªæœ‰è®¾å®š"on"æˆ–"true"æ—¶æ‰æ‰“å¼€ï¼Œä¸‹åŒ
 
-    // (ii) "debug"Ñ¡Ïî
+    // (ii) "debug"é€‰é¡¹
     } else if (strncmp(LineStr, "debug ", 6) == 0) {
       LineStr += 6;
       Command.Option.Type = e_OptionDebug;
@@ -203,35 +203,35 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Check = e_CheckFalse;
       }
 
-    // (iii) "bookfiles"Ñ¡Ïî
+    // (iii) "bookfiles"é€‰é¡¹
     } else if (strncmp(LineStr, "bookfiles ", 10) == 0) {
       Command.Option.Type = e_OptionBookFiles;
       Command.Option.Value.String = LineStr + 10;
 
-    // (iv) "egtbpaths"Ñ¡Ïî
+    // (iv) "egtbpaths"é€‰é¡¹
     } else if (strncmp(LineStr, "egtbpaths ", 10) == 0) {
       Command.Option.Type = e_OptionEgtbPaths;
       Command.Option.Value.String = LineStr + 10;
 
-    // (v) "hashsize"Ñ¡Ïî
+    // (v) "hashsize"é€‰é¡¹
     } else if (strncmp(LineStr, "hashsize ", 9) == 0) {
       LineStr += 9;
       Command.Option.Type = e_OptionHashSize;
       Command.Option.Value.Spin = ReadDigit(LineStr, 1024);
 
-    // (vi) "threads"Ñ¡Ïî
+    // (vi) "threads"é€‰é¡¹
     } else if (strncmp(LineStr, "threads ", 8) == 0) {
       LineStr += 8;
       Command.Option.Type = e_OptionThreads;
       Command.Option.Value.Spin = ReadDigit(LineStr, 32);
 
-    // (vii) "drawmoves"Ñ¡Ïî
+    // (vii) "drawmoves"é€‰é¡¹
     } else if (strncmp(LineStr, "drawmoves ", 10) == 0) {
       LineStr += 10;
       Command.Option.Type = e_OptionDrawMoves;
       Command.Option.Value.Spin = ReadDigit(LineStr, 200);
 
-    // (viii) "repetition"Ñ¡Ïî
+    // (viii) "repetition"é€‰é¡¹
     } else if (strncmp(LineStr, "repetition ", 11) == 0) {
       LineStr += 11;
       Command.Option.Type = e_OptionRepetition;
@@ -247,7 +247,7 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Repetition = e_RepetitionChineseRule;
       }
 
-    // (ix) "pruning"Ñ¡Ïî
+    // (ix) "pruning"é€‰é¡¹
     } else if (strncmp(LineStr, "pruning ", 8) == 0) {
       LineStr += 8;
       Command.Option.Type = e_OptionPruning;
@@ -263,7 +263,7 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Scale = e_ScaleLarge;
       }
 
-    // (x) "knowledge"Ñ¡Ïî
+    // (x) "knowledge"é€‰é¡¹
     } else if (strncmp(LineStr, "knowledge ", 10) == 0) {
       LineStr += 10;
       Command.Option.Type = e_OptionKnowledge;
@@ -279,7 +279,7 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Scale = e_ScaleLarge;
       }
 
-    // (xi) "selectivity"Ñ¡Ïî
+    // (xi) "selectivity"é€‰é¡¹
     } else if (strncmp(LineStr, "selectivity ", 12) == 0) {
       LineStr += 12;
       Command.Option.Type = e_OptionSelectivity;
@@ -295,7 +295,7 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Scale = e_ScaleNone;
       }
 
-    // (xii) "style"Ñ¡Ïî
+    // (xii) "style"é€‰é¡¹
     } else if (strncmp(LineStr, "style ", 6) == 0) {
       LineStr += 6;
       Command.Option.Type = e_OptionStyle;
@@ -309,21 +309,21 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         Command.Option.Value.Style = e_StyleNormal;
       }
 
-    // (xiii) "loadbook"Ñ¡Ïî
+    // (xiii) "loadbook"é€‰é¡¹
     } else if (strncmp(LineStr, "loadbook", 8) == 0) {
       Command.Option.Type = e_OptionLoadBook;
 
-    // (xiv) ÎŞ·¨Ê¶±ğµÄÑ¡Ïî£¬ÓĞÀ©³äµÄÓàµØ
+    // (xiv) æ— æ³•è¯†åˆ«çš„é€‰é¡¹ï¼Œæœ‰æ‰©å……çš„ä½™åœ°
     } else {
       Command.Option.Type = e_OptionNone;
     }
     return e_CommSetOption;
 
-  // 3. "position {<special_position> | fen <fen_string>} [moves <move_list>]"Ö¸Áî
+  // 3. "position {<special_position> | fen <fen_string>} [moves <move_list>]"æŒ‡ä»¤
   } else if (strncmp(LineStr, "position ", 9) == 0) {
     LineStr += 9;
 
-    // Ê×ÏÈÅĞ¶ÏÊÇ·ñÊÇÌØÊâ¾ÖÃæ(ÕâÀï¹æ¶¨ÁË5ÖÖ)£¬ÊÇÌØÊâ¾ÖÃæ¾ÍÖ±½Ó×ª»»³É¶ÔÓ¦µÄFEN´®
+    // é¦–å…ˆåˆ¤æ–­æ˜¯å¦æ˜¯ç‰¹æ®Šå±€é¢(è¿™é‡Œè§„å®šäº†5ç§)ï¼Œæ˜¯ç‰¹æ®Šå±€é¢å°±ç›´æ¥è½¬æ¢æˆå¯¹åº”çš„FENä¸²
     if (strncmp(LineStr, "startpos", 8) == 0) {
       Command.Position.FenStr = "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1";
     } else if (strncmp(LineStr, "midgamepos", 10) == 0) {
@@ -334,20 +334,20 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
       Command.Position.FenStr = "3k5/4PP3/4r4/3P5/9/9/9/9/9/5K3 w - - 0 1";
     } else if (strncmp(LineStr, "endgamepos", 10) == 0) {
       Command.Position.FenStr = "4k4/4a4/4P4/9/9/9/9/4B4/9/4K4 w - - 0 1";
-    // È»ºóÅĞ¶ÏÊÇ·ñÖ¸¶¨ÁËFEN´®
+    // ç„¶ååˆ¤æ–­æ˜¯å¦æŒ‡å®šäº†FENä¸²
     } else if (strncmp(LineStr, "fen ", 4) == 0) {
       Command.Position.FenStr = LineStr + 4;
-    // Èç¹ûÁ½Õß¶¼²»ÊÇ£¬¾ÍÁ¢¼´·µ»Ø
+    // å¦‚æœä¸¤è€…éƒ½ä¸æ˜¯ï¼Œå°±ç«‹å³è¿”å›
     } else {
       return e_CommNone;
     }
-    // È»ºóÑ°ÕÒÊÇ·ñÖ¸¶¨ÁËºóĞø×Å·¨£¬¼´ÊÇ·ñÓĞ"moves"¹Ø¼ü×Ö
+    // ç„¶åå¯»æ‰¾æ˜¯å¦æŒ‡å®šäº†åç»­ç€æ³•ï¼Œå³æ˜¯å¦æœ‰"moves"å…³é”®å­—
     while (*LineStr != '\0') {
       if (strncmp(LineStr, " moves ", 7) == 0) {
         LineStr += 7;        
-        Command.Position.MoveNum = int((strlen(LineStr) + 1) / 5); // ÌáÊ¾£º"moves"ºóÃæµÄÃ¿¸ö×Å·¨¶¼ÊÇ4¸ö×Ö·ûºÍ1¸ö¿Õ¸ñ
+        Command.Position.MoveNum = int((strlen(LineStr) + 1) / 5); // æç¤ºï¼š"moves"åé¢çš„æ¯ä¸ªç€æ³•éƒ½æ˜¯4ä¸ªå­—ç¬¦å’Œ1ä¸ªç©ºæ ¼
         for (i = 0; i < Command.Position.MoveNum; i ++) {
-          s_CoordList[i] = *(long *) LineStr; // 4¸ö×Ö·û¿É×ª»»ÎªÒ»¸ö"long"£¬´æ´¢ºÍ´¦ÀíÆğÀ´·½±ã
+          s_CoordList[i] = *(long *) LineStr; // 4ä¸ªå­—ç¬¦å¯è½¬æ¢ä¸ºä¸€ä¸ª"long"ï¼Œå­˜å‚¨å’Œå¤„ç†èµ·æ¥æ–¹ä¾¿
           LineStr += 5;
         }
         Command.Position.CoordList = s_CoordList;
@@ -358,7 +358,7 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
     Command.Position.MoveNum = 0;
     return e_CommPosition;
 
-  // 4. "banmoves <move_list>"Ö¸Áî£¬´¦ÀíÆğÀ´ºÍ"position ... moves ..."ÊÇÒ»ÑùµÄ
+  // 4. "banmoves <move_list>"æŒ‡ä»¤ï¼Œå¤„ç†èµ·æ¥å’Œ"position ... moves ..."æ˜¯ä¸€æ ·çš„
   } else if (strncmp(LineStr, "banmoves ", 9) == 0) {
     LineStr += 9;
     Command.BanMoves.MoveNum = int((strlen(LineStr) + 1) / 5);
@@ -369,21 +369,21 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
     Command.BanMoves.CoordList = s_CoordList;
     return e_CommBanMoves;
 
-  // 5. "go [ponder] {infinite | depth <depth> | time <time> [movestogo <moves_to_go> | increment <inc_time>]}"Ö¸Áî
+  // 5. "go [ponder] {infinite | depth <depth> | time <time> [movestogo <moves_to_go> | increment <inc_time>]}"æŒ‡ä»¤
   } else if (strncmp(LineStr, "go ", 3) == 0) {
     LineStr += 3;
-    // Ê×ÏÈÅĞ¶Ïµ½µ×ÊÇ"go"»¹ÊÇ"go ponder"£¬ÒòÎªÁ½Õß½âÊÍ³É²»Í¬µÄÖ¸Áî
+    // é¦–å…ˆåˆ¤æ–­åˆ°åº•æ˜¯"go"è¿˜æ˜¯"go ponder"ï¼Œå› ä¸ºä¸¤è€…è§£é‡Šæˆä¸åŒçš„æŒ‡ä»¤
     if (strncmp(LineStr, "ponder ", 7) == 0) {
       LineStr += 7;
       RetValue = e_CommGoPonder;
     } else {
       RetValue = e_CommGo;
     }
-    // È»ºóÅĞ¶Ïµ½µ×ÊÇ¹Ì¶¨Éî¶È»¹ÊÇÉè¶¨Ê±ÏŞ
+    // ç„¶ååˆ¤æ–­åˆ°åº•æ˜¯å›ºå®šæ·±åº¦è¿˜æ˜¯è®¾å®šæ—¶é™
     if (strncmp(LineStr, "time ", 5) == 0) {
       LineStr += 5;
       Command.Search.DepthTime.Time = ReadDigit(LineStr, 36000);
-      // Èç¹ûÊÇÉè¶¨Ê±ÏŞ£¬¾ÍÒªÅĞ¶ÏÊÇÊ±¶ÎÖÆ»¹ÊÇ¼ÓÊ±ÖÆ
+      // å¦‚æœæ˜¯è®¾å®šæ—¶é™ï¼Œå°±è¦åˆ¤æ–­æ˜¯æ—¶æ®µåˆ¶è¿˜æ˜¯åŠ æ—¶åˆ¶
       if (strncmp(LineStr, " movestogo ", 11) == 0) {
         LineStr += 11;
         Command.Search.Mode = e_TimeMove;
@@ -395,7 +395,7 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
         LineStr += 11;
         Command.Search.Mode = e_TimeInc;
         Command.Search.TimeMode.Increment = ReadDigit(LineStr, 600);
-      // Èç¹ûÃ»ÓĞËµÃ÷ÊÇÊ±¶ÎÖÆ»¹ÊÇ¼ÓÊ±ÖÆ£¬¾ÍÉè¶¨Îª²½ÊıÊÇ1µÄÊ±¶ÎÖÆ
+      // å¦‚æœæ²¡æœ‰è¯´æ˜æ˜¯æ—¶æ®µåˆ¶è¿˜æ˜¯åŠ æ—¶åˆ¶ï¼Œå°±è®¾å®šä¸ºæ­¥æ•°æ˜¯1çš„æ—¶æ®µåˆ¶
       } else {
         Command.Search.Mode = e_TimeMove;
         Command.Search.TimeMode.MovesToGo = 1;
@@ -404,22 +404,22 @@ CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug) {
       LineStr += 6;
       Command.Search.Mode = e_TimeDepth;
       Command.Search.DepthTime.Depth = ReadDigit(LineStr, c_MaxDepth - 1);
-    // Èç¹ûÃ»ÓĞËµÃ÷ÊÇ¹Ì¶¨Éî¶È»¹ÊÇÉè¶¨Ê±ÏŞ£¬¾Í¹Ì¶¨Éî¶ÈÎª"c_MaxDepth"
+    // å¦‚æœæ²¡æœ‰è¯´æ˜æ˜¯å›ºå®šæ·±åº¦è¿˜æ˜¯è®¾å®šæ—¶é™ï¼Œå°±å›ºå®šæ·±åº¦ä¸º"c_MaxDepth"
     } else {
       Command.Search.Mode = e_TimeDepth;
       Command.Search.DepthTime.Depth = c_MaxDepth - 1;
     }
     return RetValue;
 
-  // 5. "stop"Ö¸Áî
+  // 5. "stop"æŒ‡ä»¤
   } else if (strcmp(LineStr, "stop") == 0) {
     return e_CommStop;
 
-  // 6. "quit"Ö¸Áî
+  // 6. "quit"æŒ‡ä»¤
   } else if (strcmp(LineStr, "quit") == 0) {
     return e_CommQuit;
 
-  // 7. ÎŞ·¨Ê¶±ğµÄÖ¸Áî
+  // 7. æ— æ³•è¯†åˆ«çš„æŒ‡ä»¤
   } else {
     return e_CommNone;
   }
@@ -435,7 +435,7 @@ CommEnum BusyLine(int /* bool */ Debug) {
       printf("info string %s\n", LineStr);
       fflush(stdout);
     }
-    // "BusyLine"Ö»ÄÜ½ÓÊÕ"isready"¡¢"ponderhit"ºÍ"stop"ÕâÈıÌõÖ¸Áî
+    // "BusyLine"åªèƒ½æ¥æ”¶"isready"ã€"ponderhit"å’Œ"stop"è¿™ä¸‰æ¡æŒ‡ä»¤
     if (strcmp(LineStr, "isready") == 0) {
       return e_CommIsReady;
     } else if (strcmp(LineStr, "ponderhit") == 0) {

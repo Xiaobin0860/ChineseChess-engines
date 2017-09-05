@@ -37,8 +37,8 @@ const char c_InCity[256] = {
   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 };
 
-/* ÂíÍÈ±í£¬ÓÃÀ´¿ìËÙÅĞ¶ÏÄÄ¸÷ÊÇÂíÍÈ¡£
- * ¼¼ÇÉ£ºÂí´Ó from ×ßµ½ to£¬ÂíÍÈµÄ¸ñ×ÓÊÇ£ºSrc + c_HorseLegTab[to - from + 256]¡£
+/* é©¬è…¿è¡¨ï¼Œç”¨æ¥å¿«é€Ÿåˆ¤æ–­å“ªå„æ˜¯é©¬è…¿ã€‚
+ * æŠ€å·§ï¼šé©¬ä» from èµ°åˆ° toï¼Œé©¬è…¿çš„æ ¼å­æ˜¯ï¼šSrc + c_HorseLegTab[to - from + 256]ã€‚
  */
 const char c_HorseLegTab[512] = {
                                0,  0,  0,  0,  0,  0,  0,  0,  0,
@@ -79,14 +79,14 @@ const char c_HorseLegTab[512] = {
 uint16 g_BitRankMask[256];
 uint16 g_BitFileMask[256];
 
-// ½èÖú¡°Î»ĞĞ¡±ºÍ¡°Î»ÁĞ¡±Éú³É³µÅÚ×Å·¨ºÍÅĞ¶Ï³µÅÚ×Å·¨ºÏÀíĞÔµÄÔ¤ÖÃÊı×é£¬ÓÉ"PreMoveGen()"º¯ÊıÉú³É
-slide_move_t g_RankMoveTab[9][512];   // 36,864 ×Ö½Ú
-slide_move_t g_FileMoveTab[10][1024]; // 81,920 ×Ö½Ú
-slide_mask_t g_RankMaskTab[9][512];   // 36,864 ×Ö½Ú
-slide_mask_t g_FileMaskTab[10][1024]; // 81,920 ×Ö½Ú
-                                 // ¹²¼Æ:  237,568 ×Ö½Ú
+// å€ŸåŠ©â€œä½è¡Œâ€å’Œâ€œä½åˆ—â€ç”Ÿæˆè½¦ç‚®ç€æ³•å’Œåˆ¤æ–­è½¦ç‚®ç€æ³•åˆç†æ€§çš„é¢„ç½®æ•°ç»„ï¼Œç”±"PreMoveGen()"å‡½æ•°ç”Ÿæˆ
+slide_move_t g_RankMoveTab[9][512];   // 36,864 å­—èŠ‚
+slide_move_t g_FileMoveTab[10][1024]; // 81,920 å­—èŠ‚
+slide_mask_t g_RankMaskTab[9][512];   // 36,864 å­—èŠ‚
+slide_mask_t g_FileMaskTab[10][1024]; // 81,920 å­—èŠ‚
+                                 // å…±è®¡:  237,568 å­—èŠ‚
 
-// ÆäÓàÆå×Ó(²»ÊÊºÏÓÃ¡°Î»ĞĞ¡±ºÍ¡°Î»ÁĞ¡±)µÄ×Å·¨Ô¤Éú³ÉÊı×é£¬ÓÉ"PreMoveGen()"º¯ÊıÉú³É
+// å…¶ä½™æ£‹å­(ä¸é€‚åˆç”¨â€œä½è¡Œâ€å’Œâ€œä½åˆ—â€)çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ï¼Œç”±"PreMoveGen()"å‡½æ•°ç”Ÿæˆ
 uint8 g_KingMoves[256][8];
 uint8 g_AdvisorMoves[256][8];
 uint8 g_BishopMoves[256][8];
@@ -95,7 +95,7 @@ uint8 g_KnightMoves[256][12];
 uint8 g_HorseLegs[256][8];
 uint8 g_PawnMoves[2][256][4];
 
-// ÕâËÄ¸öÊı×éÓÃÀ´ÅĞ¶ÏÆå×ÓµÄ×ß×Ó·½Ïò£¬ÒÔÂíÎªÀı¾ÍÊÇ£ºto = from + c_KnightMoveTab[i]
+// è¿™å››ä¸ªæ•°ç»„ç”¨æ¥åˆ¤æ–­æ£‹å­çš„èµ°å­æ–¹å‘ï¼Œä»¥é©¬ä¸ºä¾‹å°±æ˜¯ï¼što = from + c_KnightMoveTab[i]
 const int c_KingMoveTab[4] = {-16, -1, 1, 16};
 const int c_AdvisorMoveTab[4] = {-17, -15, 15, 17};
 const int c_BishopMoveTab[4] = {-34, -30, 30, 34};
@@ -115,16 +115,16 @@ void pre_move_gen(void) {
     }    
   }
 
-  // Ê×ÏÈÉú³É³µÅÚ×Å·¨µÄÔ¤ÖÃÊı×é(Êı×éµÄÓ¦ÓÃ²ÎÔÄ"pregen.h")
+  // é¦–å…ˆç”Ÿæˆè½¦ç‚®ç€æ³•çš„é¢„ç½®æ•°ç»„(æ•°ç»„çš„åº”ç”¨å‚é˜…"pregen.h")
   for (i = 0; i < 9; i ++) {
     for (j = 0; j < 512; j ++) {
-      // ³õÊ¼»¯½èÖúÓÚ¡°Î»ĞĞ¡±µÄ³µºÍÅÚµÄ×Å·¨Ô¤Éú³ÉÊı×é£¬°üÀ¨ÒÔÏÂ¼¸¸ö²½Öè£º
-      // 1. ³õÊ¼»¯ÁÙÊ±±äÁ¿"slide_move_tab"£¬¼ÙÉèÃ»ÓĞ×Å·¨£¬ÓÃÆğÊ¼¸ñÌî³ä
+      // åˆå§‹åŒ–å€ŸåŠ©äºâ€œä½è¡Œâ€çš„è½¦å’Œç‚®çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ï¼ŒåŒ…æ‹¬ä»¥ä¸‹å‡ ä¸ªæ­¥éª¤ï¼š
+      // 1. åˆå§‹åŒ–ä¸´æ—¶å˜é‡"slide_move_tab"ï¼Œå‡è®¾æ²¡æœ‰ç€æ³•ï¼Œç”¨èµ·å§‹æ ¼å¡«å……
       slide_move_tab.non_cap[0] = slide_move_tab.non_cap[1] = slide_move_tab.rook_cap[0] = slide_move_tab.rook_cap[1] =
       slide_move_tab.cannon_cap[0] = slide_move_tab.cannon_cap[1] = slide_move_tab.super_cap[0] = slide_move_tab.super_cap[1] = i + 3;
       slide_mask_tab.non_cap = slide_mask_tab.rook_cap = slide_mask_tab.cannon_cap = slide_mask_tab.super_cap = 0;
-      // ÌáÊ¾£º²ÎÔÄ"pregen.h"£¬...[0]±íÊ¾×î´óÒ»¸ñ£¬ÏòÓÒÒÆ¶¯ºÍÏÂÒÆ¶¯¶¼ÓÃ[0]£¬·´Ö®ÒàÈ»
-      // 2. ¿¼ÂÇÏòÓÒÒÆ¶¯µÄÄ¿±ê¸ñ£¬Ìî³ä...[0]£¬
+      // æç¤ºï¼šå‚é˜…"pregen.h"ï¼Œ...[0]è¡¨ç¤ºæœ€å¤§ä¸€æ ¼ï¼Œå‘å³ç§»åŠ¨å’Œä¸‹ç§»åŠ¨éƒ½ç”¨[0]ï¼Œåä¹‹äº¦ç„¶
+      // 2. è€ƒè™‘å‘å³ç§»åŠ¨çš„ç›®æ ‡æ ¼ï¼Œå¡«å……...[0]ï¼Œ
       for (k = i + 1; k <= 8; k ++) {
         if ((j & (1 << k)) != 0) {
           slide_move_tab.rook_cap[0] = k + 3;
@@ -148,7 +148,7 @@ void pre_move_gen(void) {
           break;
         }
       }
-      // 3. ¿¼ÂÇÏò×óÒÆ¶¯µÄÄ¿±ê¸ñ£¬Ìî³ä...[1]
+      // 3. è€ƒè™‘å‘å·¦ç§»åŠ¨çš„ç›®æ ‡æ ¼ï¼Œå¡«å……...[1]
       for (k = i - 1; k >= 0; k --) {
         if ((j & (1 << k)) != 0) {
           slide_move_tab.rook_cap[1] = k + 3;
@@ -172,7 +172,7 @@ void pre_move_gen(void) {
           break;
         }
       }
-      // 4. ½«ÁÙÊ±±äÁ¿"slide_move_tab"¿½±´µ½×Å·¨Ô¤Éú³ÉÊı×éÖĞ
+      // 4. å°†ä¸´æ—¶å˜é‡"slide_move_tab"æ‹·è´åˆ°ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ä¸­
       g_RankMoveTab[i][j] = slide_move_tab;
       g_RankMaskTab[i][j] = slide_mask_tab;
     }
@@ -180,12 +180,12 @@ void pre_move_gen(void) {
 
   for (i = 0; i < 10; i ++) {
     for (j = 0; j < 1024; j ++) {
-      // ³õÊ¼»¯½èÖúÓÚ¡°Î»ÁĞ¡±µÄ³µºÍÅÚµÄ×Å·¨Ô¤Éú³ÉÊı×é£¬°üÀ¨ÒÔÏÂ¼¸¸ö²½Öè£º
-      // 1. ³õÊ¼»¯ÁÙÊ±±äÁ¿"slide_move_tab"£¬¼ÙÉèÃ»ÓĞ×Å·¨£¬ÓÃÆğÊ¼¸ñÌî³ä
+      // åˆå§‹åŒ–å€ŸåŠ©äºâ€œä½åˆ—â€çš„è½¦å’Œç‚®çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ï¼ŒåŒ…æ‹¬ä»¥ä¸‹å‡ ä¸ªæ­¥éª¤ï¼š
+      // 1. åˆå§‹åŒ–ä¸´æ—¶å˜é‡"slide_move_tab"ï¼Œå‡è®¾æ²¡æœ‰ç€æ³•ï¼Œç”¨èµ·å§‹æ ¼å¡«å……
       slide_move_tab.non_cap[0] = slide_move_tab.non_cap[1] = slide_move_tab.rook_cap[0] = slide_move_tab.rook_cap[1] =
       slide_move_tab.cannon_cap[0] = slide_move_tab.cannon_cap[1] = slide_move_tab.super_cap[0] = slide_move_tab.super_cap[1] = (i + 3) << 4;
       slide_mask_tab.non_cap = slide_mask_tab.rook_cap = slide_mask_tab.cannon_cap = slide_mask_tab.super_cap = 0;
-      // 2. ¿¼ÂÇÏòÏÂÒÆ¶¯µÄÄ¿±ê¸ñ£¬Ìî³ä...[0]
+      // 2. è€ƒè™‘å‘ä¸‹ç§»åŠ¨çš„ç›®æ ‡æ ¼ï¼Œå¡«å……...[0]
       for (k = i + 1; k <= 9; k ++) {
         if ((j & (1 << k)) != 0) {
           slide_move_tab.rook_cap[0] = (k + 3) << 4;
@@ -209,7 +209,7 @@ void pre_move_gen(void) {
           break;
         }
       }
-      // 3. ¿¼ÂÇÏòÉÏÒÆ¶¯µÄÄ¿±ê¸ñ£¬Ìî³ä...[1]
+      // 3. è€ƒè™‘å‘ä¸Šç§»åŠ¨çš„ç›®æ ‡æ ¼ï¼Œå¡«å……...[1]
       for (k = i - 1; k >= 0; k --) {
         if ((j & (1 << k)) != 0) {
           slide_move_tab.rook_cap[1] = (k + 3) << 4;
@@ -233,16 +233,16 @@ void pre_move_gen(void) {
           break;
         }
       }
-      // 4. ½«ÁÙÊ±±äÁ¿"slide_move_tab"¿½±´µ½×Å·¨Ô¤Éú³ÉÊı×éÖĞ
+      // 4. å°†ä¸´æ—¶å˜é‡"slide_move_tab"æ‹·è´åˆ°ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ä¸­
       g_FileMoveTab[i][j] = slide_move_tab;
       g_FileMaskTab[i][j] = slide_mask_tab;
     }
   }
 
-  // ½ÓÏÂÀ´Éú³É×Å·¨Ô¤Éú³ÉÊı×é£¬Á¬Í¬½«¾üÔ¤ÅĞÊı×é
+  // æ¥ä¸‹æ¥ç”Ÿæˆç€æ³•é¢„ç”Ÿæˆæ•°ç»„ï¼Œè¿åŒå°†å†›é¢„åˆ¤æ•°ç»„
   for (from = 0; from < 256; from ++) {
     if (c_InCity[from]) {
-      // Éú³ÉË§(½«)µÄ×Å·¨Ô¤Éú³ÉÊı×é
+      // ç”Ÿæˆå¸…(å°†)çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„
       index = 0;
       for (i = 0; i < 4; i ++) {
         to = from + c_KingMoveTab[i];
@@ -252,7 +252,7 @@ void pre_move_gen(void) {
         }
       }
       g_KingMoves[from][index] = 0;
-      // Éú³ÉÊË(Ê¿)µÄ×Å·¨Ô¤Éú³ÉÊı×é
+      // ç”Ÿæˆä»•(å£«)çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„
       index = 0;
       for (i = 0; i < 4; i ++) {
         to = from + c_AdvisorMoveTab[i];
@@ -267,7 +267,7 @@ void pre_move_gen(void) {
       g_AdvisorMoves[from][0] = 0;
     }
     if (c_InBoard[from]) {
-      // Éú³ÉÏà(Ïó)µÄ×Å·¨Ô¤Éú³ÉÊı×é£¬°üÀ¨ÏóÑÛÊı×é
+      // ç”Ÿæˆç›¸(è±¡)çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ï¼ŒåŒ…æ‹¬è±¡çœ¼æ•°ç»„
       index = 0;
       for (i = 0; i < 4; i ++) {
         to = from + c_BishopMoveTab[i];
@@ -278,7 +278,7 @@ void pre_move_gen(void) {
         }
       }
       g_BishopMoves[from][index] = 0;
-      // Éú³ÉÂíµÄ×Å·¨Ô¤Éú³ÉÊı×é£¬°üÀ¨ÂíÍÈÊı×é
+      // ç”Ÿæˆé©¬çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„ï¼ŒåŒ…æ‹¬é©¬è…¿æ•°ç»„
       index = 0;
       for (i = 0; i < 8; i ++) {
         to = from + c_KnightMoveTab[i];
@@ -289,7 +289,7 @@ void pre_move_gen(void) {
         }
       }
       g_KnightMoves[from][index] = 0;
-      // Éú³É±ø(×ä)µÄ×Å·¨Ô¤Éú³ÉÊı×é
+      // ç”Ÿæˆå…µ(å’)çš„ç€æ³•é¢„ç”Ÿæˆæ•°ç»„
       for (i = 0; i < 2; i ++) {
         index = 0;
         to = (i == 0 ? from - 16 : from + 16);
@@ -311,5 +311,3 @@ void pre_move_gen(void) {
     }
   }
 }
-
-

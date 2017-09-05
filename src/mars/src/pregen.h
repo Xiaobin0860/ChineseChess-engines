@@ -2,30 +2,30 @@
 #include "random.h"
 #include "util.h"
 
-extern const char  c_InBoard[256];     // ÆåÅÌÇøÓò±í
-extern const char  c_InCity[256];      // ¾Å¹¬ĞòÁĞ±í
-extern const char  c_HorseLegTab[512]; // ÂíÍÈ±í
+extern const char  c_InBoard[256];     // æ£‹ç›˜åŒºåŸŸè¡¨
+extern const char  c_InCity[256];      // ä¹å®«åºåˆ—è¡¨
+extern const char  c_HorseLegTab[512]; // é©¬è…¿è¡¨
 
 struct slide_move_t {
-  uint8 non_cap[2];      // ²»³Ô×ÓÄÜ×ßµ½µÄ×î´óÒ»¸ñ/×îĞ¡Ò»¸ñ
-  uint8 rook_cap[2];     // ³µ³Ô×ÓÄÜ×ßµ½µÄ×î´óÒ»¸ñ/×îĞ¡Ò»¸ñ
-  uint8 cannon_cap[2];   // ÅÚ³Ô×ÓÄÜ×ßµ½µÄ×î´óÒ»¸ñ/×îĞ¡Ò»¸ñ
-  uint8 super_cap[2];    // ³¬¼¶ÅÚ(¸ôÁ½×Ó³Ô×Ó)ÄÜ×ßµ½µÄ×î´óÒ»¸ñ/×îĞ¡Ò»¸ñ
+  uint8 non_cap[2];      // ä¸åƒå­èƒ½èµ°åˆ°çš„æœ€å¤§ä¸€æ ¼/æœ€å°ä¸€æ ¼
+  uint8 rook_cap[2];     // è½¦åƒå­èƒ½èµ°åˆ°çš„æœ€å¤§ä¸€æ ¼/æœ€å°ä¸€æ ¼
+  uint8 cannon_cap[2];   // ç‚®åƒå­èƒ½èµ°åˆ°çš„æœ€å¤§ä¸€æ ¼/æœ€å°ä¸€æ ¼
+  uint8 super_cap[2];    // è¶…çº§ç‚®(éš”ä¸¤å­åƒå­)èƒ½èµ°åˆ°çš„æœ€å¤§ä¸€æ ¼/æœ€å°ä¸€æ ¼
 };
 
 struct slide_mask_t {
   uint16 non_cap, rook_cap, cannon_cap, super_cap;
 };
 
-extern uint16 g_BitRankMask[256]; // Ã¿¸ö¸ñ×ÓµÄÎ»ĞĞµÄÆÁ±ÎÎ»
-extern uint16 g_BitFileMask[256]; // Ã¿¸ö¸ñ×ÓµÄÎ»ÁĞµÄÆÁ±ÎÎ»
+extern uint16 g_BitRankMask[256]; // æ¯ä¸ªæ ¼å­çš„ä½è¡Œçš„å±è”½ä½
+extern uint16 g_BitFileMask[256]; // æ¯ä¸ªæ ¼å­çš„ä½åˆ—çš„å±è”½ä½
 
 
-extern slide_move_t g_RankMoveTab[9][512];   // 36,864 ×Ö½Ú
-extern slide_move_t g_FileMoveTab[10][1024]; // 81,920 ×Ö½Ú
-extern slide_mask_t g_RankMaskTab[9][512];   // 36,864 ×Ö½Ú
-extern slide_mask_t g_FileMaskTab[10][1024]; // 81,920 ×Ö½Ú
-                                        // ¹²¼Æ:  237,568 ×Ö½Ú
+extern slide_move_t g_RankMoveTab[9][512];   // 36,864 å­—èŠ‚
+extern slide_move_t g_FileMoveTab[10][1024]; // 81,920 å­—èŠ‚
+extern slide_mask_t g_RankMaskTab[9][512];   // 36,864 å­—èŠ‚
+extern slide_mask_t g_FileMaskTab[10][1024]; // 81,920 å­—èŠ‚
+                                        // å…±è®¡:  237,568 å­—èŠ‚
 
 extern uint8 g_KingMoves[256][8];
 extern uint8 g_AdvisorMoves[256][8];

@@ -2,7 +2,7 @@
 
 #include "util.h"
 
-//Ëæ»úÊý×é
+//Ã‹Ã¦Â»ÃºÃŠÃ½Ã—Ã©
 extern unsigned long    g_ZobristKeyPlayer;
 extern unsigned long    g_ZobristKeyTable[10][256];
 extern uint64 g_ZobristLockPlayer;

@@ -1,48 +1,41 @@
 
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼þÐí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓÐ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑÐ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æžé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌÐòÊÇ×ÔÓÉÈí¼þ£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼þ»ù½ð»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ðí
-	¿ÉÖ¤Ìõ¿îÀ´ÐÞ¸ÄºÍÖØÐÂ·¢²¼ÕâÒ»³ÌÐò¡£»òÕßÓÃÐí¿ÉÖ¤µÄµÚ¶þ°æ£¬»òÕß£¨¸ù
-	¾ÝÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üÐÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌÐòµÄÄ¿µÄÊÇÏ£ÍûËüÓÐÓÃ£¬µ«Ã»ÓÐÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓÐÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒþº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌÐòÒ»ÆðÊÕµ½Ò»·ÝGNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼þ£©¡£Èç¹û»¹Ã»ÓÐ£¬Ð´ÐÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æžœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼þÊ±ÓÐÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æžœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸Žæˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ÐÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼þÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼þ±àÐ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼þ°æ±¾£º	03
-	×îºóÐÞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åŽä¿®æ”¹äºŽï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖÐµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼þ¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ÐÞÕýÀúÊ·£º
+	ä¿®æ­£åŽ†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
-#include ".\print_info.h"
+#include "print_info.h"
 #include <cstdarg>
 #include <cstdio>
 #include <cstdlib>
@@ -52,20 +45,20 @@
 
 static const char ChessName[14][4] = 
 {
-	"Ž›","ÊË","Ïà","‚Ø","‚e","ÅÚ","±ø", 
-    "Œ¢","Ê¿","Ïó","ñR","Ü‡","°ü","×ä"
+	"å¸¥","ä»•","ç›¸","å‚Œ","ä¿¥","ç‚®","å…µ", 
+    "å°‡","å£«","è±¡","é¦¬","è»Š","åŒ…","å’"
 };
 
 static const char PostionName[2][9][4] = 
 { 
-	{"¾Å","°Ë","Æß","Áù","Îå","ËÄ","Èý","¶þ","Ò»"},
-	{"£±","£²","£³","£´","£µ","£¶","£·","£¸","£¹"}
+	{"ä¹","å…«","ä¸ƒ","å…­","äº”","å››","ä¸‰","äºŒ","ä¸€"},
+	{"ï¼‘","ï¼’","ï¼“","ï¼”","ï¼•","ï¼–","ï¼—","ï¼˜","ï¼™"}
 };
 /*
 static const char ChessName32[32][4] = 
 {
-	"Ë§","ÊË","Ïà","Âí","³µ","ÅÚ","±ø", 
-    "½«","Ê¿","Ïó","Âí","³µ","ÅÚ","×ä"
+	"å¸…","ä»•","ç›¸","é©¬","è½¦","ç‚®","å…µ", 
+    "å°†","å£«","è±¡","é©¬","è½¦","ç‚®","å’"
 };*/
 
 char* get_step_name(int move)
@@ -75,7 +68,7 @@ char* get_step_name(int move)
 	int r0,f0,r1,f1;
 	int me,opp,pos;
 	
-	static char step_name[12];	// ±ØÐëÓÃ¾²Ì¬±äÁ¿£¬·ñÔò²»ÄÜ·µ»Ø
+	static char step_name[12];	// å¿…é¡»ç”¨é™æ€å˜é‡ï¼Œå¦åˆ™ä¸èƒ½è¿”å›ž
 
     from = MOVE_FROM(move) ;
 	to = MOVE_TO(move);
@@ -84,8 +77,8 @@ char* get_step_name(int move)
 	piece = Square[from] & (~31);
 	capture =Square[to] & (~31);
 
-    r0 = (from >> 4) - 3;  //ÐÐ
-    f0 = (from & 0xf) - 3; //ÁÐ
+    r0 = (from >> 4) - 3;  //è¡Œ
+    f0 = (from & 0xf) - 3; //åˆ—
    
 	r1 = (to >> 4) - 3;
     f1 = (to & 0xf) - 3;
@@ -100,37 +93,37 @@ char* get_step_name(int move)
 	strcpy( step_name, ChessName[pos] );
 	strcat( step_name, PostionName[me][f0] );
 	
-	//¼ì²é´ËÁÐx0ÊÇ·ñ´æÔÚÁíÒ»¿Å³É¶ÔµÄÆå×Ó.
-	int y,chess; //y:ÐÐ
+	//æ£€æŸ¥æ­¤åˆ—x0æ˜¯å¦å­˜åœ¨å¦ä¸€é¢—æˆå¯¹çš„æ£‹å­.
+	int y,chess; //y:è¡Œ
 	for(y=0;y<10;y++)
 	{
 		chess = Square[(y+3)*16+f0+3]; 
 
-		if(chess==0)											// ÎÞ×Ó¼ÌÐøËÑË÷
+		if(chess==0)											// æ— å­ç»§ç»­æœç´¢
 			continue;
 
         chess= chess & ~31;
 
-		if(PIECE_IS_ADVISOR(piece) || PIECE_IS_BISHOP(piece))		// Ïó¡¢Ê¿²»ÓÃÇø·Ö
+		if(PIECE_IS_ADVISOR(piece) || PIECE_IS_BISHOP(piece))		// è±¡ã€å£«ä¸ç”¨åŒºåˆ†
 			continue;
-		if(y==r0)												// ÊÇÍ¬Ò»¿ÅÆå×Ó, ²»±ØËÑË÷.
+		if(y==r0)												// æ˜¯åŒä¸€é¢—æ£‹å­, ä¸å¿…æœç´¢.
 			continue;
 
 		if(piece==chess)
 		{
-			if(me)			// ºÚ×Ó
+			if(me)			// é»‘å­
 			{
 				if(r0>y)
-					strcpy( step_name, "Ç°" );
+					strcpy( step_name, "å‰" );
 				else
-					strcpy( step_name, "ºó" );
+					strcpy( step_name, "åŽ" );
 			}
-			else				// ºì×Ó
+			else				// çº¢å­
 			{
 				if(r0>y)
-					strcpy( step_name, "ºó" );
+					strcpy( step_name, "åŽ" );
 				else
-					strcpy( step_name, "Ç°" );
+					strcpy( step_name, "å‰" );
 			}
 
 			strcat( step_name, ChessName[pos] );
@@ -140,33 +133,33 @@ char* get_step_name(int move)
 
 	//int piece = PieceTypes[piece]-7*Player;
 
-	//½ø, ÍË, Æ½
+	//è¿›, é€€, å¹³
 	if(r0==r1)
 	{
-		strcat( step_name, "Æ½" );
-		strcat( step_name, PostionName[me][f1]);					// Æ½£¬ÈÎºÎÆå×Ó¶¼ÒÔ¾ø¶ÔÎ»ÖÃ±íÊ¾
+		strcat( step_name, "å¹³" );
+		strcat( step_name, PostionName[me][f1]);					// å¹³ï¼Œä»»ä½•æ£‹å­éƒ½ä»¥ç»å¯¹ä½ç½®è¡¨ç¤º
 	}
 	else if((me && r0<r1) || (!me && r0>r1))
 	{
-		strcat( step_name, "½ø" );
+		strcat( step_name, "è¿›" );
 
-		if(PIECE_IS_ADVISOR(piece) || PIECE_IS_BISHOP(piece) ||PIECE_IS_KNIGHT(piece))						// Âí¡¢Ïó¡¢Ê¿ÓÃ¾ø¶ÔÎ»ÖÃ±íÊ¾
+		if(PIECE_IS_ADVISOR(piece) || PIECE_IS_BISHOP(piece) ||PIECE_IS_KNIGHT(piece))						// é©¬ã€è±¡ã€å£«ç”¨ç»å¯¹ä½ç½®è¡¨ç¤º
 			strcat( step_name, PostionName[me][f1] );			
-		else if(me)												    // ½«¡¢³µ¡¢ÅÚ¡¢±øÓÃÏà¶ÔÎ»ÖÃ±íÊ¾
-			strcat( step_name, PostionName[1][r1-r0-1] );			// ºÚ·½
+		else if(me)												    // å°†ã€è½¦ã€ç‚®ã€å…µç”¨ç›¸å¯¹ä½ç½®è¡¨ç¤º
+			strcat( step_name, PostionName[1][r1-r0-1] );			// é»‘æ–¹
 		else
-			strcat( step_name, PostionName[0][9-r0+r1] );			// ºì·½
+			strcat( step_name, PostionName[0][9-r0+r1] );			// çº¢æ–¹
 	}
 	else
 	{
-		strcat( step_name, "ÍË" );
+		strcat( step_name, "é€€" );
 
-		if(PIECE_IS_ADVISOR(piece) || PIECE_IS_BISHOP(piece) ||PIECE_IS_KNIGHT(piece))						// Âí¡¢Ïó¡¢Ê¿ÓÃ¾ø¶ÔÎ»ÖÃ±íÊ¾
+		if(PIECE_IS_ADVISOR(piece) || PIECE_IS_BISHOP(piece) ||PIECE_IS_KNIGHT(piece))						// é©¬ã€è±¡ã€å£«ç”¨ç»å¯¹ä½ç½®è¡¨ç¤º
 			strcat( step_name, PostionName[me][f1] );			
-		else if(me)												    // ½«¡¢³µ¡¢ÅÚ¡¢±øÓÃÏà¶ÔÎ»ÖÃ±íÊ¾
-			strcat( step_name, PostionName[1][r0-r1-1] );			// ºì·½
+		else if(me)												    // å°†ã€è½¦ã€ç‚®ã€å…µç”¨ç›¸å¯¹ä½ç½®è¡¨ç¤º
+			strcat( step_name, PostionName[1][r0-r1-1] );			// çº¢æ–¹
 		else
-			strcat( step_name, PostionName[0][9-r1+r0] );			// ºÚ·½		
+			strcat( step_name, PostionName[0][9-r1+r0] );			// é»‘æ–¹		
 	}
 
 	return(step_name);
@@ -225,7 +218,6 @@ void print_board()
 		printf("%.2x,",Piece[sq]);
 		if( (((sq+1)%16)==0))
 		printf("\n");
-
 	}
 	printf("Key=%d\n",Key);
 	printf("Lock=%d\n",Lock);
@@ -279,8 +271,8 @@ void save_file(char * file_name)
 
 	FILE *out = fopen(file_name, "w+");
 
-	fprintf(out, "-------------------ËÑË÷ÐÅÏ¢-------------------\n\n");
-    //fprintf(out,"ËÑË÷Éî¶È %d\n",SearchCurrent->max_depth);
+	fprintf(out, "-------------------æœç´¢ä¿¡æ¯-------------------\n\n");
+    //fprintf(out,"æœç´¢æ·±åº¦ %d\n",SearchCurrent->max_depth);
     //fprintf(out,"seldepth %d time %.0f nodes " S64_FORMAT " nps %.0f",SearchCurrent->max_depth,SearchCurrent->time*1000.0,SearchCurrent->node_nb,SearchCurrent->speed);
 	//fprintf(out,"node_qs_n=%d",SearchCurrent->node_qs_nb);
 
@@ -304,7 +296,7 @@ void save_file(char * file_name)
 	fprintf(out,"\n");
 
 	fprintf(out,"info current depth %d seldepth %d time %.0f nodes " S64_FORMAT " nps %.0f\n",SearchBest->depth,SearchCurrent->max_depth,SearchCurrent->time*1000.0,SearchCurrent->node_nb,SearchCurrent->speed);
-    fprintf(out,"----------Ö÷Òª±äÀýÊä³ö-----------\n");
+    fprintf(out,"----------ä¸»è¦å˜ä¾‹è¾“å‡º-----------\n");
 	
 	move_ptr=SearchBest->pv;
 	while (*move_ptr!= MoveNone)

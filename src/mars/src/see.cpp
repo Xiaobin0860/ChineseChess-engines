@@ -1,54 +1,47 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼şĞí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓĞ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑĞ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌĞòÊÇ×ÔÓÉÈí¼ş£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼ş»ù½ğ»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ğí
-	¿ÉÖ¤Ìõ¿îÀ´ĞŞ¸ÄºÍÖØĞÂ·¢²¼ÕâÒ»³ÌĞò¡£»òÕßÓÃĞí¿ÉÖ¤µÄµÚ¶ş°æ£¬»òÕß£¨¸ù
-	¾İÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üĞÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌĞòµÄÄ¿µÄÊÇÏ£ÍûËüÓĞÓÃ£¬µ«Ã»ÓĞÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓĞÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒşº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌĞòÒ»ÆğÊÕµ½Ò»·İGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼ş£©¡£Èç¹û»¹Ã»ÓĞ£¬Ğ´ĞÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼şÊ±ÓĞÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸æˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ĞÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼şÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼ş±àĞ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼ş°æ±¾£º	03
-	×îºóĞŞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åä¿®æ”¹äºï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖĞµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼ş¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ĞŞÕıÀúÊ·£º
+	ä¿®æ­£å†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
-#include ".\see.h"
+#include "see.h"
 #include "pregen.h"
 #include "attack.h"
 #include "value.h"
 #include "move.h"
 #include <stdio.h>
 
-//SEE ÊÇÒ»ÖÖÑ°ÕÒºÃµÄ³Ô×Ó×Å·¨µÄËã·¨
+//SEE æ˜¯ä¸€ç§å¯»æ‰¾å¥½çš„åƒå­ç€æ³•çš„ç®—æ³•
 //
 
 // macros
@@ -116,7 +109,7 @@ int see_move(int move) {
    ALIST_CLEAR(alists->alist[Black]);
    ALIST_CLEAR(alists->alist[Red]);
 
-   // find hidden attackersÒş²ØµÄ
+   // find hidden attackerséšè—çš„
 
    alists_hidden(alists,from,to);
 
@@ -139,7 +132,7 @@ int see_move(int move) {
    }
   // printf("\n");
 
-   // build defender list·ÀÎÀÕß
+   // build defender listé˜²å«è€…
 
    alist = alists->alist[def];
    //printf("***\n");
@@ -155,7 +148,7 @@ int see_move(int move) {
    //{
 	//   printf("(%x),",alist->square[i]);
    //}
-   // build attacker list¹¥»÷Õß
+   // build attacker listæ”»å‡»è€…
    alist = alists->alist[att];
 //printf("***8\n");
    alist_build(alist,from,to,att);
@@ -270,7 +263,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
 
 	int i, piece_tag, from, disp, x, y,pawn;
     slide_mask_t *rank_mask_ptr, *file_mask_ptr;
-    // Æå×Ó±£»¤ÅĞ¶Ï°üÀ¨ÒÔÏÂ¼¸¸ö²½Öè£º
+    // æ£‹å­ä¿æŠ¤åˆ¤æ–­åŒ…æ‹¬ä»¥ä¸‹å‡ ä¸ªæ­¥éª¤ï¼š
     //if(Square[square]==0 ||Square[square]==Edge)
 	//   return ;
 
@@ -281,7 +274,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
   if (colour == 0 ? (to & 0x80) != 0 : (to & 0x80) == 0) {
     if (c_InCity[to]) {
 
-      // 1. ÅĞ¶ÏÊÜµ½Ë§(½«)µÄ±£»¤
+      // 1. åˆ¤æ–­å—åˆ°å¸…(å°†)çš„ä¿æŠ¤
       from = Piece[piece_tag];
       if (from != 0) {
         if (ProtectTab[from - to + 256] == 1) {
@@ -289,7 +282,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
         }
       }
 
-      // 2. ÅĞ¶ÏÊÜµ½ÊË(Ê¿)µÄ±£»¤
+      // 2. åˆ¤æ–­å—åˆ°ä»•(å£«)çš„ä¿æŠ¤
       for (i = 1; i <= 2; i ++) {
         from = Piece[piece_tag + i];
         if (from != 0 ) {
@@ -300,7 +293,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
       }
     }
 
-    // 3. ÅĞ¶ÏÊÜµ½Ïà(Ïó)µÄ±£»¤
+    // 3. åˆ¤æ–­å—åˆ°ç›¸(è±¡)çš„ä¿æŠ¤
     for (i = 3; i <= 4; i ++) {
       from = Piece[piece_tag + i];
       if (from != 0 ) {
@@ -311,7 +304,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
     }
   } else {
 
-    // 4. ÅĞ¶ÏÊÜµ½¹ıºÓ±ø(×ä)ºáÏòµÄ±£»¤
+    // 4. åˆ¤æ–­å—åˆ°è¿‡æ²³å…µ(å’)æ¨ªå‘çš„ä¿æŠ¤
     for (from = to - 1; from <= to + 1; from += 2) {
 		if((Square[from] & pawn) ==pawn)
 		{
@@ -320,14 +313,14 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
     }
   }
 
-  // 5. ÅĞ¶ÏÊÜµ½¹ıºÓ±ø(×ä)×İÏòµÄ±£»¤
+  // 5. åˆ¤æ–­å—åˆ°è¿‡æ²³å…µ(å’)çºµå‘çš„ä¿æŠ¤
   from = to + (colour == 0 ? 16 : -16);
   if((Square[from] & pawn) ==pawn)
   {
 	  alist_add(alist,from);
   }
 
-  // 6. ÅĞ¶ÏÊÜµ½ÂíµÄ±£»¤
+  // 6. åˆ¤æ–­å—åˆ°é©¬çš„ä¿æŠ¤
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -343,7 +336,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-// 8. ÅĞ¶ÏÊÜµ½ÅÚµÄ±£»¤£¬²ÎÔÄ"struct.cpp"ÀïµÄ"Checked()"º¯Êı
+// 8. åˆ¤æ–­å—åˆ°ç‚®çš„ä¿æŠ¤ï¼Œå‚é˜…"struct.cpp"é‡Œçš„"Checked()"å‡½æ•°
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from!=0 && from != to) {
@@ -365,7 +358,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
     }
   }
 
-  // 7. ÅĞ¶ÏÊÜµ½³µµÄ±£»¤£¬²ÎÔÄ"struct.cpp"ÀïµÄ"Checked()"º¯Êı
+  // 7. åˆ¤æ–­å—åˆ°è½¦çš„ä¿æŠ¤ï¼Œå‚é˜…"struct.cpp"é‡Œçš„"Checked()"å‡½æ•°
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != to) {
@@ -386,7 +379,7 @@ static void alist_build(alist_t * alist,  int square,int to, int colour) {
 }
 
 // alists_hidden()
-//»¬×Óºó·½µÄÆå×Ó»¹ÊÇÍ¬Ò»ÀàĞÍµÄ»¬×Ó
+//æ»‘å­åæ–¹çš„æ£‹å­è¿˜æ˜¯åŒä¸€ç±»å‹çš„æ»‘å­
 static void alists_hidden(alists_t * alists,  int from, int to) 
 {
    int i,x,y,x1,y1,disp,piece,to1;
@@ -397,8 +390,8 @@ static void alists_hidden(alists_t * alists,  int from, int to)
    
    
    piece=Square[from];
-   if (PIECE_IS_SLIDER(piece)) {//³µ---³µ
-      x = from & 0xf;           //ÅÚ---ÅÚ
+   if (PIECE_IS_SLIDER(piece)) {//è½¦---è½¦
+      x = from & 0xf;           //ç‚®---ç‚®
       y = from >> 4;
       x1 = to & 0xf;
       y1 = to >> 4;
@@ -458,7 +451,7 @@ static void alists_hidden(alists_t * alists,  int from, int to)
 	  }
 	  
     }
-   if(PIECE_IS_ROOKPAWN(piece)) //³µ±ø--X-ÅÚ
+   if(PIECE_IS_ROOKPAWN(piece)) //è½¦å…µ--X-ç‚®
    {
 	  x = from & 0xf;
       y = from >> 4;
@@ -517,7 +510,7 @@ static void alists_hidden(alists_t * alists,  int from, int to)
 		 }
 	  }
    }
-   if(PIECE_IS_ADVISOR(piece))//Ê¿-----Âí
+   if(PIECE_IS_ADVISOR(piece))//å£«-----é©¬
    {
         for (i = 5; i <= 6; i ++) {
             to1 = Piece[i];
@@ -564,7 +557,7 @@ static void alist_add(alist_t * alist, int square) {
    // insert in MV order
 
    //piece = Square[square];
-   //½«Æä×ª»¯ÎªMVÖµ
+   //å°†å…¶è½¬åŒ–ä¸ºMVå€¼
    
    //printf("vv%d,%x,",alist->size,square);
    mvv=MvvValues[Square[square] & 31];
@@ -625,5 +618,3 @@ static int alist_pop(alist_t * alist) {
 }
 
 // end of see.cpp
-
-

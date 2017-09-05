@@ -1,50 +1,43 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼þÐí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓÐ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑÐ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æžé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌÐòÊÇ×ÔÓÉÈí¼þ£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼þ»ù½ð»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ðí
-	¿ÉÖ¤Ìõ¿îÀ´ÐÞ¸ÄºÍÖØÐÂ·¢²¼ÕâÒ»³ÌÐò¡£»òÕßÓÃÐí¿ÉÖ¤µÄµÚ¶þ°æ£¬»òÕß£¨¸ù
-	¾ÝÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üÐÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌÐòµÄÄ¿µÄÊÇÏ£ÍûËüÓÐÓÃ£¬µ«Ã»ÓÐÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓÐÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒþº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌÐòÒ»ÆðÊÕµ½Ò»·ÝGNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼þ£©¡£Èç¹û»¹Ã»ÓÐ£¬Ð´ÐÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æžœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼þÊ±ÓÐÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æžœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸Žæˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ÐÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼þÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼þ±àÐ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼þ°æ±¾£º	03
-	×îºóÐÞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åŽä¿®æ”¹äºŽï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖÐµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼þ¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ÐÞÕýÀúÊ·£º
+	ä¿®æ­£åŽ†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
 #pragma once
 #include "colour.h"
 
-// ½«¡¢³µ¡¢ÅÚ¡¢Âí¡¢Ïó¡¢Ê¿¡¢±ø
+// å°†ã€è½¦ã€ç‚®ã€é©¬ã€è±¡ã€å£«ã€å…µ
 const int KingFlag    =1<<7;
 const int AdvisorFlag =1<<8;
 const int BishopFlag  =1<<9;
@@ -64,7 +57,7 @@ const int Rook90   =RookFlag;
 const int Cannon90 =CannonFlag;
 const int Pawn90   =PawnFlag;
 
-//ºì·½Æå×Ó±íÊ¾ Ë§ÊËÏàÂí³µÅÚ±ø
+//çº¢æ–¹æ£‹å­è¡¨ç¤º å¸…ä»•ç›¸é©¬è½¦ç‚®å…µ
 const int RedKing    =King90   | RedFlag;
 const int RedAdvisor =Advisor90| RedFlag;
 const int RedBishop  =Bishop90 | RedFlag;
@@ -73,7 +66,7 @@ const int RedRook    =Rook90   | RedFlag;
 const int RedCannon  =Cannon90 | RedFlag;
 const int RedPawn    =Pawn90   | RedFlag;
 
-//ºÚ·½Æå×Ó±íÊ¾ ½«Ê¿ÏóÂí³µÅÚ×ä
+//é»‘æ–¹æ£‹å­è¡¨ç¤º å°†å£«è±¡é©¬è½¦ç‚®å’
 const int BlackKing    =King90   | BlackFlag;
 const int BlackAdvisor =Advisor90| BlackFlag;
 const int BlackBishop  =Bishop90 | BlackFlag;
@@ -110,7 +103,7 @@ const int BlackPawn14   =13;
 #define PIECE_IS_ROOK(piece)     (((piece)&RookFlag)!=0)
 #define PIECE_IS_CANNON(piece)   (((piece)&CannonFlag)!=0)
 #define PIECE_IS_PAWN(piece)     (((piece)&PawnFlag)!=0)
-#define PIECE_IS_SLIDER(piece)   (((piece)&SliderFlag)!=0)  //ÊÇ·ñÎª»¬×Ó
+#define PIECE_IS_SLIDER(piece)   (((piece)&SliderFlag)!=0)  //æ˜¯å¦ä¸ºæ»‘å­
 #define PIECE_IS_ROOKPAWN(piece) (((piece)&RookPawnFlag)!=0)
 */
 
@@ -121,7 +114,7 @@ const int BlackPawn14   =13;
 #define PIECE_IS_ROOK(piece)     (((piece)&RookFlag))
 #define PIECE_IS_CANNON(piece)   (((piece)&CannonFlag))
 #define PIECE_IS_PAWN(piece)     (((piece)&PawnFlag))
-#define PIECE_IS_SLIDER(piece)   (((piece)&SliderFlag))  //ÊÇ·ñÎª»¬×Ó
+#define PIECE_IS_SLIDER(piece)   (((piece)&SliderFlag))  //æ˜¯å¦ä¸ºæ»‘å­
 #define PIECE_IS_ROOKPAWN(piece) (((piece)&RookPawnFlag))
 
 #define PAWN_MAKE(colour)        (PawnMake[colour])

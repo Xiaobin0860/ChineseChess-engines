@@ -1,47 +1,40 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    ��������֤ �� GPL
-	��Ȩ���� (C) 2005-2008 �����˹������о�
+    软件许可证 － GPL
+	版权所有 (C) 2005-2008 极速人工智能研究
 	----------------------------------------------------------------
-	��һ������������������������������������������GNU ͨ�ù�����
-	��֤�������޸ĺ����·�����һ���򡣻���������֤�ĵڶ��棬���ߣ���
-	�����ѡ�����κθ��µİ汾��
-
-    ������һ�����Ŀ����ϣ�������ã���û���κε���������û���ʺ��ض�
-	Ŀ�ص������ĵ���������ϸ����������GNUͨ�ù�������֤��
-
-    ��Ӧ���Ѿ��ͳ���һ���յ�һ��GNUͨ�ù�������֤�ĸ�������Ŀ¼
-	GPL.txt�ļ����������û�У�д�Ÿ���
+	这一程序是自由软件，你可以遵照自由软件基金会出版的GNU 通用公共许
+	可证条款来修改和重新发布这一程序。或者用许可证的第二版，或者（根
+	据你的选择）用任何更新的版本。
+    发布这一程序的目的是希望它有用，但没有任何担保。甚至没有适合特定
+	目地的隐含的担保。更详细的情况请参阅GNU通用公共许可证。
+    你应该已经和程序一起收到一份GNU通用公共许可证的副本（本目录
+	GPL.txt文件）。如果还没有，写信给：
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	�������ʹ�ñ�����ʱ��ʲô������飬�������µ�ַ������ȡ����ϵ��
-
+	如果你在使用本软件时有什么问题或建议，请用以下地址与我们取得联系：
 			http://www.jsmaster.com
-
-	���ŵ���
-
+	或发信到：
 			jschess##163.com
 	----------------------------------------------------------------
-	���ļ���;��	��
+	本文件用途：	略
 	
 	  
-	���ļ���д�ˣ�	
-				�˽���			jschess##163.com
+	本文件编写人：	
+				顾剑辉			jschess##163.com
 		
-	���ļ��汾��	03
-	����޸��ڣ�	2006-1-16
+	本文件版本：	03
+	最后修改于：	2006-1-16
 		  
-	ע������E-Mail��ַ�е�##����@�滻����������Ϊ�˵��ƶ����E-Mail
-	��ַ�ռ�������
+	注：以上E-Mail地址中的##请用@替换，这样做是为了抵制恶意的E-Mail
+	地址收集软件。
 	----------------------------------------------------------------
-	������ʷ��
+	修正历史：
 			
-		  2006-1		��һ�淢��
-
+		  2006-1		第一版发布
 ********************************************************************/
-#include ".\attack.h"
+#include "attack.h"
 #include "piece.h"
 #include "move.h"
 
@@ -119,7 +112,6 @@ const char AttackTab[512] = {
 };
 
 /*
-
  0, 0, 0, 0, 0,  0,-33,-16,-31,  0, 0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0,-18,  0,-16,  0,-14, 0, 0, 0, 0, 0, 0,
   0, 0,-1, -1,-1, -1,-1,  0,  1,  1, 1, 1, 1, 0, 0, 0,
@@ -127,9 +119,7 @@ const char AttackTab[512] = {
   0, 0, 0, 0, 0,  0, 31, 16, 33,  0, 0, 0, 0, 0, 0, 0,
 const int c_Rook[4] = {-16, -1, 1, 16};
 const int c_Knight[8] = {-33, -31, -18, -14, 14, 18, 31, 33};
-
 int AttackTab[512];
-
 void attack_init()
 {
 	int i;
@@ -141,31 +131,25 @@ void attack_init()
 		AttackTab[i]=0;
 	}
 	for (dir = 0; dir < 8; dir++) {
-
       delta = c_Knight[dir];
       AttackTab[256+delta] = delta;
    }
-
    for (dir = 0; dir < 4; dir++) {
-
       inc = c_Rook[dir];
-
       for (dist = 1; dist < 10; dist++) {
-
          delta = inc*dist;
          AttackTab[256+delta] = inc;
       }
    }
-
 }
 */
 
-//to �Ƿ��ܵ�colour��ɫ�Ĺ���
+//to 是否受到colour颜色的攻击
 bool is_attacked(int to, int colour) 
 {
 	int i, piece_tag, from, disp, x, y,pawn;
     slide_mask_t *rank_mask_ptr, *file_mask_ptr;
-    // ���ӱ����жϰ������¼������裺
+    // 棋子保护判断包括以下几个步骤：
 
     piece_tag =colour<<4;
 
@@ -175,7 +159,7 @@ bool is_attacked(int to, int colour)
   if (colour == 0 ? (to & 0x80) != 0 : (to & 0x80) == 0) {
     if (c_InCity[to]) {
 
-      // 1. �ж��ܵ�˧(��)�ı���
+      // 1. 判断受到帅(将)的保护
       from = Piece[piece_tag];
       if (from != 0) {
         if (ProtectTab[from - to + 256] == 1) {
@@ -183,7 +167,7 @@ bool is_attacked(int to, int colour)
         }
       }
 
-      // 2. �ж��ܵ���(ʿ)�ı���
+      // 2. 判断受到仕(士)的保护
       for (i = 1; i <= 2; i ++) {
         from = Piece[piece_tag + i];
         if (from != 0 ) {
@@ -194,7 +178,7 @@ bool is_attacked(int to, int colour)
       }
     }
 
-    // 3. �ж��ܵ���(��)�ı���
+    // 3. 判断受到相(象)的保护
     for (i = 3; i <= 4; i ++) {
       from = Piece[piece_tag + i];
       if (from != 0 ) {
@@ -205,7 +189,7 @@ bool is_attacked(int to, int colour)
     }
   } else {
 
-    // 4. �ж��ܵ����ӱ�(��)����ı���
+    // 4. 判断受到过河兵(卒)横向的保护
     for (from = to - 1; from <= to + 1; from += 2) {
 		if((Square[from]&pawn)==pawn)
 		{
@@ -214,14 +198,14 @@ bool is_attacked(int to, int colour)
     }
   }
 
-  // 5. �ж��ܵ����ӱ�(��)����ı���
+  // 5. 判断受到过河兵(卒)纵向的保护
   from = to + (colour == 0 ? 16 : -16);
   if((Square[from]&pawn)==pawn)
   {
 	  return true;
   }
 
-  // 6. �ж��ܵ����ı���
+  // 6. 判断受到马的保护
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -237,7 +221,7 @@ bool is_attacked(int to, int colour)
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  // 7. �ж��ܵ����ı���������"struct.cpp"���"Checked()"����
+  // 7. 判断受到车的保护，参阅"struct.cpp"里的"Checked()"函数
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != to) {
@@ -253,7 +237,7 @@ bool is_attacked(int to, int colour)
     }
   }
 
-  // 8. �ж��ܵ��ڵı���������"struct.cpp"���"Checked()"����
+  // 8. 判断受到炮的保护，参阅"struct.cpp"里的"Checked()"函数
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from!=0 && from != to) {
@@ -270,7 +254,7 @@ bool is_attacked(int to, int colour)
   }
   return false;
 }
-//�жϽ��Ƿ��ܵ�ǣ��
+//判断将是否受到牵制
 bool is_pinned(int colour)
 {
 	int i, piece_tag, from,to, disp, x, y,me_flag;
@@ -286,7 +270,7 @@ bool is_pinned(int colour)
     rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
     file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-	//�����ڡ�������ǣ��
+	//空心炮、超级炮牵制
    for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != to) {
@@ -302,7 +286,7 @@ bool is_pinned(int colour)
      }
    }
 
-	//��ǣ��
+	//将牵制
     from=Piece[piece_tag];
     if (from != 0 && from != to) {
       if ((x == (from & 0xf)) && (x == (to & 0xf))) {
@@ -311,7 +295,7 @@ bool is_pinned(int colour)
         }
       } 
     }
-	// 7. ����ǣ�Ƶ�����
+	// 7. 被车牵制的问题
    for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != to) {
@@ -326,7 +310,7 @@ bool is_pinned(int colour)
       }
     }
   }
-   	//����ǣ��
+   	//马的牵制
 	for (i = 5; i <= 6; i ++) {
        from = Piece[piece_tag + i];
           if (from != 0) {
@@ -339,18 +323,18 @@ bool is_pinned(int colour)
 	return false;
 }
 
-//�ж������Ƿ��ܵ�ǣ��
+//判断棋子是否受到牵制
 bool is_piece_pinned(int square, int colour) 
 {
 	int i, piece_tag, from,to, disp, x, y,inc;
     slide_mask_t *rank_mask_ptr, *file_mask_ptr;
-    // ���ӱ����жϰ������¼������裺
+    // 棋子保护判断包括以下几个步骤：
 
     piece_tag =16-(colour<<4);
 
 	to=Piece[colour<<4];
 
-  // ����ǣ��
+  // 被马牵制
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -369,7 +353,7 @@ bool is_piece_pinned(int square, int colour)
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  //˫������ǣ��
+  //双王照面牵制
   from=Piece[piece_tag];
   if (from != 0 && from != square) {
       if ((x == (from & 0xf)) && (x == (to & 0xf))) {
@@ -379,7 +363,7 @@ bool is_piece_pinned(int square, int colour)
       } 
     }
 
-  // 7. ����ǣ�Ƶ�����
+  // 7. 被车牵制的问题
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != square) {
@@ -396,7 +380,7 @@ bool is_piece_pinned(int square, int colour)
   }
 
 
-  //����ǣ��
+  //被炮牵制
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from!=0 && from != square) {
@@ -416,12 +400,12 @@ bool is_piece_pinned(int square, int colour)
   return false;
 }
 
-//�жϽ��Ƿ��ܵ�ǣ�� ������
+//判断将是否受到牵制 空心炮
 bool is_cannon_pinned(int square, int colour) 
 {
     int i, piece_tag, from,to, x, y,inc;
     slide_mask_t *rank_mask_ptr, *file_mask_ptr;
-    // ���ӱ����жϰ������¼������裺
+    // 棋子保护判断包括以下几个步骤：
 
 	to=Piece[colour<<4];
 
@@ -435,7 +419,7 @@ bool is_cannon_pinned(int square, int colour)
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  // 7. ������ǣ�Ƶ�����
+  // 7. 空心炮牵制的问题
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != square) {
@@ -453,7 +437,7 @@ bool is_cannon_pinned(int square, int colour)
 
   return false;
 }
-//0��ʾû��ǣ��
+//0表示没有牵制
 bool is_knight_pinned(int move, int colour) 
 {
 	int i, piece_tag, from,to, disp,inc,square;
@@ -467,7 +451,7 @@ bool is_knight_pinned(int move, int colour)
  
 	count=0;
 	piece_tag =16-(colour<<4);
-  // ����ǣ��
+  // 被马牵制
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -508,7 +492,7 @@ bool is_filter_pinned(int move, int colour)
     rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
     file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  //˫������ǣ��
+  //双王照面牵制
   from=Piece[piece_tag];
   if (from != 0 && from != square) {
       if ((x == (from & 0xf)) && (x == (from & 0xf))) {
@@ -520,15 +504,15 @@ bool is_filter_pinned(int move, int colour)
       } 
     }
 
-  // 7. ����ǣ�Ƶ�����
+  // 7. 被车牵制的问题
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != square) {
       if ((x == (from & 0xf)) && (x == (to & 0xf))) {
         if (((file_mask_ptr->rook_cap & g_BitFileMask[from]) != 0) && ((file_mask_ptr->rook_cap & g_BitFileMask[to]) != 0)) {
-            if(x==(move_to & 0xf))//ͬһ��Ϊ�Ϸ�
+            if(x==(move_to & 0xf))//同一列为合法
 			{
-				if( Square[move_to]!=Empty && from!=move_to)//���ӱ����ǣ����
+				if( Square[move_to]!=Empty && from!=move_to)//吃子必须吃牵制子
 					return true;
 				return false;
 			}
@@ -549,7 +533,7 @@ bool is_filter_pinned(int move, int colour)
   }
 
 
-  //����ǣ��
+  //被炮牵制
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from!=0 && from != square) {
@@ -582,7 +566,7 @@ bool is_filter_pinned(int move, int colour)
   }
   return false;
 }
-//��������������λ��
+//将军攻击棋子与位置
 void attack_set(attack_t * attack)
 {
 	 int i, piece_tag, from, to, x, y, disp;
@@ -591,14 +575,14 @@ void attack_set(attack_t * attack)
 	 attack->dn=0;
 
 	 piece_tag = 16-(Turn<<4);
-     // �����жϰ������¼��������ݣ�
-     // 1. �ж�˧(��)�Ƿ���������
+     // 将军判断包括以下几部分内容：
+     // 1. 判断帅(将)是否在棋盘上
      from = Piece[16-piece_tag];
      
 	 if (from == 0) {
          return; 
      }
-	   // 7. �ж��Ƿ񱻱�(��)����
+	   // 7. 判断是否被兵(卒)将军
    for (to = from - 1; to <= from + 1; to += 2) {
       if(PIECE_IS_PAWN(Square[to]))
 	  {
@@ -612,12 +596,12 @@ void attack_set(attack_t * attack)
 		  attack->ds[attack->dn] = to;
           attack->dn++;
     }
-     // 2. ���˧(��)���ڸ��ӵ�λ�к�λ��
+     // 2. 获得帅(将)所在格子的位行和位列
      x = from & 0xf;
      y = from >> 4;
      rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
      file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
-     // 3. �ж��Ƿ�˧����
+     // 3. 判断是否将帅对脸
      /*
 	 to = Piece[piece_tag];
      if (to != 0) {
@@ -629,7 +613,7 @@ void attack_set(attack_t * attack)
      }
 	 */
 	 
-  // 4. �ж��Ƿ�������
+  // 4. 判断是否被马将军
   for (i = 5; i <= 6; i ++) {
     to = Piece[piece_tag + i];
     if (to != 0) {
@@ -641,7 +625,7 @@ void attack_set(attack_t * attack)
     }
   }
  
-  // 5. �ж��Ƿ񱻳�������˧����
+  // 5. 判断是否被车将军或将帅对脸
   for (i = 7; i <= 8; i ++) {
     to = Piece[piece_tag + i];
     if (to != 0) {
@@ -659,7 +643,7 @@ void attack_set(attack_t * attack)
     }
   }
 
- // 6. �ж��Ƿ��ڽ���
+ // 6. 判断是否被炮将军
   for (i = 9; i <= 10; i ++) {
     to = Piece[piece_tag + i];
     if (to != 0) {
@@ -678,33 +662,33 @@ void attack_set(attack_t * attack)
   }
 }
 
-//�Ƿ񱻽���
+//是否被将军
 bool is_in_check(int colour)
 {
      int i, piece_tag, from, to, x, y, disp;
      slide_mask_t *rank_mask_ptr, *file_mask_ptr;
  
 	 piece_tag = 16-(colour<<4);
-     // �����жϰ������¼��������ݣ�
-     // 1. �ж�˧(��)�Ƿ���������
+     // 将军判断包括以下几部分内容：
+     // 1. 判断帅(将)是否在棋盘上
      from = Piece[colour<<4];
      
 	 if (from == 0) {
          return true; 
      }
-     // 2. ���˧(��)���ڸ��ӵ�λ�к�λ��
+     // 2. 获得帅(将)所在格子的位行和位列
      x = from & 0xf;
      y = from >> 4;
      rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
      file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
-     // 3. �ж��Ƿ�˧����
+     // 3. 判断是否将帅对脸
      to = Piece[piece_tag];
      if (to != 0) {
         if (x == (to & 0xf) && (file_mask_ptr->rook_cap & g_BitFileMask[to]) != 0) {
                return true; 
         }
      }
-  // 4. �ж��Ƿ�������
+  // 4. 判断是否被马将军
   for (i = 5; i <= 6; i ++) {
     to = Piece[piece_tag + i];
     if (to != 0) {
@@ -714,7 +698,7 @@ bool is_in_check(int colour)
       }
     }
   }
-  // 5. �ж��Ƿ񱻳�������˧����
+  // 5. 判断是否被车将军或将帅对脸
   for (i = 7; i <= 8; i ++) {
     to = Piece[piece_tag + i];
     if (to != 0) {
@@ -729,7 +713,7 @@ bool is_in_check(int colour)
       }
     }
   }
-  // 6. �ж��Ƿ��ڽ���
+  // 6. 判断是否被炮将军
   for (i = 9; i <= 10; i ++) {
     to = Piece[piece_tag + i];
     if (to != 0) {
@@ -744,7 +728,7 @@ bool is_in_check(int colour)
       }
     }
   }
-  // 7. �ж��Ƿ񱻱�(��)����
+  // 7. 判断是否被兵(卒)将军
   for (to = from - 1; to <= from + 1; to += 2) {
 	if(PIECE_IS_PAWN(Square[to]))
 	{
@@ -759,8 +743,8 @@ bool is_in_check(int colour)
     return false;
 }
 
-//�Ƿ񱻽���
-//�ƶ��� �Ƿ��ܵ�colour��ɫ�Ľ��� �����ƶ�����ʱ��ʹ��
+//是否被将军
+//移动后 是否受到colour颜色的将军 ，在移动将军时候使用
 bool is_checked(int to, int colour) 
 {
 	int i, piece_tag, from, disp, x, y;
@@ -776,7 +760,7 @@ bool is_checked(int to, int colour)
       ;
   } else {
 
-    // 4. �ж��ܵ����ӱ�(��)����ı���
+    // 4. 判断受到过河兵(卒)横向的保护
     for (from = to - 1; from <= to + 1; from += 2) {
 		if((Square[from]&pawn)==pawn)
 		{
@@ -785,14 +769,14 @@ bool is_checked(int to, int colour)
     }
   }
 
-  // 5. �ж��ܵ����ӱ�(��)����ı���
+  // 5. 判断受到过河兵(卒)纵向的保护
   from = to + (colour == 0 ? 16 : -16);
   if((Square[from]&pawn)==pawn)
   {
 	  return true;
   }
 
-  // 6. �ж��ܵ����ı���
+  // 6. 判断受到马的保护
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -808,7 +792,7 @@ bool is_checked(int to, int colour)
   rank_mask_ptr = g_RankMaskTab[x - 3] + BitRanks[y];
   file_mask_ptr = g_FileMaskTab[y - 3] + BitFiles[x];
 
-  // 7. �ж��ܵ����ı���������"struct.cpp"���"Checked()"����
+  // 7. 判断受到车的保护，参阅"struct.cpp"里的"Checked()"函数
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0 && from != to) {
@@ -824,7 +808,7 @@ bool is_checked(int to, int colour)
     }
   }
 
-  //�Ƿ���˫�������Σ��
+  //是否有双王照面的危险
   from=Piece[piece_tag];
   if (from != 0 && from != to) {
       if (x == (from & 0xf)) {
@@ -834,7 +818,7 @@ bool is_checked(int to, int colour)
       } 
     }
 
-  // 8. �ж��ܵ��ڵı���
+  // 8. 判断受到炮的保护
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from!=0 && from != to) {

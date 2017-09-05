@@ -1,47 +1,40 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼þÐí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓÐ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑÐ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æžé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌÐòÊÇ×ÔÓÉÈí¼þ£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼þ»ù½ð»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ðí
-	¿ÉÖ¤Ìõ¿îÀ´ÐÞ¸ÄºÍÖØÐÂ·¢²¼ÕâÒ»³ÌÐò¡£»òÕßÓÃÐí¿ÉÖ¤µÄµÚ¶þ°æ£¬»òÕß£¨¸ù
-	¾ÝÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üÐÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌÐòµÄÄ¿µÄÊÇÏ£ÍûËüÓÐÓÃ£¬µ«Ã»ÓÐÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓÐÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒþº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌÐòÒ»ÆðÊÕµ½Ò»·ÝGNUÍ¨ÓÃ¹«¹²Ðí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼þ£©¡£Èç¹û»¹Ã»ÓÐ£¬Ð´ÐÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æžœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼þÊ±ÓÐÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æžœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸Žæˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ÐÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼þÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼þ±àÐ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼þ°æ±¾£º	03
-	×îºóÐÞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åŽä¿®æ”¹äºŽï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖÐµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼þ¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ÐÞÕýÀúÊ·£º
+	ä¿®æ­£åŽ†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
-#include ".\move_gen.h"
+#include "move_gen.h"
 
 #include "move.h"
 #include "pregen.h"
@@ -164,7 +157,7 @@ void gen_quiet_moves(list_t * list) {
 	LIST_CLEAR(list);
 	add_quiet_moves(list);
 }
-//³Ô×Ó×Å·¨
+//åƒå­ç€æ³•
 static void add_captures(list_t * list) 
 {
 
@@ -184,7 +177,7 @@ static void add_captures(list_t * list)
    opp = COLOUR_OPP(me);
    opp_flag = COLOUR_FLAG(opp);
 
-   // 1. Éú³ÉË§(½«)µÄ×Å·¨
+   // 1. ç”Ÿæˆå¸…(å°†)çš„ç€æ³•
    from = Piece[piece_tag];
    if (from != 0) {
        ptr = g_KingMoves[from];
@@ -198,7 +191,7 @@ static void add_captures(list_t * list)
        }
     }
 
-  // 2. Éú³ÉÊË(Ê¿)µÄ×Å·¨
+  // 2. ç”Ÿæˆä»•(å£«)çš„ç€æ³•
   for (i = 1; i <= 2; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -214,7 +207,7 @@ static void add_captures(list_t * list)
     }
   }
 
-  // 3. Éú³ÉÏà(Ïó)µÄ×Å·¨
+  // 3. ç”Ÿæˆç›¸(è±¡)çš„ç€æ³•
   for (i = 3; i <= 4; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -234,7 +227,7 @@ static void add_captures(list_t * list)
     }
   }
 
-  // 4. Éú³ÉÂíµÄ×Å·¨
+  // 4. ç”Ÿæˆé©¬çš„ç€æ³•
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -254,7 +247,7 @@ static void add_captures(list_t * list)
     }
   }
 
-  // 5. Éú³É³µµÄ×Å·¨
+  // 5. ç”Ÿæˆè½¦çš„ç€æ³•
   for (i = 7; i <= 8; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -293,7 +286,7 @@ static void add_captures(list_t * list)
     }
   }
 
-  // 6. Éú³ÉÅÚµÄ×Å·¨
+  // 6. ç”Ÿæˆç‚®çš„ç€æ³•
   for (i = 9; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -332,7 +325,7 @@ static void add_captures(list_t * list)
     }
   }
 
-  // 7. Éú³É±ø(×ä)µÄ×Å·¨
+  // 7. ç”Ÿæˆå…µ(å’)çš„ç€æ³•
   for (i = 11; i <= 15; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -349,7 +342,7 @@ static void add_captures(list_t * list)
   }
 
 }
-//²»³Ô×Ó×Å·¨
+//ä¸åƒå­ç€æ³•
 static void add_quiet_moves(list_t * list)
 {
    int from, to;
@@ -362,13 +355,13 @@ static void add_quiet_moves(list_t * list)
   
    piece_tag = Turn<<4;
 
-     // 1. Éú³ÉË§(½«)µÄ×Å·¨
+     // 1. ç”Ÿæˆå¸…(å°†)çš„ç€æ³•
   from = Piece[piece_tag];
   if (from != 0) {
     ptr = g_KingMoves[from];
     to = *ptr;
     while (to != 0) {
-      // ÕÒµ½Ò»¸ö×Å·¨ºó£¬Ê×ÏÈÅÐ¶ÏÊÇ·ñ³Ôµ½Æå×Ó
+      // æ‰¾åˆ°ä¸€ä¸ªç€æ³•åŽï¼Œé¦–å…ˆåˆ¤æ–­æ˜¯å¦åƒåˆ°æ£‹å­
       if (Square[to] == 0) {
       LIST_ADD(list,MOVE_MAKE(from,to));
       }
@@ -377,7 +370,7 @@ static void add_quiet_moves(list_t * list)
     }
   }
 
-  // 2. Éú³ÉÊË(Ê¿)µÄ×Å·¨
+  // 2. ç”Ÿæˆä»•(å£«)çš„ç€æ³•
   for (i = 1; i <= 2; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -393,7 +386,7 @@ static void add_quiet_moves(list_t * list)
     }
   }
 
-  // 3. Éú³ÉÏà(Ïó)µÄ×Å·¨
+  // 3. ç”Ÿæˆç›¸(è±¡)çš„ç€æ³•
   for (i = 3; i <= 4; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -413,7 +406,7 @@ static void add_quiet_moves(list_t * list)
     }
   }
 
-  // 4. Éú³ÉÂíµÄ×Å·¨
+  // 4. ç”Ÿæˆé©¬çš„ç€æ³•
   for (i = 5; i <= 6; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -433,7 +426,7 @@ static void add_quiet_moves(list_t * list)
     }
   }
 
-  // 5. Éú³É³µºÍÅÚµÄ×Å·¨£¬Ã»ÓÐ±ØÒªÅÐ¶ÏÊÇ·ñ³Ôµ½±¾·½Æå×Ó
+  // 5. ç”Ÿæˆè½¦å’Œç‚®çš„ç€æ³•ï¼Œæ²¡æœ‰å¿…è¦åˆ¤æ–­æ˜¯å¦åƒåˆ°æœ¬æ–¹æ£‹å­
   for (i = 7; i <= 10; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {
@@ -468,7 +461,7 @@ static void add_quiet_moves(list_t * list)
     }
   }
 
-  // 6. Éú³É±ø(×ä)µÄ×Å·¨
+  // 6. ç”Ÿæˆå…µ(å’)çš„ç€æ³•
   for (i = 11; i <= 15; i ++) {
     from = Piece[piece_tag + i];
     if (from != 0) {

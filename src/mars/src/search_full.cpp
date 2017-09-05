@@ -1,45 +1,38 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼şĞí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓĞ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑĞ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌĞòÊÇ×ÔÓÉÈí¼ş£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼ş»ù½ğ»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ğí
-	¿ÉÖ¤Ìõ¿îÀ´ĞŞ¸ÄºÍÖØĞÂ·¢²¼ÕâÒ»³ÌĞò¡£»òÕßÓÃĞí¿ÉÖ¤µÄµÚ¶ş°æ£¬»òÕß£¨¸ù
-	¾İÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üĞÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌĞòµÄÄ¿µÄÊÇÏ£ÍûËüÓĞÓÃ£¬µ«Ã»ÓĞÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓĞÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒşº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌĞòÒ»ÆğÊÕµ½Ò»·İGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼ş£©¡£Èç¹û»¹Ã»ÓĞ£¬Ğ´ĞÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼şÊ±ÓĞÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸æˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ĞÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼şÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼ş±àĞ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼ş°æ±¾£º	03
-	×îºóĞŞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åä¿®æ”¹äºï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖĞµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼ş¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ĞŞÕıÀúÊ·£º
+	ä¿®æ­£å†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
 // search_full.cpp
 
@@ -521,29 +514,20 @@ static int full_search( int alpha, int beta, int depth, int height, mv_t pv[], i
       }
 /*      
       if (UseFutility && depth == 1 && node_type != NodePV) {
-
          if (!in_check && new_depth == 0 && !move_is_tactical(move)) {
-
             ASSERT(!move_is_check(move,board));
-
             // optimistic evaluation
-
             if (opt_value == +ValueInf) {
                opt_value = eval(0,0) + FutilityMargin;
                ASSERT(opt_value<+ValueInf);
             }
-
             value = opt_value;
-
             // pruning
-
             if (value <= alpha) {
-
                if (value > best_value) {
                   best_value = value;
                   PV_CLEAR(pv);
                }
-
                continue;
             }
          }
@@ -586,7 +570,6 @@ static int full_search( int alpha, int beta, int depth, int height, mv_t pv[], i
       }
       /*
 	  reduced = false;
-
       if (UseHistory && depth >= HistoryDepth && node_type != NodePV) {
          if (!in_check && played_nb >= HistoryMoveNb && new_depth < depth) {
             value = sort->value; // history score
@@ -875,30 +858,21 @@ static int full_quiescence( int alpha, int beta, int depth, int height, mv_t pv[
       // delta pruning
 /*
       if (UseDelta && beta == old_alpha+1) {
-
          if (!in_check && !move_is_check(move) /*&& !capture_is_dangerous(move)) {
-
             ASSERT(move_is_tactical(move));
-
             // optimistic evaluation
-
             value = opt_value;
-
             int to = MOVE_TO(move);
             int capture = Square[to];
-
             if (capture != Empty) {
                value += VALUE_PIECE(capture);
             } 
             // pruning
-
             if (value <= alpha) {
-
                if (value > best_value) {
                   best_value = value;
                   PV_CLEAR(pv);
                }
-
                continue;
             }
          }
@@ -1013,58 +987,38 @@ static void pv_fill(const mv_t pv[]) {
 // move_is_dangerous()
 /*
 static bool move_is_dangerous(int move) {
-
    int piece;
-
    ASSERT(move_is_ok(move));
    
-
    ASSERT(!move_is_tactical(move));
-
    piece = MOVE_PIECE(move);
-
    if (PIECE_IS_PAWN(piece)
     && PAWN_RANK(MOVE_TO(move),Turn) >= Rank7) {
       return true;
    }
-
    return false;
 }
-
 // capture_is_dangerous()
-
 static bool capture_is_dangerous(int move) {
-
    int piece, capture;
-
    ASSERT(move_is_ok(move));
    
-
    ASSERT(move_is_tactical(move));
-
    piece = MOVE_PIECE(move);
-
    if (PIECE_IS_PAWN(piece)
     && PAWN_RANK(MOVE_TO(move),Turn) >= Rank7) {
       return true;
    }
-
    capture = move_capture(move);
-
    if (PIECE_IS_QUEEN(capture)) return true;
-
    if (PIECE_IS_PAWN(capture)
     && PAWN_RANK(MOVE_TO(move),Turn) <= Rank2) {
       return true;
    }
-
    return false;
 }
-
 // simple_stalemate()
-
 static bool simple_stalemate() {
-
    int me, opp;
    int king;
    int opp_flag;
@@ -1072,31 +1026,20 @@ static bool simple_stalemate() {
    int capture;
    const inc_t * inc_ptr;
    int inc;
-
    
-
    ASSERT(board_is_legal(board));
    ASSERT(!board_is_check(board));
-
    // lone king?
-
    me = Turn;
    if (Piece_size[me] != 1 || Pawn_size[me] != 0) return false; // no
-
    // king in a corner?
-
    king = KING_POS(me);
    if (king != A1 && king != H1 && king != A8 && king != H8) return false; // no
-
    // init
-
    opp = COLOUR_OPP(me);
    opp_flag = COLOUR_FLAG(opp);
-
    // king can move?
-
    from = king;
-
    for (inc_ptr = KingInc; (inc=*inc_ptr) != IncNone; inc_ptr++) {
       to = from + inc;
       capture = Square[to];
@@ -1104,13 +1047,9 @@ static bool simple_stalemate() {
          if (!is_attacked(to,opp)) return false; // legal king move
       }
    }
-
    // no legal move
-
    ASSERT(board_is_stalemate((board_t*)board));
-
    return true;
 }
 */
 // end of search_full.cpp
-

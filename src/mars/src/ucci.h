@@ -1,26 +1,27 @@
+
 #ifndef UCCI_H
 #define UCCI_H
 
-/* ÎÄ¼ş£ºucci.h
- * ÄÚÈİ£ºElephantEyeÔ´³ÌĞòµÚ1²¿·Ö¡ª¡ªUCCIÖ¸Áî½âÊÍÄ£¿é
- * ±êÊ¶·ûÔ¼¶¨£º
- * c_£º³£Á¿£»
- * e_£ºÑ¡Ïî£»
- * g_£º×Å·¨Ô¤²úÉúÊı×é£»
- * p_£º¾ÖÃæ(ChessPosition)µÄ³ÉÔ±±äÁ¿£»
- * s_£º¾²Ì¬(È«¾Ö)±äÁ¿¡£
+/* æ–‡ä»¶ï¼šucci.h
+ * å†…å®¹ï¼šElephantEyeæºç¨‹åºç¬¬1éƒ¨åˆ†â€”â€”UCCIæŒ‡ä»¤è§£é‡Šæ¨¡å—
+ * æ ‡è¯†ç¬¦çº¦å®šï¼š
+ * c_ï¼šå¸¸é‡ï¼›
+ * e_ï¼šé€‰é¡¹ï¼›
+ * g_ï¼šç€æ³•é¢„äº§ç”Ÿæ•°ç»„ï¼›
+ * p_ï¼šå±€é¢(ChessPosition)çš„æˆå‘˜å˜é‡ï¼›
+ * s_ï¼šé™æ€(å…¨å±€)å˜é‡ã€‚
  */
 
-const int c_MaxDepth = 32; // UCCIÒıÇæË¼¿¼µÄ¼«ÏŞÉî¶È
+const int c_MaxDepth = 32; // UCCIå¼•æ“æ€è€ƒçš„æé™æ·±åº¦
 
-// ºÍUCCIÖ¸ÁîÖĞ¹Ø¼ü×ÖÓĞ¹ØµÄÑ¡Ïî
+// å’ŒUCCIæŒ‡ä»¤ä¸­å…³é”®å­—æœ‰å…³çš„é€‰é¡¹
 enum OptionEnum {
   e_OptionNone, e_OptionBatch, e_OptionDebug, e_OptionBookFiles, e_OptionEgtbPaths, e_OptionHashSize, e_OptionThreads, e_OptionDrawMoves,
   e_OptionRepetition, e_OptionPruning, e_OptionKnowledge, e_OptionSelectivity, e_OptionStyle, e_OptionLoadBook
-}; // ÓÉ"setoption"Ö¸¶¨µÄÑ¡Ïî
+}; // ç”±"setoption"æŒ‡å®šçš„é€‰é¡¹
 enum CheckEnum {
   e_CheckFalse, e_CheckTrue
-}; // Ñ¡ÏîÀàĞÍÎª"check"µÄÉè¶¨Öµ£¬Ö»ÓĞ¹Ø(off»òfalse)»ò¿ª(on»òtrue)Á½ÖÖ
+}; // é€‰é¡¹ç±»å‹ä¸º"check"çš„è®¾å®šå€¼ï¼Œåªæœ‰å…³(offæˆ–false)æˆ–å¼€(onæˆ–true)ä¸¤ç§
 enum RepetitionEnum {
   e_RepetitionAlwaysDraw, e_RepetitionCheckBan, e_RepetitionAsianRule, e_RepetitionChineseRule
 };
@@ -29,78 +30,78 @@ enum ScaleEnum {
 };
 enum StyleEnum {
   e_StyleSolid, e_StyleNormal, e_StyleRisky
-}; // Ñ¡ÏîstyleµÄÉè¶¨Öµ
+}; // é€‰é¡¹styleçš„è®¾å®šå€¼
 enum TimeEnum {
   e_TimeDepth, e_TimeMove, e_TimeInc
-}; // ÓÉ"go"Ö¸ÁîÖ¸¶¨µÄÊ±¼äÄ£Ê½£¬·Ö±ğÊÇ¹Ì¶¨Éî¶È(ÎŞÏŞÉîÏàµ±ÓÚÉî¶ÈÎª"c_MaxDepth")¡¢Ê±¶ÎÖÆ(¼¸ÃëÖÓÄÚ±ØĞëÍê³É¼¸²½)ºÍ¼ÓÊ±ÖÆ(Ê£ÓàÊ±¼ä¶àÉÙ£¬×ßÍêÕâ²½ºó¼Ó¼¸Ãë)
+}; // ç”±"go"æŒ‡ä»¤æŒ‡å®šçš„æ—¶é—´æ¨¡å¼ï¼Œåˆ†åˆ«æ˜¯å›ºå®šæ·±åº¦(æ— é™æ·±ç›¸å½“äºæ·±åº¦ä¸º"c_MaxDepth")ã€æ—¶æ®µåˆ¶(å‡ ç§’é’Ÿå†…å¿…é¡»å®Œæˆå‡ æ­¥)å’ŒåŠ æ—¶åˆ¶(å‰©ä½™æ—¶é—´å¤šå°‘ï¼Œèµ°å®Œè¿™æ­¥ååŠ å‡ ç§’)
 enum CommEnum {
   e_CommNone, e_CommPonderHit, e_CommStop, e_CommUcci, e_CommIsReady, e_CommSetOption, e_CommPosition, e_CommBanMoves, e_CommGo, e_CommGoPonder, e_CommQuit
-}; // UCCIÖ¸ÁîÀàĞÍ
+}; // UCCIæŒ‡ä»¤ç±»å‹
 
-// UCCIÖ¸Áî¿ÉÒÔ½âÊÍ³ÉÒÔÏÂÕâ¸ö³éÏóµÄ½á¹¹
+// UCCIæŒ‡ä»¤å¯ä»¥è§£é‡Šæˆä»¥ä¸‹è¿™ä¸ªæŠ½è±¡çš„ç»“æ„
 union CommDetail {
 
-  /* ¿ÉµÃµ½¾ßÌåĞÅÏ¢µÄUCCIÖ¸ÁîÖ»ÓĞÒÔÏÂ4ÖÖÀàĞÍ
+  /* å¯å¾—åˆ°å…·ä½“ä¿¡æ¯çš„UCCIæŒ‡ä»¤åªæœ‰ä»¥ä¸‹4ç§ç±»å‹
    *
-   * 1. "setoption"Ö¸Áî´«µİµÄĞÅÏ¢£¬ÊÊºÏÓÚ"e_CommSetOption"Ö¸ÁîÀàĞÍ
-   *    "setoption"Ö¸ÁîÓÃÀ´Éè¶¨Ñ¡Ïî£¬Òò´ËÒıÇæ½ÓÊÜµ½µÄĞÅÏ¢ÓĞ¡°Ñ¡ÏîÀàĞÍ¡±ºÍ¡°Ñ¡ÏîÖµ¡±
-   *    ÀıÈç£¬setoption batch on£¬Ñ¡ÏîÀàĞÍ¾ÍÊÇ"e_OptionDebug£¬Öµ(Value.Spin)¾ÍÊÇ"e_CheckTrue"
+   * 1. "setoption"æŒ‡ä»¤ä¼ é€’çš„ä¿¡æ¯ï¼Œé€‚åˆäº"e_CommSetOption"æŒ‡ä»¤ç±»å‹
+   *    "setoption"æŒ‡ä»¤ç”¨æ¥è®¾å®šé€‰é¡¹ï¼Œå› æ­¤å¼•æ“æ¥å—åˆ°çš„ä¿¡æ¯æœ‰â€œé€‰é¡¹ç±»å‹â€å’Œâ€œé€‰é¡¹å€¼â€
+   *    ä¾‹å¦‚ï¼Œsetoption batch onï¼Œé€‰é¡¹ç±»å‹å°±æ˜¯"e_OptionDebugï¼Œå€¼(Value.Spin)å°±æ˜¯"e_CheckTrue"
    */
   struct {
-    OptionEnum Type;             // Ñ¡ÏîÀàĞÍ
-    union {                      // Ñ¡ÏîÖµ
-      int Spin;                  // "spin"ÀàĞÍµÄÑ¡ÏîµÄÖµ
-      CheckEnum Check;           // "check"ÀàĞÍµÄÑ¡ÏîµÄÖµ
+    OptionEnum Type;             // é€‰é¡¹ç±»å‹
+    union {                      // é€‰é¡¹å€¼
+      int Spin;                  // "spin"ç±»å‹çš„é€‰é¡¹çš„å€¼
+      CheckEnum Check;           // "check"ç±»å‹çš„é€‰é¡¹çš„å€¼
       RepetitionEnum Repetition;
       ScaleEnum Scale;
-      StyleEnum Style;           // "combo"ÀàĞÍµÄÑ¡ÏîµÄÖµ
-      const char *String;        // "string"ÀàĞÍµÄÑ¡ÏîµÄÖµ
-    } Value;                     // "button"ÀàĞÍÃ»ÓĞÖµ
+      StyleEnum Style;           // "combo"ç±»å‹çš„é€‰é¡¹çš„å€¼
+      const char *String;        // "string"ç±»å‹çš„é€‰é¡¹çš„å€¼
+    } Value;                     // "button"ç±»å‹æ²¡æœ‰å€¼
   } Option;
 
-  /* 2. "position"Ö¸Áî´«µİµÄĞÅÏ¢£¬ÊÊºÏÓÚ"e_CommPosition"Ö¸ÁîÀàĞÍ
-   *    "position"Ö¸ÁîÓÃÀ´ÉèÖÃ¾ÖÃæ£¬°üÀ¨³õÊ¼¾ÖÃæÁ¬Í¬ºóĞø×Å·¨¹¹³ÉµÄ¾ÖÃæ
-   *    ÀıÈç£¬position startpos moves h2e2 h9g8£¬FEN´®¾ÍÊÇ"startpos"´ú±íµÄFEN´®£¬×Å·¨Êı(MoveNum)¾ÍÊÇ2
+  /* 2. "position"æŒ‡ä»¤ä¼ é€’çš„ä¿¡æ¯ï¼Œé€‚åˆäº"e_CommPosition"æŒ‡ä»¤ç±»å‹
+   *    "position"æŒ‡ä»¤ç”¨æ¥è®¾ç½®å±€é¢ï¼ŒåŒ…æ‹¬åˆå§‹å±€é¢è¿åŒåç»­ç€æ³•æ„æˆçš„å±€é¢
+   *    ä¾‹å¦‚ï¼Œposition startpos moves h2e2 h9g8ï¼ŒFENä¸²å°±æ˜¯"startpos"ä»£è¡¨çš„FENä¸²ï¼Œç€æ³•æ•°(MoveNum)å°±æ˜¯2
    */
   struct {
-    const char *FenStr; // FEN´®£¬ÌØÊâ¾ÖÃæ(Èç"startpos"µÈ)Ò²ÓÉ½âÊÍÆ÷×îÖÕ×ª»»³ÉFEN´®
-    int MoveNum;        // ºóĞø×Å·¨Êı
-    long *CoordList;    // ºóĞø×Å·¨£¬Ö¸Ïò³ÌĞò"IdleLine()"ÖĞµÄÒ»¸ö¾²Ì¬Êı×é£¬µ«¿ÉÒÔ°Ñ"CoordList"±¾Éí¿´³ÉÊı×é
+    const char *FenStr; // FENä¸²ï¼Œç‰¹æ®Šå±€é¢(å¦‚"startpos"ç­‰)ä¹Ÿç”±è§£é‡Šå™¨æœ€ç»ˆè½¬æ¢æˆFENä¸²
+    int MoveNum;        // åç»­ç€æ³•æ•°
+    long *CoordList;    // åç»­ç€æ³•ï¼ŒæŒ‡å‘ç¨‹åº"IdleLine()"ä¸­çš„ä¸€ä¸ªé™æ€æ•°ç»„ï¼Œä½†å¯ä»¥æŠŠ"CoordList"æœ¬èº«çœ‹æˆæ•°ç»„
   } Position;
 
-  /* 3. "banmoves"Ö¸Áî´«µİµÄĞÅÏ¢£¬ÊÊºÏÓÚ"e_CommBanMoves"Ö¸ÁîÀàĞÍ
-   *    "banmoves"Ö¸ÁîÓÃÀ´ÉèÖÃ½ûÖ¹×Å·¨£¬Êı¾İ½á¹¹Ê±ÀàËÆÓÚ"position"Ö¸ÁîµÄºóĞø×Å·¨£¬µ«Ã»ÓĞFEN´®
+  /* 3. "banmoves"æŒ‡ä»¤ä¼ é€’çš„ä¿¡æ¯ï¼Œé€‚åˆäº"e_CommBanMoves"æŒ‡ä»¤ç±»å‹
+   *    "banmoves"æŒ‡ä»¤ç”¨æ¥è®¾ç½®ç¦æ­¢ç€æ³•ï¼Œæ•°æ®ç»“æ„æ—¶ç±»ä¼¼äº"position"æŒ‡ä»¤çš„åç»­ç€æ³•ï¼Œä½†æ²¡æœ‰FENä¸²
    */
   struct {
     int MoveNum;
     long *CoordList;
   } BanMoves;
 
-  /* 4. "go"Ö¸Áî´«µİµÄĞÅÏ¢£¬ÊÊºÏÓÚ"e_CommGo"»ò"e_CommGoPonder"Ö¸ÁîÀàĞÍ
-   *    "go"Ö¸ÁîÈÃÒıÇæË¼¿¼(ËÑË÷)£¬Í¬Ê±Éè¶¨Ë¼¿¼Ä£Ê½£¬¼´¹Ì¶¨Éî¶È¡¢Ê±¶ÎÖÆ»¹ÊÇ¼ÓÊ±ÖÆ
+  /* 4. "go"æŒ‡ä»¤ä¼ é€’çš„ä¿¡æ¯ï¼Œé€‚åˆäº"e_CommGo"æˆ–"e_CommGoPonder"æŒ‡ä»¤ç±»å‹
+   *    "go"æŒ‡ä»¤è®©å¼•æ“æ€è€ƒ(æœç´¢)ï¼ŒåŒæ—¶è®¾å®šæ€è€ƒæ¨¡å¼ï¼Œå³å›ºå®šæ·±åº¦ã€æ—¶æ®µåˆ¶è¿˜æ˜¯åŠ æ—¶åˆ¶
    */
   struct {
-    TimeEnum Mode;   // Ë¼¿¼Ä£Ê½
+    TimeEnum Mode;   // æ€è€ƒæ¨¡å¼
     union {          
-      int Depth;     // Èç¹ûÊÇ¹Ì¶¨Éî¶È£¬Ôò±íÊ¾Éî¶È(²ã)
-      int Time;      // Èç¹ûÊÇÏŞ¶¨Ê±¼ä£¬Ôò±íÊ¾Ê±¼ä(Ãë)
+      int Depth;     // å¦‚æœæ˜¯å›ºå®šæ·±åº¦ï¼Œåˆ™è¡¨ç¤ºæ·±åº¦(å±‚)
+      int Time;      // å¦‚æœæ˜¯é™å®šæ—¶é—´ï¼Œåˆ™è¡¨ç¤ºæ—¶é—´(ç§’)
     } DepthTime;
     union {
-      int MovesToGo; // Èç¹ûÊÇ¼ÓÊ±ÖÆ£¬ÔòÏŞ¶¨Ê±¼äÄÚÒª×ß¶àÉÙ²½Æå
-      int Increment; // Èç¹ûÊÇÊ±¶ÎÖÆ£¬Ôò±íÊ¾×ßÍê¸Ã²½ºóÏŞ¶¨Ê±¼ä¼Ó¶àÉÙÃë
+      int MovesToGo; // å¦‚æœæ˜¯åŠ æ—¶åˆ¶ï¼Œåˆ™é™å®šæ—¶é—´å†…è¦èµ°å¤šå°‘æ­¥æ£‹
+      int Increment; // å¦‚æœæ˜¯æ—¶æ®µåˆ¶ï¼Œåˆ™è¡¨ç¤ºèµ°å®Œè¯¥æ­¥åé™å®šæ—¶é—´åŠ å¤šå°‘ç§’
     } TimeMode;
   } Search;
 };
 
-// ÏÂÃæÁ½¸öº¯Êı¿É±»UCCIÖ¸Áî½âÊÍÆ÷ºÍÇ³ºìÏóÆåĞ­Òé½âÊÍÆ÷µ÷ÓÃ
-char *ReadInput(void);                             // ¶ÁÈ¡Ò»ĞĞ
-int ReadDigit(const char *&LineStr, int MaxValue); // ¶ÁÈ¡Ä³´®×Ö·ûÖĞµÄÊı×Ö
+// ä¸‹é¢ä¸¤ä¸ªå‡½æ•°å¯è¢«UCCIæŒ‡ä»¤è§£é‡Šå™¨å’Œæµ…çº¢è±¡æ£‹åè®®è§£é‡Šå™¨è°ƒç”¨
+char *ReadInput(void);                             // è¯»å–ä¸€è¡Œ
+int ReadDigit(const char *&LineStr, int MaxValue); // è¯»å–æŸä¸²å­—ç¬¦ä¸­çš„æ•°å­—
 
-// ÏÂÃæÈı¸öº¯ÊıÓÃÀ´½âÊÍUCCIÖ¸Áî£¬µ«ÊÊÓÃÓÚ²»Í¬³¡ºÏ
-CommEnum BootLine(void);                                      // UCCIÒıÇæÆô¶¯µÄµÚÒ»ÌõÖ¸Áî£¬Ö»½ÓÊÕ"ucci"
-CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug); // ÒıÇæ¿ÕÏĞÊ±½ÓÊÕÖ¸Áî
-CommEnum BusyLine(int /* bool */ Debug);                      // ÒıÇæË¼¿¼Ê±½ÓÊÕÖ¸Áî£¬Ö»ÔÊĞí½ÓÊÕ"stop"ºÍ"ponderhit"
+// ä¸‹é¢ä¸‰ä¸ªå‡½æ•°ç”¨æ¥è§£é‡ŠUCCIæŒ‡ä»¤ï¼Œä½†é€‚ç”¨äºä¸åŒåœºåˆ
+CommEnum BootLine(void);                                      // UCCIå¼•æ“å¯åŠ¨çš„ç¬¬ä¸€æ¡æŒ‡ä»¤ï¼Œåªæ¥æ”¶"ucci"
+CommEnum IdleLine(CommDetail &Command, int /* bool */ Debug); // å¼•æ“ç©ºé—²æ—¶æ¥æ”¶æŒ‡ä»¤
+CommEnum BusyLine(int /* bool */ Debug);                      // å¼•æ“æ€è€ƒæ—¶æ¥æ”¶æŒ‡ä»¤ï¼Œåªå…è®¸æ¥æ”¶"stop"å’Œ"ponderhit"
 
-int /* bool */ QhInputLine(int /* bool */ Busy); // Ç³ºìÏóÆåĞ­ÒéµÄ½ÓÊÕ¹ı³Ì
+int /* bool */ QhInputLine(int /* bool */ Busy); // æµ…çº¢è±¡æ£‹åè®®çš„æ¥æ”¶è¿‡ç¨‹
 
 #endif

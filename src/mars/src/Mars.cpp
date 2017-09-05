@@ -1,45 +1,38 @@
 /********************************************************************
-
 	----------------------------------------------------------------
-    Èí¼şĞí¿ÉÖ¤ £­ GPL
-	°æÈ¨ËùÓĞ (C) 2005-2008 ¼«ËÙÈË¹¤ÖÇÄÜÑĞ¾¿
+    è½¯ä»¶è®¸å¯è¯ ï¼ GPL
+	ç‰ˆæƒæ‰€æœ‰ (C) 2005-2008 æé€Ÿäººå·¥æ™ºèƒ½ç ”ç©¶
 	----------------------------------------------------------------
-	ÕâÒ»³ÌĞòÊÇ×ÔÓÉÈí¼ş£¬Äã¿ÉÒÔ×ñÕÕ×ÔÓÉÈí¼ş»ù½ğ»á³ö°æµÄGNU Í¨ÓÃ¹«¹²Ğí
-	¿ÉÖ¤Ìõ¿îÀ´ĞŞ¸ÄºÍÖØĞÂ·¢²¼ÕâÒ»³ÌĞò¡£»òÕßÓÃĞí¿ÉÖ¤µÄµÚ¶ş°æ£¬»òÕß£¨¸ù
-	¾İÄãµÄÑ¡Ôñ£©ÓÃÈÎºÎ¸üĞÂµÄ°æ±¾¡£
-
-    ·¢²¼ÕâÒ»³ÌĞòµÄÄ¿µÄÊÇÏ£ÍûËüÓĞÓÃ£¬µ«Ã»ÓĞÈÎºÎµ£±£¡£ÉõÖÁÃ»ÓĞÊÊºÏÌØ¶¨
-	Ä¿µØµÄÒşº¬µÄµ£±£¡£¸üÏêÏ¸µÄÇé¿öÇë²ÎÔÄGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤¡£
-
-    ÄãÓ¦¸ÃÒÑ¾­ºÍ³ÌĞòÒ»ÆğÊÕµ½Ò»·İGNUÍ¨ÓÃ¹«¹²Ğí¿ÉÖ¤µÄ¸±±¾£¨±¾Ä¿Â¼
-	GPL.txtÎÄ¼ş£©¡£Èç¹û»¹Ã»ÓĞ£¬Ğ´ĞÅ¸ø£º
+	è¿™ä¸€ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼Œä½ å¯ä»¥éµç…§è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‡ºç‰ˆçš„GNU é€šç”¨å…¬å…±è®¸
+	å¯è¯æ¡æ¬¾æ¥ä¿®æ”¹å’Œé‡æ–°å‘å¸ƒè¿™ä¸€ç¨‹åºã€‚æˆ–è€…ç”¨è®¸å¯è¯çš„ç¬¬äºŒç‰ˆï¼Œæˆ–è€…ï¼ˆæ ¹
+	æ®ä½ çš„é€‰æ‹©ï¼‰ç”¨ä»»ä½•æ›´æ–°çš„ç‰ˆæœ¬ã€‚
+    å‘å¸ƒè¿™ä¸€ç¨‹åºçš„ç›®çš„æ˜¯å¸Œæœ›å®ƒæœ‰ç”¨ï¼Œä½†æ²¡æœ‰ä»»ä½•æ‹…ä¿ã€‚ç”šè‡³æ²¡æœ‰é€‚åˆç‰¹å®š
+	ç›®åœ°çš„éšå«çš„æ‹…ä¿ã€‚æ›´è¯¦ç»†çš„æƒ…å†µè¯·å‚é˜…GNUé€šç”¨å…¬å…±è®¸å¯è¯ã€‚
+    ä½ åº”è¯¥å·²ç»å’Œç¨‹åºä¸€èµ·æ”¶åˆ°ä¸€ä»½GNUé€šç”¨å…¬å…±è®¸å¯è¯çš„å‰¯æœ¬ï¼ˆæœ¬ç›®å½•
+	GPL.txtæ–‡ä»¶ï¼‰ã€‚å¦‚æœè¿˜æ²¡æœ‰ï¼Œå†™ä¿¡ç»™ï¼š
     The Free Software Foundation, Inc.,  675  Mass Ave,  Cambridge,
     MA02139,  USA
 	----------------------------------------------------------------
-	Èç¹ûÄãÔÚÊ¹ÓÃ±¾Èí¼şÊ±ÓĞÊ²Ã´ÎÊÌâ»ò½¨Òé£¬ÇëÓÃÒÔÏÂµØÖ·ÓëÎÒÃÇÈ¡µÃÁªÏµ£º
-
+	å¦‚æœä½ åœ¨ä½¿ç”¨æœ¬è½¯ä»¶æ—¶æœ‰ä»€ä¹ˆé—®é¢˜æˆ–å»ºè®®ï¼Œè¯·ç”¨ä»¥ä¸‹åœ°å€ä¸æˆ‘ä»¬å–å¾—è”ç³»ï¼š
 			http://www.jsmaster.com
-
-	»ò·¢ĞÅµ½£º
-
+	æˆ–å‘ä¿¡åˆ°ï¼š
 			jschess##163.com
 	----------------------------------------------------------------
-	±¾ÎÄ¼şÓÃÍ¾£º	ÂÔ
+	æœ¬æ–‡ä»¶ç”¨é€”ï¼š	ç•¥
 	
 	  
-	±¾ÎÄ¼ş±àĞ´ÈË£º	
-				¹Ë½£»Ô			jschess##163.com
+	æœ¬æ–‡ä»¶ç¼–å†™äººï¼š	
+				é¡¾å‰‘è¾‰			jschess##163.com
 		
-	±¾ÎÄ¼ş°æ±¾£º	03
-	×îºóĞŞ¸ÄÓÚ£º	2006-1-16
+	æœ¬æ–‡ä»¶ç‰ˆæœ¬ï¼š	03
+	æœ€åä¿®æ”¹äºï¼š	2006-1-16
 		  
-	×¢£ºÒÔÉÏE-MailµØÖ·ÖĞµÄ##ÇëÓÃ@Ìæ»»£¬ÕâÑù×öÊÇÎªÁËµÖÖÆ¶ñÒâµÄE-Mail
-	µØÖ·ÊÕ¼¯Èí¼ş¡£
+	æ³¨ï¼šä»¥ä¸ŠE-Mailåœ°å€ä¸­çš„##è¯·ç”¨@æ›¿æ¢ï¼Œè¿™æ ·åšæ˜¯ä¸ºäº†æŠµåˆ¶æ¶æ„çš„E-Mail
+	åœ°å€æ”¶é›†è½¯ä»¶ã€‚
 	----------------------------------------------------------------
-	ĞŞÕıÀúÊ·£º
+	ä¿®æ­£å†å²ï¼š
 			
-		  2006-1		µÚÒ»°æ·¢²¼
-
+		  2006-1		ç¬¬ä¸€ç‰ˆå‘å¸ƒ
 ********************************************************************/
 #include <cstdarg>
 #include <cstdio>
@@ -79,9 +72,9 @@ int main(int argc, char * argv[])
 {
 	const char *BoolValue[2] = { "false", "true" };
     printf("Mars V0.3 UCCI based on Fruit 2.1 by Fabien Letouzey\n");
-	printf("×÷Õß£º¹Ë½£»Ô\n");
-    printf("ÍøÕ¾£ºwww.jsmaster.com\n");
-	printf("Çë¼üÈëucciÖ¸Áî......\n");
+	printf("ä½œè€…ï¼šé¡¾å‰‘è¾‰\n");
+    printf("ç½‘ç«™ï¼šwww.jsmaster.com\n");
+	printf("è¯·é”®å…¥ucciæŒ‡ä»¤......\n");
     //position fen rnbakab2/9/2c1c1n2/p1p1p3p/6p2/2PN3r1/P3P1P1P/1C2C1N2/9/1RBAKAB1R w - - 0 7   
 	//position fen 1rbakab2/9/1cn5n/pR4p1p/2p1p4/4c1P2/P1P4rP/2N1C1NC1/4A4/2B1KABR1 w - - 0 10
 	//9/3ka4/3R5/5r2p/p5p2/4N4/P5P1P/9/4A2c1/2BK2B2 b - - 0 36
@@ -108,69 +101,58 @@ int main(int argc, char * argv[])
 		printf("\n");
 		printf("id name Mars v0.3\n");
 		fflush(stdout);
-		printf("id copyright °æÈ¨ËùÓĞ(C) 2005-2008\n");
+		printf("id copyright ç‰ˆæƒæ‰€æœ‰(C) 2005-2008\n");
 		fflush(stdout);
-		printf("id author ¹Ë½£»Ô\n");
+		printf("id author é¡¾å‰‘è¾‰\n");
 		fflush(stdout);
-		printf("id user Î´Öª\n\n");
+		printf("id user æœªçŸ¥\n\n");
 		fflush(stdout);
 /*
 				printf("option batch type check default %s\n", BoolValue[ThisSearch.bBatch]);
 		fflush(stdout);
-
-		// option debug ÈÃÒıÇæÊä³öÏêÏ¸µÄËÑË÷ĞÅÏ¢£¬²¢·ÇÕæÕıµÄµ÷ÊÔÄ£Ê½¡£
+		// option debug è®©å¼•æ“è¾“å‡ºè¯¦ç»†çš„æœç´¢ä¿¡æ¯ï¼Œå¹¶éçœŸæ­£çš„è°ƒè¯•æ¨¡å¼ã€‚
 		printf("option debug type check default %s\n", BoolValue[ThisSearch.Debug]);
 		fflush(stdout);
-
-		// Ö¸¶¨¿ª¾Ö¿âÎÄ¼şµÄÃû³Æ£¬¿ÉÖ¸¶¨¶à¸ö¿ª¾Ö¿âÎÄ¼ş£¬ÓÃ·ÖºÅ¡°;¡±¸ô¿ª£¬Èç²»ÈÃÒıÇæÊ¹ÓÃ¿ª¾Ö¿â£¬¿ÉÒÔ°ÑÖµÉè³É¿Õ
+		// æŒ‡å®šå¼€å±€åº“æ–‡ä»¶çš„åç§°ï¼Œå¯æŒ‡å®šå¤šä¸ªå¼€å±€åº“æ–‡ä»¶ï¼Œç”¨åˆ†å·â€œ;â€éš”å¼€ï¼Œå¦‚ä¸è®©å¼•æ“ä½¿ç”¨å¼€å±€åº“ï¼Œå¯ä»¥æŠŠå€¼è®¾æˆç©º
 		ThisSearch.bUseOpeningBook = ThisSearch.m_Hash.LoadBook(BookFile);
 		if(ThisSearch.bUseOpeningBook)
 			printf("option bookfiles type string default %s\n", BookFile);
 		else
 			printf("option bookfiles type string default %s\n", 0);
 		fflush(stdout);
-
-		// ²Ğ¾Ö¿âÃû³Æ
+		// æ®‹å±€åº“åç§°
 		printf("option egtbpaths type string default null\n");
 		fflush(stdout);
-
-		// ÏÔÊ¾Hash±íµÄ´óĞ¡
+		// æ˜¾ç¤ºHashè¡¨çš„å¤§å°
 		printf("option hashsize type spin default %d MB\n", ThisSearch.m_Hash.nHashSize*2*sizeof(CHashRecord)/1024/1024);
 		fflush(stdout);
-
-		// ÒıÇæµÄÏß³ÌÊı
+		// å¼•æ“çš„çº¿ç¨‹æ•°
 		printf("option threads type spin default %d\n", 0);
 		fflush(stdout);
-
-		// ÒıÇæ´ïµ½×ÔÈ»ÏŞ×ÅµÄ°ë»ØºÏÊı
+		// å¼•æ“è¾¾åˆ°è‡ªç„¶é™ç€çš„åŠå›åˆæ•°
 		printf("option drawmoves type spin default %d\n", ThisSearch.NaturalBouts);
 		fflush(stdout);
-
-		// Æå¹æ
-		printf("option repetition type spin default %d 1999Äê°æ¡¶ÖĞ¹úÏóÆå¾ºÈü¹æÔò¡·\n", e_RepetitionChineseRule);
+		// æ£‹è§„
+		printf("option repetition type spin default %d 1999å¹´ç‰ˆã€Šä¸­å›½è±¡æ£‹ç«èµ›è§„åˆ™ã€‹\n", e_RepetitionChineseRule);
 		fflush(stdout);
-
-		// ¿Õ×Å²Ã¼õÊÇ·ñ´ò¿ª
+		// ç©ºç€è£å‡æ˜¯å¦æ‰“å¼€
 		printf("option pruning type check %d\n", ThisSearch);
 		fflush(stdout);
-
-		// ¹ÀÖµº¯ÊıµÄÊ¹ÓÃÇé¿ö
+		// ä¼°å€¼å‡½æ•°çš„ä½¿ç”¨æƒ…å†µ
 		printf("option knowledge type check %d\n", ThisSearch);
 		fflush(stdout);
-
-		// Ö¸¶¨Ñ¡ÔñĞÔÏµÊı£¬Í¨³£ÓĞ0,1,2,3ËÄ¸ö¼¶±ğ¡£¸ø¹ÀÖµº¯Êı¼Ó¼õÒ»¶¨·¶Î§ÄÚµÄËæ»úÊı£¬ÈÃÒıÇæÃ¿´Î×ß³ö²»ÏàÍ¬µÄÆå¡£
+		// æŒ‡å®šé€‰æ‹©æ€§ç³»æ•°ï¼Œé€šå¸¸æœ‰0,1,2,3å››ä¸ªçº§åˆ«ã€‚ç»™ä¼°å€¼å‡½æ•°åŠ å‡ä¸€å®šèŒƒå›´å†…çš„éšæœºæ•°ï¼Œè®©å¼•æ“æ¯æ¬¡èµ°å‡ºä¸ç›¸åŒçš„æ£‹ã€‚
 		printf("option selectivity type spin min 0 max 3 default %d\n", ThisSearch.nSelectivity);
 		fflush(stdout);
-
-		// Ö¸¶¨ÏÂÆåµÄ·ç¸ñ£¬Í¨³£ÓĞsolid(±£ÊØ)¡¢normal(¾ùºâ)ºÍrisky(Ã°½ø)ÈıÖÖ
+		// æŒ‡å®šä¸‹æ£‹çš„é£æ ¼ï¼Œé€šå¸¸æœ‰solid(ä¿å®ˆ)ã€normal(å‡è¡¡)å’Œrisky(å†’è¿›)ä¸‰ç§
 		printf("option style type combo var solid var normal var risky default %s\n", ChessStyle[ThisSearch.nStyle]);
 		fflush(stdout);		
 */
-		// copyprotection ÏÔÊ¾°æÈ¨¼ì²éĞÅÏ¢(ÕıÔÚ¼ì²é£¬°æÈ¨ĞÅÏ¢ÕıÈ·»ò°æÈ¨ĞÅÏ¢´íÎó)¡£ 
+		// copyprotection æ˜¾ç¤ºç‰ˆæƒæ£€æŸ¥ä¿¡æ¯(æ­£åœ¨æ£€æŸ¥ï¼Œç‰ˆæƒä¿¡æ¯æ­£ç¡®æˆ–ç‰ˆæƒä¿¡æ¯é”™è¯¯)ã€‚ 
 		printf("copyprotection ok\n\n");
 		fflush(stdout);
 
-		// ucciok ÕâÊÇucciÖ¸ÁîµÄ×îºóÒ»Ìõ·´À¡ĞÅÏ¢£¬±íÊ¾ÒıÇæÒÑ¾­½øÈëÓÃUCCIĞ­ÒéÍ¨Ñ¶µÄ×´Ì¬¡£
+		// ucciok è¿™æ˜¯ucciæŒ‡ä»¤çš„æœ€åä¸€æ¡åé¦ˆä¿¡æ¯ï¼Œè¡¨ç¤ºå¼•æ“å·²ç»è¿›å…¥ç”¨UCCIåè®®é€šè®¯çš„çŠ¶æ€ã€‚
 		printf("ucciok\n\n");
 		fflush(stdout);
         
@@ -180,15 +162,15 @@ int main(int argc, char * argv[])
 			IdleComm = IdleLine(Command, 0);
 			switch (IdleComm) 
 			{
-				// isready ¼ì²âÒıÇæÊÇ·ñ´¦ÓÚ¾ÍĞ÷×´Ì¬£¬Æä·´À¡ĞÅÏ¢×ÜÊÇreadyok£¬¸ÃÖ¸Áî½ö½öÓÃÀ´¼ì²âÒıÇæµÄ¡°Ö¸Áî½ÓÊÕ»º³åÇø¡±ÊÇ·ñÄÜÕı³£ÈİÄÉÖ¸Áî¡£
-				// readyok ±íÃ÷ÒıÇæ´¦ÓÚ¾ÍĞ÷×´Ì¬(¼´¿É½ÓÊÕÖ¸ÁîµÄ×´Ì¬)£¬²»¹ÜÒıÇæ´¦ÓÚ¿ÕÏĞ×´Ì¬»¹ÊÇË¼¿¼×´Ì¬¡£
+				// isready æ£€æµ‹å¼•æ“æ˜¯å¦å¤„äºå°±ç»ªçŠ¶æ€ï¼Œå…¶åé¦ˆä¿¡æ¯æ€»æ˜¯readyokï¼Œè¯¥æŒ‡ä»¤ä»…ä»…ç”¨æ¥æ£€æµ‹å¼•æ“çš„â€œæŒ‡ä»¤æ¥æ”¶ç¼“å†²åŒºâ€æ˜¯å¦èƒ½æ­£å¸¸å®¹çº³æŒ‡ä»¤ã€‚
+				// readyok è¡¨æ˜å¼•æ“å¤„äºå°±ç»ªçŠ¶æ€(å³å¯æ¥æ”¶æŒ‡ä»¤çš„çŠ¶æ€)ï¼Œä¸ç®¡å¼•æ“å¤„äºç©ºé—²çŠ¶æ€è¿˜æ˜¯æ€è€ƒçŠ¶æ€ã€‚
 				case e_CommIsReady:
 					//fprintf(out,"readyok\n");
 					printf("readyok\n");
 					fflush(stdout);
 					break;
 
-				// stop ÖĞ¶ÏÒıÇæµÄË¼¿¼£¬Ç¿ÖÆ³ö×Å¡£ºóÌ¨Ë¼¿¼Ã»ÓĞÃüÖĞÊ±£¬¾ÍÓÃ¸ÃÖ¸ÁîÀ´ÖĞÖ¹Ë¼¿¼£¬È»ºóÖØĞÂÊäÈë¾ÖÃæ¡£
+				// stop ä¸­æ–­å¼•æ“çš„æ€è€ƒï¼Œå¼ºåˆ¶å‡ºç€ã€‚åå°æ€è€ƒæ²¡æœ‰å‘½ä¸­æ—¶ï¼Œå°±ç”¨è¯¥æŒ‡ä»¤æ¥ä¸­æ­¢æ€è€ƒï¼Œç„¶åé‡æ–°è¾“å…¥å±€é¢ã€‚
 				case e_CommStop:
 					//ThisSearch.bStopThinking = 1;
 					printf("nobestmove\n");
@@ -196,9 +178,9 @@ int main(int argc, char * argv[])
 					fflush(stdout);
 					break;
 
-				// position fen ÉèÖÃ¡°ÄÚÖÃÆåÅÌ¡±µÄ¾ÖÃæ£¬ÓÃfenÀ´Ö¸¶¨FEN¸ñÊ½´®£¬movesºóÃæ¸úµÄÊÇËæºó×ß¹ıµÄ×Å·¨
+				// position fen è®¾ç½®â€œå†…ç½®æ£‹ç›˜â€çš„å±€é¢ï¼Œç”¨fenæ¥æŒ‡å®šFENæ ¼å¼ä¸²ï¼Œmovesåé¢è·Ÿçš„æ˜¯éšåèµ°è¿‡çš„ç€æ³•
 				case e_CommPosition:
-					// ½«½çÃæ´«À´µÄFen´®×ª»¯ÎªÆå¾ÖĞÅÏ¢
+					// å°†ç•Œé¢ä¼ æ¥çš„Fenä¸²è½¬åŒ–ä¸ºæ£‹å±€ä¿¡æ¯
 					// board_clear();
 					//fprintf(out,"%s\n",Command.Position.FenStr);
                     //fprintf(out,"%d",Command.Position.MoveNum);
@@ -216,14 +198,14 @@ int main(int argc, char * argv[])
 						move_do(move,undo);
 						//ThisSearch.StepRecords[ThisSearch.nCurrentStep-1] |= ThisSearch.Checking(ThisSearch.Player) << 24;
 					}
-					// ½«¾ÖÃæ×ßµ½µ±Ç°£¬Ö÷ÒªÊÇÎªÁË¸üĞÂ×Å·¨¼ÇÂ¼£¬ÓÃÓÚÑ­»·¼ì²â¡£
+					// å°†å±€é¢èµ°åˆ°å½“å‰ï¼Œä¸»è¦æ˜¯ä¸ºäº†æ›´æ–°ç€æ³•è®°å½•ï¼Œç”¨äºå¾ªç¯æ£€æµ‹ã€‚
 					break;
 
-				// banmoves Îªµ±Ç°¾ÖÃæÉèÖÃ½ûÊÖ£¬ÒÔ½â¾öÒıÇæÎŞ·¨´¦ÀíµÄ³¤´òÎÊÌâ¡£µ±³öÏÖ³¤´ò¾ÖÃæÊ±£¬ÆåÊÖ¿ÉÒÔ²Ù¿Ø½çÃæÏòÒıÇæ·¢³ö½ûÊÖÖ¸Áî¡£
+				// banmoves ä¸ºå½“å‰å±€é¢è®¾ç½®ç¦æ‰‹ï¼Œä»¥è§£å†³å¼•æ“æ— æ³•å¤„ç†çš„é•¿æ‰“é—®é¢˜ã€‚å½“å‡ºç°é•¿æ‰“å±€é¢æ—¶ï¼Œæ£‹æ‰‹å¯ä»¥æ“æ§ç•Œé¢å‘å¼•æ“å‘å‡ºç¦æ‰‹æŒ‡ä»¤ã€‚
 				case e_CommBanMoves:
 					break;
 
-				// setoption ÉèÖÃÒıÇæ¸÷ÖÖ²ÎÊı
+				// setoption è®¾ç½®å¼•æ“å„ç§å‚æ•°
 				case e_CommSetOption:
 					switch(Command.Option.Type) 
 					{
@@ -234,77 +216,77 @@ int main(int argc, char * argv[])
 							fflush(stdout);
 							break;
 
-						// setoption debug %d ÈÃÒıÇæÊä³öÏêÏ¸µÄËÑË÷ĞÅÏ¢£¬²¢·ÇÕæÕıµÄµ÷ÊÔÄ£Ê½¡£
+						// setoption debug %d è®©å¼•æ“è¾“å‡ºè¯¦ç»†çš„æœç´¢ä¿¡æ¯ï¼Œå¹¶éçœŸæ­£çš„è°ƒè¯•æ¨¡å¼ã€‚
 						case e_OptionDebug:
 							
 							break;
 
-						// setoption bookfiles %s  Ö¸¶¨¿ª¾Ö¿âÎÄ¼şµÄÃû³Æ£¬¿ÉÖ¸¶¨¶à¸ö¿ª¾Ö¿âÎÄ¼ş£¬ÓÃ·ÖºÅ¡°;¡±¸ô¿ª£¬Èç²»ÈÃÒıÇæÊ¹ÓÃ¿ª¾Ö¿â£¬¿ÉÒÔ°ÑÖµÉè³É¿Õ
+						// setoption bookfiles %s  æŒ‡å®šå¼€å±€åº“æ–‡ä»¶çš„åç§°ï¼Œå¯æŒ‡å®šå¤šä¸ªå¼€å±€åº“æ–‡ä»¶ï¼Œç”¨åˆ†å·â€œ;â€éš”å¼€ï¼Œå¦‚ä¸è®©å¼•æ“ä½¿ç”¨å¼€å±€åº“ï¼Œå¯ä»¥æŠŠå€¼è®¾æˆç©º
 						case e_OptionBookFiles:
 							
 							break;
 
-						// setoption egtbpaths %s  Ö¸¶¨²Ğ¾Ö¿âÎÄ¼şµÄÃû³Æ£¬¿ÉÖ¸¶¨¶à¸ö²Ğ¾Ö¿âÂ·¾¶£¬ÓÃ·ÖºÅ¡°;¡±¸ô¿ª£¬Èç²»ÈÃÒıÇæÊ¹ÓÃ²Ğ¾Ö¿â£¬¿ÉÒÔ°ÑÖµÉè³É¿Õ
+						// setoption egtbpaths %s  æŒ‡å®šæ®‹å±€åº“æ–‡ä»¶çš„åç§°ï¼Œå¯æŒ‡å®šå¤šä¸ªæ®‹å±€åº“è·¯å¾„ï¼Œç”¨åˆ†å·â€œ;â€éš”å¼€ï¼Œå¦‚ä¸è®©å¼•æ“ä½¿ç”¨æ®‹å±€åº“ï¼Œå¯ä»¥æŠŠå€¼è®¾æˆç©º
 						case e_OptionEgtbPaths:
-							// ÒıÇæÄ¿Ç°²»Ö§³Ö¿ª¾Ö¿â
+							// å¼•æ“ç›®å‰ä¸æ”¯æŒå¼€å±€åº“
 							
 							break;
 
-						// setoption hashsize %d  ÒÔMBÎªµ¥Î»¹æ¶¨Hash±íµÄ´óĞ¡£¬-1±íÊ¾ÈÃÒıÇæ×Ô¶¯·ÖÅäHash±í¡£1¡«1024MB
-						// Ïó±¤½çÃæÓĞ¸öBug£¬Ã¿´ÎÉèÖÃÒıÇæÊ±£¬Õâ¸öÃüÁîÓ¦ÔÚ¿ª¾Ö¿âµÄÇ°Ãæ
+						// setoption hashsize %d  ä»¥MBä¸ºå•ä½è§„å®šHashè¡¨çš„å¤§å°ï¼Œ-1è¡¨ç¤ºè®©å¼•æ“è‡ªåŠ¨åˆ†é…Hashè¡¨ã€‚1ï½1024MB
+						// è±¡å ¡ç•Œé¢æœ‰ä¸ªBugï¼Œæ¯æ¬¡è®¾ç½®å¼•æ“æ—¶ï¼Œè¿™ä¸ªå‘½ä»¤åº”åœ¨å¼€å±€åº“çš„å‰é¢
 						case e_OptionHashSize:
-							// -1MB(×Ô¶¯), 0MB(×Ô¶¯), 1MB(16), 2MB(17), 4MB(18), 8MB(19), 16MB(20), 32MB(21), 64MB(22), 128MB(23), 256MB(24), 512MB(25), 1024MB(26)
+							// -1MB(è‡ªåŠ¨), 0MB(è‡ªåŠ¨), 1MB(16), 2MB(17), 4MB(18), 8MB(19), 16MB(20), 32MB(21), 64MB(22), 128MB(23), 256MB(24), 512MB(25), 1024MB(26)
 							if( Command.Option.Value.Spin <= 0)
-								n = 22;		// È±Ê¡Çé¿öÏÂ£¬ÒıÇæ×Ô¶¯·ÖÅä(1<<22)*16=64MB£¬ºìÓëºÚÁ½¸÷±í£¬Ë«·½¸÷Ò»°ë¡£
+								n = 22;		// ç¼ºçœæƒ…å†µä¸‹ï¼Œå¼•æ“è‡ªåŠ¨åˆ†é…(1<<22)*16=64MBï¼Œçº¢ä¸é»‘ä¸¤å„è¡¨ï¼ŒåŒæ–¹å„ä¸€åŠã€‚
 							else
 							{
-								n = 15;											// 0.5 MB = 512 KB ÒÔ´ËÎª»ùÊı
+								n = 15;											// 0.5 MB = 512 KB ä»¥æ­¤ä¸ºåŸºæ•°
 								while( Command.Option.Value.Spin > 0 )
 								{
-									Command.Option.Value.Spin >>= 1;			// Ã¿´Î³ıÒÔ2£¬Ö±µ½Îª0
+									Command.Option.Value.Spin >>= 1;			// æ¯æ¬¡é™¤ä»¥2ï¼Œç›´åˆ°ä¸º0
 									n ++;
 								}
 							}								
 
 							break;
 
-						// setoption threads %d	      ÒıÇæµÄÏß³ÌÊı£¬Îª¶à´¦ÀíÆ÷²¢ĞĞÔËËã·şÎñ
+						// setoption threads %d	      å¼•æ“çš„çº¿ç¨‹æ•°ï¼Œä¸ºå¤šå¤„ç†å™¨å¹¶è¡Œè¿ç®—æœåŠ¡
 						case e_OptionThreads:
 							// ThisSearch.nThreads = Command.Option.Value.Spin;		// 0(auto),1,2,4,8,16,32
 							printf("option drawmoves type spin default %d\n", 0);
 							fflush(stdout);
 							break;
 
-						// setoption drawmoves %d	  ´ïµ½×ÔÈ»ÏŞ×ÅµÄ»ØºÏÊı:50,60,70,80,90,100£¬Ïó±¤ÒÑ¾­×Ô¶¯×ª»¯Îª°ë»ØºÏÊı
+						// setoption drawmoves %d	  è¾¾åˆ°è‡ªç„¶é™ç€çš„å›åˆæ•°:50,60,70,80,90,100ï¼Œè±¡å ¡å·²ç»è‡ªåŠ¨è½¬åŒ–ä¸ºåŠå›åˆæ•°
 						case e_OptionDrawMoves:
 							
 							break;
 
-						// setoption repetition %d	  ´¦ÀíÑ­»·µÄÆå¹æ£¬Ä¿Ç°Ö»Ö§³Ö¡°ÖĞ¹úÏóÆåÆå¹æ1999¡±
+						// setoption repetition %d	  å¤„ç†å¾ªç¯çš„æ£‹è§„ï¼Œç›®å‰åªæ”¯æŒâ€œä¸­å›½è±¡æ£‹æ£‹è§„1999â€
 						case e_OptionRepetition:
 							// ThisSearch.nRepetitionStyle = Command.Option.Value.Repetition;
-							// e_RepetitionAlwaysDraw  ²»±ä×÷ºÍ
-							// e_RepetitionCheckBan    ½ûÖ¹³¤½«
-							// e_RepetitionAsianRule   ÑÇÖŞ¹æÔò
-							// e_RepetitionChineseRule ÖĞ¹ú¹æÔò£¨È±Ê¡£©
+							// e_RepetitionAlwaysDraw  ä¸å˜ä½œå’Œ
+							// e_RepetitionCheckBan    ç¦æ­¢é•¿å°†
+							// e_RepetitionAsianRule   äºšæ´²è§„åˆ™
+							// e_RepetitionChineseRule ä¸­å›½è§„åˆ™ï¼ˆç¼ºçœï¼‰
 							
 							break;
 
-						// setoption pruning %d£¬¡°¿Õ×ÅÏòÇ°²Ã¼ô¡±ÊÇ·ñ´ò¿ª
+						// setoption pruning %dï¼Œâ€œç©ºç€å‘å‰è£å‰ªâ€æ˜¯å¦æ‰“å¼€
 						case e_OptionPruning:
 							//ThisSearch.bPruning = Command.Option.Value.Scale;
 							//printf("option pruning type check %d\n", ThisSearch);
 							//fflush(stdout);
 							break;
 
-						// setoption knowledge %d£¬¹ÀÖµº¯ÊıµÄÊ¹ÓÃ
+						// setoption knowledge %dï¼Œä¼°å€¼å‡½æ•°çš„ä½¿ç”¨
 						case e_OptionKnowledge:
 							//ThisSearch.bKnowledge = Command.Option.Value.Scale;
 							//printf("option knowledge type check %d\n", ThisSearch);
 							//fflush(stdout);
 							break;
 
-						// setoption selectivity %d  Ö¸¶¨Ñ¡ÔñĞÔÏµÊı£¬Í¨³£ÓĞ0,1,2,3ËÄ¸ö¼¶±ğ
+						// setoption selectivity %d  æŒ‡å®šé€‰æ‹©æ€§ç³»æ•°ï¼Œé€šå¸¸æœ‰0,1,2,3å››ä¸ªçº§åˆ«
 						case e_OptionSelectivity:
 							/*switch (Command.Option.Value.Scale)
 							{
@@ -328,22 +310,22 @@ int main(int argc, char * argv[])
 							fflush(stdout);*/
 							break;
 
-						// setoption style %d  Ö¸¶¨ÏÂÆåµÄ·ç¸ñ£¬Í¨³£ÓĞsolid(±£ÊØ)¡¢normal(¾ùºâ)ºÍrisky(Ã°½ø)ÈıÖÖ
+						// setoption style %d  æŒ‡å®šä¸‹æ£‹çš„é£æ ¼ï¼Œé€šå¸¸æœ‰solid(ä¿å®ˆ)ã€normal(å‡è¡¡)å’Œrisky(å†’è¿›)ä¸‰ç§
 						case e_OptionStyle:
 							//ThisSearch.nStyle = Command.Option.Value.Style;
 							//printf("option style type combo var solid var normal var risky default %s\n", ChessStyle[Command.Option.Value.Style]);
 							//fflush(stdout);
 							break;						
 
-						// setoption loadbook  UCCI½çÃæElephantBoardÔÚÃ¿´ÎĞÂ½¨Æå¾ÖÊ±¶¼»á·¢ËÍÕâÌõÖ¸Áî
+						// setoption loadbook  UCCIç•Œé¢ElephantBoardåœ¨æ¯æ¬¡æ–°å»ºæ£‹å±€æ—¶éƒ½ä¼šå‘é€è¿™æ¡æŒ‡ä»¤
 						case e_OptionLoadBook:
 							/*ThisSearch.m_Hash.ClearHashTable();
 							ThisSearch.bUseOpeningBook = ThisSearch.m_Hash.LoadBook(BookFile);
 							
 							if(ThisSearch.bUseOpeningBook)
-								printf("option loadbook succeed. %s\n", BookFile);		// ³É¹¦
+								printf("option loadbook succeed. %s\n", BookFile);		// æˆåŠŸ
 							else
-								printf("option loadbook failed! %s\n", "Not found file BOOK.DAT");				// Ã»ÓĞ¿ª¾Ö¿â
+								printf("option loadbook failed! %s\n", "Not found file BOOK.DAT");				// æ²¡æœ‰å¼€å±€åº“
 							fflush(stdout);
 							printf("\n\n");
 							fflush(stdout);
@@ -360,13 +342,13 @@ int main(int argc, char * argv[])
 				case e_CommGoPonder:
 					switch (Command.Search.Mode)
 					{
-						// ¹Ì¶¨Éî¶ÈCommand.Search.DepthTime.Depth
+						// å›ºå®šæ·±åº¦Command.Search.DepthTime.Depth
 						case e_TimeDepth:
 							ponder = 2;
 							search(Command.Search.DepthTime.Depth,0,0);
 							break;
 
-						// Ê±¶ÎÖÆ£º ·ÖÅäÊ±¼ä = Ê£ÓàÊ±¼ä / Òª×ßµÄ²½Êı
+						// æ—¶æ®µåˆ¶ï¼š åˆ†é…æ—¶é—´ = å‰©ä½™æ—¶é—´ / è¦èµ°çš„æ­¥æ•°
 						case e_TimeMove:
 							ponder = (IdleComm == e_CommGoPonder ? 1 : 0);
 							search(32,Command.Search.DepthTime.Time * 1000 / Command.Search.TimeMode.MovesToGo, Command.Search.DepthTime.Time * 1000);
@@ -375,7 +357,7 @@ int main(int argc, char * argv[])
 						//	ThisSearch.MainSearch(127, Command.Search.DepthTime.Time * 1000 / Command.Search.TimeMode.MovesToGo, Command.Search.DepthTime.Time * 1000);
 							break;
 
-						// ¼ÓÊ±ÖÆ£º ·ÖÅäÊ±¼ä = Ã¿²½Ôö¼ÓµÄÊ±¼ä + Ê£ÓàÊ±¼ä / 20 (¼´¼ÙÉèÆå¾Ö»áÔÚ20²½ÄÚ½áÊø)
+						// åŠ æ—¶åˆ¶ï¼š åˆ†é…æ—¶é—´ = æ¯æ­¥å¢åŠ çš„æ—¶é—´ + å‰©ä½™æ—¶é—´ / 20 (å³å‡è®¾æ£‹å±€ä¼šåœ¨20æ­¥å†…ç»“æŸ)
 						case e_TimeInc:
                             ponder = (IdleComm == e_CommGoPonder ? 1 : 0);
 							search(32,(Command.Search.DepthTime.Time + Command.Search.TimeMode.Increment * 20) * 1000 / 20, Command.Search.DepthTime.Time * 1000);
