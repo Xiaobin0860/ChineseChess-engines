@@ -186,7 +186,7 @@ for(i=s;i<=e &&j0==-1;i+=2)
   for(j=i+2;j<=e;j+=2)
   if(YX_X(cch_p[i])==YX_X(cch_p[j]))
   {   if(j1==-1){  j0=i;	j1=j;}
-  else {j2=j;¸õ¥X;}    	}
+  else {j2=j;è·³å‡º;}    	}
 if(j2==-1) j2=j1;
 CMP_SWAP(j1,j2);
 CMP_SWAP(j0,j1);
@@ -200,9 +200,9 @@ if(c=='+' &&!Turn()) cmp=1;
 static char translate_c2e(char *c)
 {
 int i;
-char *c_table="±N¤h¶H¨®°¨" "¥]¨ò«Ó¥K¬Û"
-              "ÚÏØX¬¶¯¥§L" "«e«á¶i°h¥­"
-              "¤@¤G¤T¥|¤­" "¤»¤C¤K¤E" "1 "
+char *c_table="å°‡å£«è±¡è»Šé¦¬" "åŒ…å’å¸¥ä»•ç›¸"
+              "ç¡¨å‚Œç‚®ç ²å…µ" "å‰å¾Œé€²é€€å¹³"
+              "ä¸€äºŒä¸‰å››äº”" "å…­ä¸ƒå…«ä¹" "1 "
               "2 3 4 5 6 " "7 8 9  1 2"
               " 3 4 5 6 7" " 8 9";
 char *e_table="kgmrn" "cpkgm"
@@ -238,7 +238,7 @@ return CmdMove(str2);
 }
 
   c=tolower(str[0]);
-  for(t=0;t<7;t++) if(ta[t]==c) ¸õ¥X;
+  for(t=0;t<7;t++) if(ta[t]==c) è·³å‡º;
   if(t>=7) return 0;
   if(t==0)  pid=2+Turn();
   else if(t==6) pid=pidS(6,str[1]);

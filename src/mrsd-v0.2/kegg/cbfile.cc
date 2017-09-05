@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "cbfile.h"
 #include <ctype.h>
 char *XQFile::KeyEng[]={"GAME","RESULT","START","TIME","DATE","RED","BLACK","PLACE","INIT"};
-char *XQFile::KeyChn[]={"´Ñ§½","Result","¶}©l","¥Î®É","®É¶¡","¬õ¤è","¶Â¤è","¦aÂI","³]©w"};
+char *XQFile::KeyChn[]={"æ£‹å±€","Result","é–‹å§‹","ç”¨æ™‚","æ™‚é–“","ç´…æ–¹","é»‘æ–¹","åœ°é»ž","è¨­å®š"};
 static char *ResultText[]={"time","Resign","Checkmate"};
 XQFile::XQFile(int n)
 {
@@ -179,7 +179,7 @@ unsigned short n,m;
 	if(c=='R') Result=0x10;
 	else if(c=='B') Result=0x11;
 	else if(c=='T') Result=0x12;
-	else {printf("°O¿ýError\n");return 0;}
+	else {printf("è¨˜éŒ„Error\n");return 0;}
 //	printf("n=%d c=%c\n",n,c);
 	bd.GotoStart();
 	for(;n>0;n--)

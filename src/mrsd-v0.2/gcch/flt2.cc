@@ -116,7 +116,7 @@ void *do_thinking(void *p)
 	  AppendComment("no ki11egg\n");
 	  if(thinking==YES)
 	  {  guess_move=0; 
-	    AppendComment("µLªkMove\n");
+	    AppendComment("ç„¡æ³•Move\n");
 	  }
 	  else 	  guess_move_next=0;
 	  thinking--;
@@ -126,9 +126,9 @@ void *do_thinking(void *p)
     {
 	AppendComment(
 #ifndef GB
-			"²Ä%d¨B %s (%5d) %3d¬í %d¼h\n",
+			"ç¬¬%dæ­¥ %s (%5d) %3dç§’ %då±¤\n",
 #else
-			"µÚ%d²½ %s (%5d) %3dÃë %d²ã\n",
+			"è´%dç¥­ %s (%5d) %3déƒ %dè„¯\n",
 #endif
 	B->Ply(),B->Chinese_Notation(),v,time(NULL)-thinking_start_at,B->InitDepth);
 	/*
@@ -232,7 +232,7 @@ if(thinking==BG_DONE && turn==kcolor)
 		Fl::unlock();
 		}
     		if(thinking==YES)
-			AppendComment("²Ä%dply %s (%5d) %3d¬í %d¼h\n",
+			AppendComment("ç¬¬%dply %s (%5d) %3dç§’ %då±¤\n",
 			B->Ply(),B->Chinese_Notation(),0,-1,MB->InitDepth);
 		guess_move=guess_move_next;
 		guess_move_next=guess_reply=0;
@@ -481,15 +481,15 @@ if(Select) {
 }
 static char *ButtonLabel[]={
 #ifndef GB	
-	"Games","¬õ³Ó","¶Â³Ó","©M´Ñ",
+	"Games","ç´…å‹","é»‘å‹","å’Œæ£‹",
 #else
 	
-	"ÅÌÊı","ºìÊ¤","ºÚÊ¤","ºÍÆå",
+	"æ”«æ…","ç¶»å¨","çªªå¨","ç¿ï¼½",
 #endif
 	"@|<","@<","@>","@>|","@2<->",
 	"@square","good","bad","even","New","CLI","Edit",NULL
 }; 		    
-//¶}©l©w¸qXQControlªº Callback ¨ç¼Æ­Ì
+//é–‹å§‹å®šç¾©XQControlçš„ Callback å‡½æ•¸å€‘
 static void Buttoncb(Fl_Widget *button,void *data) {
       ((XQControl *)data)->ButtonAction(button->label());
 }
@@ -507,12 +507,12 @@ static void open_cb(Fl_Widget *widget,void *data) {
 static void about_cb(Fl_Widget *widget,void *data) {
 fl_message(
 #ifndef GB		
-"ºM³J (C)1995-2002 Tzer-jen Wei\n\
-ª©¥»¥N¸¹ ¹Ú¤J¸t³J/MRSD+ Dec 22 2002\n\
+"æ’¤è›‹ (C)1995-2002 Tzer-jen Wei\n\
+ç‰ˆæœ¬ä»£è™Ÿ å¤¢å…¥è–è›‹/MRSD+ Dec 22 2002\n\
 "
 #else
-"³·µ° (C)1995-2002 Tzer-jen Wei\n\
-°æ±¾´úºÅ ÃÎÈëÊ¥µ°/MRSD+ Dec 22 2002\n\
+"é›ªç²¥ (C)1995-2002 Tzer-jen Wei\n\
+å”³æ›æ¸¬ç˜ è¥â»Œå¤ç²¥/MRSD+ Dec 22 2002\n\
 "
 #endif
 );	
@@ -520,7 +520,7 @@ fl_message(
 static void save_cb(Fl_Widget *widget,void *data) {
 	((XQControl *)data)->SaveFile();
 }
-//µ²§ô©w¸qXQControlªº Callback ¨ç¼Æ­Ì
+//çµæŸå®šç¾©XQControlçš„ Callback å‡½æ•¸å€‘
 
 void XQControl::_SetMoveText(int ply){
 	char buf[50];
@@ -529,26 +529,26 @@ void XQControl::_SetMoveText(int ply){
 }
 	
 void XQControl::LoadFile(){
-	char *fn=fl_file_chooser("switchLoadÀÉ®×","*.icc",NULL);
+	char *fn=fl_file_chooser("switchLoadæª”æ¡ˆ","*.icc",NULL);
 	printf("Load%s\n",fn);
 	cf.SetFileName(fn);
-	if(!cf.Load(*B,0)) {fl_alert("µLªkLoadÀÉ®× %s!!\n",fn);return;}
+	if(!cf.Load(*B,0)) {fl_alert("ç„¡æ³•Loadæª”æ¡ˆ %s!!\n",fn);return;}
 	MoveText.clear();
 	for(int i=0;i<B->MaxPly();i++) _SetMoveText(i);	
 	MoveTextChanged();
 	redraw();
 }
 void XQControl::SaveFile(){
-	char *fn=fl_file_chooser("switchSaveÀÉ®×","*.icc",NULL);
+	char *fn=fl_file_chooser("switchSaveæª”æ¡ˆ","*.icc",NULL);
 	printf("Save%s\n",fn);
 	cf.SetFileName(fn);
-	if(!cf.Save(*B,0)) {fl_alert("SaveÀÉ®×%s®Éµo¥ÍError",fn);return;}
+	if(!cf.Save(*B,0)) {fl_alert("Saveæª”æ¡ˆ%sæ™‚ç™¼ç”ŸError",fn);return;}
 	redraw();
 }
 	
 	
 void XQControl::MoveTextChanged(){
-          //Ãi´k¦Ó¤£¦nªº§@ªk¡A¦³ªº®É­Ô¥i¯à·|¦³°İÃD
+          //æ‡¶æƒ°è€Œä¸å¥½çš„ä½œæ³•ï¼Œæœ‰çš„æ™‚å€™å¯èƒ½æœƒæœ‰å•é¡Œ
 	  char buf[500];
 	  int n,i;
 	  if(B->MaxPly()==MoveText.size()+1){
@@ -588,7 +588,7 @@ sprintf(buf,"%s\t%d\t%2.1f%%\t%2.1f%%\t%2.1f%%\t@.%c%c",B2.Chinese_Notation(),p2
 		p2.Result[0]*100.0/p2.Games,p2.Result[1]*100.0/p2.Games,
 		p2.Result[2]*100.0/p2.Games,' '+s,' '+d);
 Information.add(buf);
-B2.¨ì°h();
+B2.åˆ°é€€();
         }
 #endif
 delete db;
@@ -693,13 +693,13 @@ static void no_egg(Fl_Widget *widget,void *data) {
 	MB->stop_thinking=1;
 }
 
-static char *ControlMethodMenuText[]={"GUI","¤÷µ{§Ç","ºM³J"};
+static char *ControlMethodMenuText[]={"GUI","çˆ¶ç¨‹åº","æ’¤è›‹"};
 static int wd[]={80,80,60,60,60,10,0,0,0,0};
 XQControl::XQControl():
 #ifndef GB
-	Fl_Double_Window(800,500,"MRSD+/¹Ú¤J¸t³J"),
+	Fl_Double_Window(800,500,"MRSD+/å¤¢å…¥è–è›‹"),
 #else	
-	Fl_Double_Window(800,500,"MRSD+/ÃÎÈëÊ¥µ°"),
+	Fl_Double_Window(800,500,"MRSD+/è¥â»Œå¤ç²¥"),
 #endif	
                      box(2,30),
 		     Menu(0,0,400,30),
@@ -813,7 +813,7 @@ int main(int argc, char **argv) {
 #ifndef XGCCH
   Fl::add_fd(0,stdin_cb,(void *)window);
   return Fl::run();
-  //­ì¨Ó¸Ó¬O¦p¤U¼gªk¡A¦ı¤£ÆF
+  //åŸä¾†è©²æ˜¯å¦‚ä¸‹å¯«æ³•ï¼Œä½†ä¸éˆ
 #if 0  
  while(1) {
     FD_ZERO(&rfds);

@@ -48,7 +48,7 @@ for(i=0;i<n;i++)
 if(a[i]!=A[i]) return 0;
 return 1;
 }
-//§O¦r­×¥¿
+//åˆ¥å­—ä¿®æ­£
 typedef struct  
 {
 unsigned short lmv[6][128];

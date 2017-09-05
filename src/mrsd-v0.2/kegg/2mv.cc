@@ -45,7 +45,7 @@ B->GotoStart();
 if((i+1)%10==0)
 {	
 odb.FindNode(B,p);
-printf("Games=%d ¬õ³Ó%d ¶Â³Ó%d ©M%d\n",
+printf("Games=%d ç´…å‹%d é»‘å‹%d å’Œ%d\n",
 	p.Games,p.Result[0],p.Result[1],p.Result[2]);
 if((i+1)%50==0) odb.sync();
 }

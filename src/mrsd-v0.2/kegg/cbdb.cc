@@ -66,20 +66,20 @@ CSP(13,15)
 CSP(14,15)
 return 1;
 }
-//code for ¨®°¨¬¶(Rook/Knight/Cannon)
+//code for è»Šé¦¬ç‚®(Rook/Knight/Cannon)
 inline unsigned long long  num(unsigned a,unsigned b)
 {
 	if(a== 0xff && b==0xff) return 0;
 	if(b==0xff) return a+1;
 	return 91+b*(b-1)/2+a;
 }
-//code for «Ó(King)
+//code for å¸¥(King)
 inline unsigned long long  num0(YX a)
 {
 	if(a== 0xff) return 0;
 	return YX_Y(a)*3+YX_X(a)-2;
 }
-//code for ¤h(Guard)
+//code for å£«(Guard)
 inline unsigned num1_1(YX a)
 { 
 	return YX_Y(a)==1 ? 4 :(YX_X(a)-3)/2+2*(YX_Y(a)/2);
@@ -93,7 +93,7 @@ inline unsigned long long  num1(YX a,YX b)
 	t2=num1_1(b);
 	return t1>t2? t1*(t1-1)/2+t2+6: t2*(t2-1)/2+t1+6;
 }
-//code for ¶H(Minister)
+//code for è±¡(Minister)
 inline unsigned num2_1(YX a)
 { 
 	return YX_Y(a)==2 ? 4+YX_X(a)/4 :(YX_X(a)-2)/4+2*(YX_Y(a)/4);
@@ -107,7 +107,7 @@ inline unsigned long long  num2(YX a,YX b)
 	t2=num2_1(b);
 	return t1>t2? t1*(t1-1)/2+t2+6: t2*(t2-1)/2+t1+8;
 }
-//code for §L(Pawn)
+//code for å…µ(Pawn)
 inline unsigned long num5_1(YX a)
 {
 	return a < 45 ? (a-26)/2 : a-35;
@@ -148,7 +148,7 @@ for(i=0;i<32;i++) img2[i]=YX_R(img1[i]);
 Normalize(img1);
 Normalize(img2);
 unsigned long long n1,n2;
-//©¿²¤¥ª¥k®t²§
+//å¿½ç•¥å·¦å³å·®ç•°
 lr=0;
 for(i=0;i<32 && img1[i]==img2[i];i++);
 if(i==32) lr=0;
@@ -258,7 +258,7 @@ int recn,i;
 f1=fopen(fn1,"rb");
 fseek(f1,0,SEEK_END);
 recn=ftell(f1)/(KL+4+DL);
-printf("Á`¦@ %d Image\n",recn);
+printf("ç¸½å…± %d Image\n",recn);
 fseek(f1,0,SEEK_SET);
 for(i=0;i<recn;i++)
 {	

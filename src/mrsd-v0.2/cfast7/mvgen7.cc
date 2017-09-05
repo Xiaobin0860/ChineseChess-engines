@@ -51,7 +51,7 @@ inline static int HashLookUp(BD *b1,XQAI *b,int LowerBound,int UpperBound,int s)
 	 return ( s > b1->sdepth /*|| 
 		(s==b1->sdepth && UpperBound-LowerBound>200 && UpperBound-LowerBound>b1->ub-b1->lb)*/)
 		? Replaceable : NoUse;
-//	¦³±ş±¡§Î
+//	æœ‰æ®ºæƒ…å½¢
 	if(b1->ub<-8000 && LowerBound>=b1->ub) return UseUpperBound;
 	if(b1->lb> 8000 && UpperBound<=b1->lb) return UseLowerBound;
 	if(s > b1->sdepth) return b1->move ? Usable : Replaceable;
@@ -129,7 +129,7 @@ int XQAI::mm_7(int sdepth,int alpha,int beta)
   beta=min(beta,10000-_Ply-1);
 
 D(printf("%d [%s] %d %d %d %d\n",sdepth,Chinese_Notation(),v,alpha,beta,_Ply));
-/*IsCheck©M¦Y¤ı*/
+/*IsCheckå’Œåƒç‹*/
 YX Opponent=cch_p[2|(!clr)];
 for(int i0=0;i0<12;i0++)
 	if(CaptureRule(MoveOrder[i0]|clr,Opponent))
@@ -137,13 +137,13 @@ for(int i0=0;i0<12;i0++)
 if(yy=IsCheck()) {
 	CallPly= sdepth;//sdepth<InitDepth-1 ?sdepth:CallPly;
 }
-/*³B¸Ì³s±N±ş*/
+/*è™•è£¡é€£å°‡æ®º*/
 else if(PuzzleFlag)
 {
 	if(clr==1) return 8000;
 }
 //if(!yy && v< alpha-400) return v+400;
-/*ÀË¬d­«½ÆImage*/
+/*æª¢æŸ¥é‡è¤‡Image*/
   if(_Ply>=in_nullstep+4 && hvalue[_Ply]==hvalue[_Ply-4])
   {
   	if(yy && IsCheck(2))
@@ -152,8 +152,8 @@ else if(PuzzleFlag)
 		return -10000+_Ply-6;
 	else 
 		return OrigTurn==Turn() ? -6000 : 6000;
-	// §PÂ_Rule«ÜÃø¡A¦Û»{­Ë·°¡C
-	// ³o¸Ì¥u¦³§PÂ_long±N¡Along®»¡A¤@±N¤@®»µ¥µ¥·|§PÂ_Error¡C
+	// åˆ¤æ–·Ruleå¾ˆé›£ï¼Œè‡ªèªå€’æ¥£ã€‚
+	// é€™è£¡åªæœ‰åˆ¤æ–·longå°‡ï¼Œlongæ‰ï¼Œä¸€å°‡ä¸€æ‰ç­‰ç­‰æœƒåˆ¤æ–·Errorã€‚
   }
 /*HASH*/
   if((sdepth>=2 || beta-alpha==OrigBound) && !in_nullstep)
@@ -205,7 +205,7 @@ else if(PuzzleFlag)
 	}
 	}
   }
-/*´İ§½*/
+/*æ®˜å±€*/
 	/*N/A*/
 /*NULL MOVE*/
   if(!yy && NumberOfPieces[clr] > 5 && !in_nullstep && sdepth >=5  && beta<8000) {
@@ -218,9 +218,9 @@ else if(PuzzleFlag)
 		if(b1) b1->Set(this,oldalpha,beta,sdepth,v,0);
 		return v;
 	}
-	//if(v<-40000)printf("¶Ê±ş\n");
+	//if(v<-40000)printf("å‚¬æ®º\n");
   }
-//·s¼W
+//æ–°å¢
 //if(!CallPly && v+500<alpha) return alpha;
 #if 1 
 if(!CallPly)
@@ -235,7 +235,7 @@ if(v+mp<alpha)
 }
 }
 #endif
-//µ²§ô·s¼W
+//çµæŸæ–°å¢
 /*Try Some Good Move First*/
 #if 0
   if( !yy && sdepth==InitDepth-1 && InitDepth>7 && beta-alpha> 50)
@@ -249,7 +249,7 @@ if(v+mp<alpha)
 	return v;
   }
 #endif
-/*¦pªG¦bPV¤¤¡A¥B¨S¦³ hash_move ¸Õ¸Õ¬İ²L¼h·j´MªºResult*/
+/*å¦‚æœåœ¨PVä¸­ï¼Œä¸”æ²’æœ‰ hash_move è©¦è©¦çœ‹æ·ºå±¤æœå°‹çš„Result*/
   if(!used_mv && beta-alpha==OrigBound && sdepth>=3) {
 D(printf("try shallow\n"));
   	v=_mm_7(min(6 ,sdepth-2),alpha,beta);
@@ -288,10 +288,10 @@ D(printf("return2 %d [%s] %d %d %d %d\n",sdepth,Chinese_Notation(),v,alpha,beta,
   }
   else used_mv=0;
 /*Normal*/
-//³o­Ó³¡¤À¤]¤£¬O§¹¬üªº¡A58+5¬O³Ì¤jªºMove®t¶Z(§L¨ò)¡A¦pªG²{¦bªº­È¤ñalpha¤p«Ü¦h¡A
-//¨ºÀ³¸Ó»İ­n¦Y¤l¤~¯àÁ×§K³Qcut,³o³¡¥÷¨S°İÃD¡A¦ı³Ì«áreturnªº­È·|¤ñ²z·Q­È¤p¤@ÂI¡C
-//¦ı¬O¦pªG¨S¦³¦nªº¦Y¤l¨B¡Av¤S¤ñalpha¤p«Ü¦h¡A¥i¥Hwhile¦¨¤@ºØ¤£¦nªºcase¨Ó¦©¤À¡C
-//¤U­±¬O¤@¨Ç¹Á¸Õ©Êªº¸Ñªk
+//é€™å€‹éƒ¨åˆ†ä¹Ÿä¸æ˜¯å®Œç¾çš„ï¼Œ58+5æ˜¯æœ€å¤§çš„Moveå·®è·(å…µå’)ï¼Œå¦‚æœç¾åœ¨çš„å€¼æ¯”alphaå°å¾ˆå¤šï¼Œ
+//é‚£æ‡‰è©²éœ€è¦åƒå­æ‰èƒ½é¿å…è¢«cut,é€™éƒ¨ä»½æ²’å•é¡Œï¼Œä½†æœ€å¾Œreturnçš„å€¼æœƒæ¯”ç†æƒ³å€¼å°ä¸€é»ã€‚
+//ä½†æ˜¯å¦‚æœæ²’æœ‰å¥½çš„åƒå­æ­¥ï¼Œvåˆæ¯”alphaå°å¾ˆå¤šï¼Œå¯ä»¥whileæˆä¸€ç¨®ä¸å¥½çš„caseä¾†æ‰£åˆ†ã€‚
+//ä¸‹é¢æ˜¯ä¸€äº›å˜—è©¦æ€§çš„è§£æ³•
 int cf_flag=0;
 AGAIN:  
 #if 0

@@ -47,15 +47,15 @@ XQ::XQ (XQ &bd2)
         for(i=0;i<34;i++)
    cch_p[i]=bd2.cch_p[i];                             
 }
-#ifndef GB
-static char pc_name[2][8][3] = {{ "«Ó", "¥K", "¬Û", "ØX","¨®",  "¬¶", "§L" ,"xx" },
- { "±N", "¤h", "¶H", "°¨", "¨®", "¥]", "¨ò","xx" }};
-static char *number1[] = { "¤@", "¤G", "¤T", "¥|", "¤­", "¤»", "¤C", "¤K", "¤E" };
-#else
-static char pc_name[2][8][3] = {{ "Ë§", "ÊË", "Ïà", "¡õ","³µ",  "ÅÚ", "±ø" ,"xx" },
- { "½«", "Ê¿", "Ïó", "Âí", "³µ", "°ü", "×ä","xx" }};
-static char *number1[] = { "Ò»", "¶ş", "Èı", "ËÄ", "Îå", "Áù", "Æß", "°Ë", "¾Å" };
-#endif
+// #ifndef GB
+static char pc_name[2][8][3] = {{ "å¸¥", "ä»•", "ç›¸", "å‚Œ","è»Š",  "ç‚®", "å…µ" ,"xx" },
+ { "å°‡", "å£«", "è±¡", "é¦¬", "è»Š", "åŒ…", "å’","xx" }};
+static char *number1[] = { "ä¸€", "äºŒ", "ä¸‰", "å››", "äº”", "å…­", "ä¸ƒ", "å…«", "ä¹" };
+// #else
+// static char pc_name[2][8][3] = {{ "é‚Ÿ", "å¸Š", "çœˆ", "â†“","é™¬",  "è˜¿", "æ¢" ,"xx" },
+//  { "è”š", "å°ª", "ç “", "é®", "é™¬", "å©¦", "é€‘","xx" }};
+// static char *number1[] = { "ç¨", "åª¼", "ÊŠ", "ä¾", "æ‹»", "é ", "ä»", "åŒ", "å¬" };
+// #endif
 static char *number2[] = { " 1", " 2", " 3", " 4", " 5", " 6", " 7", " 8", " 9" };
 static char **number;
 char *XQ::Chinese_Notation(int turn)
@@ -69,13 +69,13 @@ n=Ply();
 GotoPly(turn);
 number= turn&1 ? number2 : number1;
 	movepos(s,d,turn);
-	if(s==0xff && d==0xff) {sprintf(movestr,"©ñ±óµÛ¤â");GotoPly(n);return movestr;}
+	if(s==0xff && d==0xff) {sprintf(movestr,"æ”¾æ£„è‘—æ‰‹");GotoPly(n);return movestr;}
 	if(s>=90 || d>=90) {sprintf(movestr,"Error%x%x",s,d);GotoPly(n);return movestr;} 
 	t=_bd(s);
 	if((id2type(t)|1)==5
 	   && 	YX_X(_p(t^2))==YX_X(s))
 	sprintf(movestr,"%s%s",
-		(turn &1)^(s> _p(t^2))? "«e":"«á",
+		(turn &1)^(s> _p(t^2))? "å‰":"å¾Œ",
 		pc_name[_bd(s)&1][id2type(_bd(s))]
 		);
 	else
@@ -84,9 +84,9 @@ number= turn&1 ? number2 : number1;
 	number[turn&1 ? YX_X(s) : 8-YX_X(s) ]);
 	strcat(movestr,
 #ifndef 	GB
-	YX_Y(s) == YX_Y(d) ?  "¥­" :((s<d) ==  (turn&1)? "°h" : "¶i"));
+	YX_Y(s) == YX_Y(d) ?  "å¹³" :((s<d) ==  (turn&1)? "é€€" : "é€²"));
 #else
-	YX_Y(s) == YX_Y(d) ?  "Æ½" :((s<d) ==  (turn&1)? "ÍË" : "½ø"));
+	YX_Y(s) == YX_Y(d) ?  "â…¸" :((s<d) ==  (turn&1)? "è±–" : "è¼›"));
 #endif	
 	strcat(movestr,
 	 YX_X(s) == YX_X(d) ?

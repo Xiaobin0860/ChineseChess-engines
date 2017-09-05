@@ -45,7 +45,7 @@ for(i=0;i<step;i++)
 v=B->automove(level,0);
 if(B->info.time>0)
 speed=B->info.TotalNodes/B->info.time;
-printf("²Ä%d¨B %s (%5d) ¥H%3d¬í·j´M%2d¼h¦@%dImage ¨C¬í%dImage\n",
+printf("ç¬¬%dæ­¥ %s (%5d) ä»¥%3dç§’æœå°‹%2då±¤å…±%dImage æ¯ç§’%dImage\n",
 B->Ply(),B->Chinese_Notation(),v,B->info.time,B->InitDepth,B->info.TotalNodes,speed);
 j=0;
 while((bd=Get_HASH(B->hValue())) && B->_Move(bd->move) && j<20)

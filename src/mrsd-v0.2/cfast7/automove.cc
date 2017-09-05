@@ -97,11 +97,11 @@ info.time=sec2-sec1;
 EXPECT_TIME=info.time*4+sec2;
 if(_Move(BestMove[_Ply]))
 {
-//msg_cb("%d,%d Best­È=%d  %s \n",InitDepth,info.time,v,Chinese_Notation());
+//msg_cb("%d,%d Bestå€¼=%d  %s \n",InitDepth,info.time,v,Chinese_Notation());
 Back();
 }
 //else
-//msg_cb("%d,%d Best­È=%d  Error \n",InitDepth,info.time,v);
+//msg_cb("%d,%d Bestå€¼=%d  Error \n",InitDepth,info.time,v);
 }
 while(abs(v)<8000 &&
 ((info.time < AUTO_TIME && (sec2< SOFT_TIMELIMIT || !SOFT_TIMELIMIT))

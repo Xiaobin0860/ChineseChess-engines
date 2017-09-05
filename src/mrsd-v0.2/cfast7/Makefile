@@ -1,8 +1,8 @@
 CC = gcc
-OPT1 = -O3 -march=athlon-xp -fomit-frame-pointer -pipe -maccumulate-outgoing-args
-OPT2 = -ffast-math -fforce-mem -mpreferred-stack-boundary=2 -foptimize-sibling-calls
+OPT1 = -O3 -w#-march=athlon-xp -fomit-frame-pointer -pipe -maccumulate-outgoing-args
+OPT2 = #-ffast-math -fforce-mem -mpreferred-stack-boundary=2 -foptimize-sibling-calls
 OPT4 = -s -static
-CFLAGS =  $(OPT1) $(OPT2) $(OPTP) -I../kegg  
+CFLAGS =  $(OPT1) $(OPT2) $(OPTP) -I../kegg  -fpermissive -w
 #CFLAGS =  -fprofile-arcs  -ftest-coverage -I../kegg  
 LIBOBJS =  $(SOBJS)  mboard.o score.o mvgen.o  bd.o\
            automove.o mvgen2.o mvgen7.o hvalue.o

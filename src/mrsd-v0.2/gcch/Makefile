@@ -1,12 +1,12 @@
 CC = gcc
-OPT1 = -O3 -march=athlon-xp -fomit-frame-pointer -pipe
-OPT2 = -ffast-math -fforce-mem -mpreferred-stack-boundary=2
+OPT1 = -O3 -w -fpermissive#-march=athlon-xp -fomit-frame-pointer -pipe
+OPT2 = #-ffast-math -fforce-mem -mpreferred-stack-boundary=2
 # you may want to remove -mwindows option from fltk-config if you are using
 # cygwin
 CFLAGS =   $(OPT1) $(OPT2) -I../kegg  `fltk-config --cxxflags` 
 #	   -I/usr/src/Mird-1.0.7/src
 LDFLAGS2=  $(OPT1) -L../kegg -lkegg `fltk-config --use-images --ldflags`
-LDFLAGS=  $(OPT1) -L../kegg -lkegg `fltk-config --use-images --ldflags` -lstdc++
+LDFLAGS=  $(OPT1) -L../kegg -lkegg `fltk-config --use-images --ldflags` -lstdc++ -pthread
 #	  -L/usr/src/Mird-1.0.7/src -lmird -lstdc++
 OBJS = flt2.o client_board.o edit_board.o  
 all: xgcch
@@ -23,4 +23,4 @@ edit_board.o: edit_board.cc control.h ../kegg/board.h ../kegg/cbfile.h
 ../cfast7/libcfast.a:
 	cd ../cfast7;make
 clean:
-	rm -f *~ *.o
+	rm -f *~ *.o xgcch

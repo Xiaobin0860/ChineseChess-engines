@@ -1,6 +1,6 @@
 CC = gcc
-OPT1 =  -O3 -march=athlon-xp -fomit-frame-pointer -pipe
-OPT2 = -ffast-math -fforce-mem -mpreferred-stack-boundary=2
+OPT1 =  -O3 -w -fpermissive#-march=athlon-xp -fomit-frame-pointer -pipe
+OPT2 = #-ffast-math -fforce-mem -mpreferred-stack-boundary=2
 #OPT3 = -I/usr/src/Mird-1.0.7/src
 OPT4 = -s -static
 CFLAGS = $(OPT1)  $(OPT2) $(OPT3)

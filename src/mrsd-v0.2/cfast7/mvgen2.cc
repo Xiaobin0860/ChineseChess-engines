@@ -112,7 +112,7 @@ for(;i0<4;i0++)
 			{ml_Set(5,x,0);}
 		for(x-=9;x>=0 && !_bd(x);x-=9);
 		if(x>=0) {AddAttackMove(Cannon,x)}
-  }//if(cch_p[i].¦s¬¡()
+  }//if(cch_p[i].å­˜æ´»()
 
 for(;i0<16;i0++)
  if(YX_isalive((pyx=cch_p[i=clr+MoveOrder[i0]])))
@@ -149,21 +149,21 @@ for(i0=0;i0<2;i0++)
 		for(x=pyx-1;x>=y && !_bd(x);x--);
 		if(x>=y) {AddAttackMove(Rook,x)}
 /*		x=max(bmap.and_frs(line[pyx][y]),y);
-		{AddAttackMove(¨®,x)}*/
+		{AddAttackMove(è»Š,x)}*/
         y+=8;
 	        for(x=pyx+1;x<=y &&!_bd(x);x++);
      		if(x<=y)  {AddAttackMove(Rook,x)}
 /*		x=min(bmap.and_ffs(line[pyx][y]),y);
-		{AddAttackMove(¨®,x)}*/
+		{AddAttackMove(è»Š,x)}*/
 	        for(x=pyx+9;x<90 && !_bd(x);x+=9);
 		if(x<90) {AddAttackMove(Rook,x)}
 		for(x=pyx-9;x>=0 && !_bd(x);x-=9);
 		if(x>=0)  {AddAttackMove(Rook,x)}
 /*	for(j=(!clr)|2;j<34;j+=2)
 		if(RelativeRule(pyx,cch_p[j]))
-			{AddAttackMove(¨®,cch_p[j])}*/
+			{AddAttackMove(è»Š,cch_p[j])}*/
 
-  }//if(cch_p[i].¦s¬¡()
+  }//if(cch_p[i].å­˜æ´»()
 
 for(;i0<4;i0++)
  if(YX_isalive((pyx=cch_p[i=clr+MoveOrder[i0]])))
@@ -183,7 +183,7 @@ for(;i0<4;i0++)
 		for(x=pyx-9;x>=0 && !_bd(x);x-=9);
 		for(x-=9;x>=0 && !_bd(x);x-=9);
 		if(x>=0) {AddAttackMove(Cannon,x)}
-  }//if(cch_p[i].¦s¬¡()
+  }//if(cch_p[i].å­˜æ´»()
 
 for(;i0<16;i0++)
  if(YX_isalive((pyx=cch_p[i=clr+MoveOrder[i0]])))
@@ -248,13 +248,13 @@ for(eat_level=0;eat_level<5;eat_level++)
 	     }
               CallPly=sdepth-1;
 	      D(printf("mm_quiet %d %d,%d %d,%d\n",sdepth,YX_Y_X(pyx),YX_Y_X(yx)))
-	      if(i0<4) //¸õ¶}¨®¬¶ªºcase¡A¤]³\·|§Ö¤@ÂI
+	      if(i0<4) //è·³é–‹è»Šç‚®çš„caseï¼Œä¹Ÿè¨±æœƒå¿«ä¸€é»ž
 	      {      
-	      if(i0==3) //°¨
+	      if(i0==3) //é¦¬
 	      		{if(_bd(KnightLeg(pyx,yx))) continue;}
-	      else if(i0==2) //¶H
+	      else if(i0==2) //è±¡
 	        	{if(_bd(MinisterEye(pyx,yx))) continue;}
-	      else if (!i0)//±N«Ó
+	      else if (!i0)//å°‡å¸¥
 		   	{if(!RelativeRule(pyx,yx)) continue;}
 	      }
                   fMove(pyx,yx);
@@ -269,7 +269,7 @@ for(eat_level=0;eat_level<5;eat_level++)
 	        Back();
 	     Compare
 	}
-  D(printf("mm_quiet %d ³Ì«áreturn %d\n",sdepth,BestScore));
+  D(printf("mm_quiet %d æœ€å¾Œreturn %d\n",sdepth,BestScore));
   return BestScore;
 }
 

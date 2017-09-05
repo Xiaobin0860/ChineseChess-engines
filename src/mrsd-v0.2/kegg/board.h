@@ -24,10 +24,10 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define myabs(x) ((x)>=0 ? (x) :-(x))
 //#define abs myabs
 #define BOUNDED(x,l,u) {if(x<l) x=(l);if(x>(u)) x=(u);}
-// YX(YX)ªº©w¸q
+// YX(YX)çš„å®šç¾©
 #define YX unsigned char
 //Constructor
-// µL°Ñ¼Æ  YX°_©l­È¬°0xff(¦º)
+// ç„¡åƒæ•¸  YXèµ·å§‹å€¼ç‚º0xff(æ­»)
 #define YX_Set(Y,X) (((Y)<<3)+(Y)+(X))
 #define YX_SetX(yx,X) (yx+=((X)-yx%9))
 #define YX_SetY(yx,y) (yx=((y)<<3)+(y)+yx%9)
@@ -40,7 +40,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define YX_R(yx) ((yx)==0xff ? 0xff :  (yx)+8-2*((yx)%9) )
 #define YX_LR(yx) ((yx)==0xff ? 0 : ( (yx%9)-4)
 
-// YX©w¸qµ²§ô
+// YXå®šç¾©çµæŸ
 typedef struct  trace
 {
   YX src, dst;

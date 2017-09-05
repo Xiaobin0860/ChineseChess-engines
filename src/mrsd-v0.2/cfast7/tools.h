@@ -1,6 +1,6 @@
 /*
 Ki11egg , Xiangqi(Chinese Chess) engine
-Copyright (C) Tzer-jen Wei 
+Copyright (C) Tzer-jen Wei
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -31,30 +31,30 @@ int debug=0;
 #if defined(VC)
 #define ull unsigned __int64
 #define LL1 1ui64
-#else 
+#else
 #define ull unsigned long long
 #define LL1 1ULL
 #endif
-#define check(a,n) 
+#define check(a,n)
 //#define check(a,n) if(a>=n || a<0) {printf("error!!! %s >=%d in %s %d",#a,n,__FUNCTION__,__LINE__);exit(1);}
 //tools for 90bits data
 #include "u96.h"
 //tools for initgame
 #ifdef CONSTANT_BD
 #ifndef VC
-#define _1lbd 0x20100 
+#define _1lbd 0x20100
 #define _0lbd 0x8040201008040201LL
-#define _1rbd 0x2010080 
+#define _1rbd 0x2010080
 #define _0rbd 0x4020100804020100LL
-#define _1lbd2 0x60301 
+#define _1lbd2 0x60301
 #define _0lbd2 0x80c06030180c0603LL
-#define _1rbd2 0x30180c0 
+#define _1rbd2 0x30180c0
 #define _0rbd2 0x6030180c06030180LL
-#define _1eveny 0x1ff00 
+#define _1eveny 0x1ff00
 #define _0eveny 0x7fc01ff007fc01ffLL
-#define _1zoo 0x880088 
+#define _1zoo 0x880088
 #define _0zoo 0x8008844004440044LL
-#define _1palace 0x70381c 
+#define _1palace 0x70381c
 #define _0palace 0xe07038LL
 #endif
 #endif
@@ -71,13 +71,13 @@ inline void swap (T& a, T& b) {
 #ifdef max
 #undef max
 #endif
-#ifdef VC
-template <class T> 
+// #ifdef VC
+template <class T>
 inline T max(const T a,const T b)
 { return (a>b) ? a: b;}
 template <class T>
 inline T min(const T a, const T b){ return a<b ? a: b;}
-#else
-#define max(a,b) ((a)>? (b))
-#define min(a,b) ((a)<? (b))
-#endif
+// #else
+// #define max(a,b) ((a)>? (b))
+// #define min(a,b) ((a)<? (b))
+// #endif
